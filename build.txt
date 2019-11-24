@@ -1,0 +1,8 @@
+author = MountainDrew
+version = 1.4.2.001
+displayName = Calamity Mod Music
+homepage = https://forums.terraria.org/index.php?threads/calamity-mod.44065/
+hideCode = true
+hideResources = true
+includeSource = false
+includePDB = false
