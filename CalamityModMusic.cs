@@ -75,7 +75,7 @@ namespace CalamityModMusic
 		{
 			Mod bossChecklist = ModLoader.GetMod("BossChecklist");
 			Mod calamity = ModLoader.GetMod("CalamityMod");
-			if (calamity != null)
+			if (calamity != null && bossChecklist != null)
 			{
 				bossChecklist.Call(
 				"AddToBossCollection", 
