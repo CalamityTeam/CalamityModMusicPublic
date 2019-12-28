@@ -70,5 +70,163 @@ namespace CalamityModMusic
         {
             Instance = null;
         }
+
+        public override void PostSetupContent()
+		{
+			Mod bossChecklist = ModLoader.GetMod("BossChecklist");
+			Mod calamity = ModLoader.GetMod("CalamityMod");
+			if (calamity != null)
+			{
+				bossChecklist.Call(
+				"AddToBossCollection", 
+				calamity.Name, 
+				"Desert Scourge", 
+				ItemType("DesertScourgeMusicbox"));
+
+				bossChecklist.Call(
+				"AddToBossCollection", 
+				calamity.Name, 
+				"Giant Clam", 
+				ItemType("SunkenSeaMusicbox"));
+
+				bossChecklist.Call(
+				"AddToBossCollection", 
+				calamity.Name, 
+				"Crabulon", 
+				ItemType("CrabulonMusicbox"));
+
+				bossChecklist.Call(
+				"AddToBossCollection", 
+				calamity.Name, 
+				"Hive Mind", 
+				ItemType("HiveMindMusicbox"));
+
+				bossChecklist.Call(
+				"AddToBossCollection", 
+				calamity.Name, 
+				"The Perforators", 
+				ItemType("PerforatorMusicbox"));
+
+				bossChecklist.Call(
+				"AddToBossCollection", 
+				calamity.Name, 
+				"Slime God", 
+				ItemType("SlimeGodMusicbox"));
+
+				bossChecklist.Call(
+				"AddToBossCollection", 
+				calamity.Name, 
+				"Cryogen", 
+				ItemType("CryogenMusicbox"));
+
+				bossChecklist.Call(
+				"AddToBossCollection", 
+				calamity.Name, 
+				"Brimstone Elemental", 
+				ItemType("BrimmyMusicbox"));
+
+				bossChecklist.Call(
+				"AddToBossCollection", 
+				calamity.Name, 
+				"Aquatic Scourge", 
+				ItemType("AquaticScourgeMusicbox"));
+
+				bossChecklist.Call(
+				"AddToBossCollection", 
+				calamity.Name, 
+				"Calamitas", 
+				ItemType("CalamitasMusicbox"));
+
+				bossChecklist.Call(
+				"AddToBossCollection", 
+				calamity.Name, 
+				"Leviathan", 
+				new List<int>() {ItemType("LeviathanMusicbox"), ItemType("SirenMusicbox")});
+
+				bossChecklist.Call(
+				"AddToBossCollection", 
+				calamity.Name, 
+				"Astrum Aureus", 
+				ItemType("AstrageldonMusicbox"));
+
+				bossChecklist.Call(
+				"AddToBossCollection", 
+				calamity.Name, 
+				"Plaguebringer Goliath", 
+				ItemType("PlaguebringerMusicbox"));
+
+				bossChecklist.Call(
+				"AddToBossCollection", 
+				calamity.Name, 
+				"Ravager", 
+				ItemType("RavagerMusicbox"));
+
+				bossChecklist.Call(
+				"AddToBossCollection", 
+				calamity.Name, 
+				"Astrum Deus", 
+				ItemType("AstrumDeusMusicbox"));
+
+				bossChecklist.Call(
+				"AddToBossCollection", 
+				calamity.Name, 
+				"Profaned Guardians", 
+				ItemType("ProfanedGuardianMusicbox"));
+
+				bossChecklist.Call(
+				"AddToBossCollection", 
+				calamity.Name, 
+				"Bumblebirb", 
+				ItemType("BumblebirbMusicbox"));
+
+				bossChecklist.Call(
+				"AddToBossCollection", 
+				calamity.Name, 
+				"Providence", 
+				ItemType("ProvidenceMusicbox"));
+
+				bossChecklist.Call(
+				"AddToBossCollection", 
+				calamity.Name, 
+				"Ceaseless Void", 
+				ItemType("CeaselessVoidMusicbox"));
+
+				bossChecklist.Call(
+				"AddToBossCollection", 
+				calamity.Name, 
+				"Storm Weaver", 
+				ItemType("StormWeaverMusicbox"));
+
+				bossChecklist.Call(
+				"AddToBossCollection", 
+				calamity.Name, 
+				"Signus", 
+				ItemType("SignusMusicbox"));
+
+				bossChecklist.Call(
+				"AddToBossCollection", 
+				calamity.Name, 
+				"Polterghast", 
+				ItemType("PolterghastMusicbox"));
+
+				bossChecklist.Call(
+				"AddToBossCollection", 
+				calamity.Name, 
+				"Devourer of Gods", 
+				new List<int>() {ItemType("DoGMusicbox"), ItemType("DoGP2Musicbox")});
+
+				bossChecklist.Call(
+				"AddToBossCollection", 
+				calamity.Name, 
+				"Yharon", 
+				new List<int>() {ItemType("Yharon2Musicbox"), ItemType("Yharon1Musicbox"), ItemType("Yharon3Musicbox")});
+
+				bossChecklist.Call(
+				"AddToBossCollection", 
+				calamity.Name, 
+				"Supreme Calamitas", 
+				new List<int>() {ItemType("SCalGMusicbox"), ItemType("SCalLMusicbox"), ItemType("SCalEMusicbox"), ItemType("SCalAMusicbox")});
+			}
+		}
     }
 }
