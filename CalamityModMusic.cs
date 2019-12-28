@@ -4,6 +4,8 @@ using System.IO;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
+using CalamityModMusic.Tiles;
+using CalamityModMusic.Items.Placeables;
 
 namespace CalamityModMusic
 {
@@ -21,48 +23,48 @@ namespace CalamityModMusic
             if (!Main.dedServ)
             {
                 //Boss Music
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/AquaticScourge"), ItemType("AquaticScourgeMusicbox"), TileType("AquaticScourgeMusicbox"));
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Astrageldon"), ItemType("AstrageldonMusicbox"), TileType("AstrageldonMusicbox"));
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/AstrumDeus"), ItemType("AstrumDeusMusicbox"), TileType("AstrumDeusMusicbox"));
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/LeftAlone"), ItemType("BrimmyMusicbox"), TileType("BrimmyMusicbox"));
-				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Murderswarm"), ItemType("BumblebirbMusicbox"), TileType("BumblebirbMusicbox"));
-				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Calamitas"), ItemType("CalamitasMusicbox"), TileType("CalamitasMusicbox"));
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Void"), ItemType("CeaselessVoidMusicbox"), TileType("CeaselessVoidMusicbox"));
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Crabulon"), ItemType("CrabulonMusicbox"), TileType("CrabulonMusicbox"));
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Cryogen"), ItemType("CryogenMusicbox"), TileType("CryogenMusicbox"));
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/DesertScourge"), ItemType("DesertScourgeMusicbox"), TileType("DesertScourgeMusicbox"));
-				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/YHARON"), ItemType("Yharon1Musicbox"), TileType("Yharon1Musicbox"));
-				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/YHARONREBIRTH"), ItemType("Yharon2Musicbox"), TileType("Yharon2Musicbox"));
-				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/DragonGod"), ItemType("Yharon3Musicbox"), TileType("Yharon3Musicbox"));
-				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/RUIN"), ItemType("PolterghastMusicbox"), TileType("PolterghastMusicbox"));
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Guardians"), ItemType("ProfanedGuardianMusicbox"), TileType("ProfanedGuardianMusicbox"));
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/ProvidenceTheme"), ItemType("ProvidenceMusicbox"), TileType("ProvidenceMusicbox"));
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Ravager"), ItemType("RavagerMusicbox"), TileType("RavagerMusicbox"));
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Signus"), ItemType("SignusMusicbox"), TileType("SignusMusicbox"));
-				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/SirenLure"), ItemType("SirenIdleMusicbox"), TileType("SirenIdleMusicbox"));
-				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Siren"), ItemType("SirenMusicbox"), TileType("SirenMusicbox"));
-				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/LeviathanAndSiren"), ItemType("LeviathanMusicbox"), TileType("LeviathanMusicbox"));
-				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Weaver"), ItemType("StormWeaverMusicbox"), TileType("StormWeaverMusicbox"));
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/SCG"), ItemType("SCalGMusicbox"), TileType("SCalGMusicbox"));
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/SCL"), ItemType("SCalLMusicbox"), TileType("SCalLMusicbox"));
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/SCE"), ItemType("SCalEMusicbox"), TileType("SCalEMusicbox"));
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/SCA"), ItemType("SCalAMusicbox"), TileType("SCalAMusicbox"));
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/ScourgeofTheUniverse"), ItemType("DoGMusicbox"), TileType("DoGMusicbox"));
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/UniversalCollapse"), ItemType("DoGP2Musicbox"), TileType("DoGP2Musicbox"));
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/HiveMind"), ItemType("HiveMindMusicbox"), TileType("HiveMindMusicbox"));
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/BloodCoagulant"), ItemType("PerforatorMusicbox"), TileType("PerforatorMusicbox"));
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/PlaguebringerGoliath"), ItemType("PlaguebringerMusicbox"), TileType("PlaguebringerMusicbox"));
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/SlimeGod"), ItemType("SlimeGodMusicbox"), TileType("SlimeGodMusicbox"));
+                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/AquaticScourge"), ModContent.ItemType<Items.Placeables.AquaticScourgeMusicbox>(), ModContent.TileType<Tiles.AquaticScourgeMusicbox>());
+                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Astrageldon"), ModContent.ItemType<Items.Placeables.AstrageldonMusicbox>(), ModContent.TileType<Tiles.AstrageldonMusicbox>());
+                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/AstrumDeus"), ModContent.ItemType<Items.Placeables.AstrumDeusMusicbox>(), ModContent.TileType<Tiles.AstrumDeusMusicbox>());
+                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/LeftAlone"), ModContent.ItemType<Items.Placeables.BrimmyMusicbox>(), ModContent.TileType<Tiles.BrimmyMusicbox>());
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Murderswarm"), ModContent.ItemType<Items.Placeables.BumblebirbMusicbox>(), ModContent.TileType<Tiles.BumblebirbMusicbox>());
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Calamitas"), ModContent.ItemType<Items.Placeables.CalamitasMusicbox>(), ModContent.TileType<Tiles.CalamitasMusicbox>());
+                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Void"), ModContent.ItemType<Items.Placeables.CeaselessVoidMusicbox>(), ModContent.TileType<Tiles.CeaselessVoidMusicbox>());
+                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Crabulon"), ModContent.ItemType<Items.Placeables.CrabulonMusicbox>(), ModContent.TileType<Tiles.CrabulonMusicbox>());
+                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Cryogen"), ModContent.ItemType<Items.Placeables.CryogenMusicbox>(), ModContent.TileType<Tiles.CryogenMusicbox>());
+                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/DesertScourge"), ModContent.ItemType<Items.Placeables.DesertScourgeMusicbox>(), ModContent.TileType<Tiles.DesertScourgeMusicbox>());
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/YHARON"), ModContent.ItemType<Items.Placeables.Yharon1Musicbox>(), ModContent.TileType<Tiles.Yharon1Musicbox>());
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/YHARONREBIRTH"), ModContent.ItemType<Items.Placeables.Yharon2Musicbox>(), ModContent.TileType<Tiles.Yharon2Musicbox>());
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/DragonGod"), ModContent.ItemType<Items.Placeables.Yharon3Musicbox>(), ModContent.TileType<Tiles.Yharon3Musicbox>());
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/RUIN"), ModContent.ItemType<Items.Placeables.PolterghastMusicbox>(), ModContent.TileType<Tiles.PolterghastMusicbox>());
+                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Guardians"), ModContent.ItemType<Items.Placeables.ProfanedGuardianMusicbox>(), ModContent.TileType<Tiles.ProfanedGuardianMusicbox>());
+                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/ProvidenceTheme"), ModContent.ItemType<Items.Placeables.ProvidenceMusicbox>(), ModContent.TileType<Tiles.ProvidenceMusicbox>());
+                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Ravager"), ModContent.ItemType<Items.Placeables.RavagerMusicbox>(), ModContent.TileType<Tiles.RavagerMusicbox>());
+                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Signus"), ModContent.ItemType<Items.Placeables.SignusMusicbox>(), ModContent.TileType<Tiles.SignusMusicbox>());
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/SirenLure"), ModContent.ItemType<Items.Placeables.SirenIdleMusicbox>(), ModContent.TileType<Tiles.SirenIdleMusicbox>());
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Siren"), ModContent.ItemType<Items.Placeables.SirenMusicbox>(), ModContent.TileType<Tiles.SirenMusicbox>());
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/LeviathanAndSiren"), ModContent.ItemType<Items.Placeables.LeviathanMusicbox>(), ModContent.TileType<Tiles.LeviathanMusicbox>());
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Weaver"), ModContent.ItemType<Items.Placeables.StormWeaverMusicbox>(), ModContent.TileType<Tiles.StormWeaverMusicbox>());
+                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/SCG"), ModContent.ItemType<Items.Placeables.SCalGMusicbox>(), ModContent.TileType<Tiles.SCalGMusicbox>());
+                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/SCL"), ModContent.ItemType<Items.Placeables.SCalLMusicbox>(), ModContent.TileType<Tiles.SCalLMusicbox>());
+                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/SCE"), ModContent.ItemType<Items.Placeables.SCalEMusicbox>(), ModContent.TileType<Tiles.SCalEMusicbox>());
+                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/SCA"), ModContent.ItemType<Items.Placeables.SCalAMusicbox>(), ModContent.TileType<Tiles.SCalAMusicbox>());
+                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/ScourgeofTheUniverse"), ModContent.ItemType<Items.Placeables.DoGMusicbox>(), ModContent.TileType<Tiles.DoGMusicbox>());
+                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/UniversalCollapse"), ModContent.ItemType<Items.Placeables.DoGP2Musicbox>(), ModContent.TileType<Tiles.DoGP2Musicbox>());
+                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/HiveMind"), ModContent.ItemType<Items.Placeables.HiveMindMusicbox>(), ModContent.TileType<Tiles.HiveMindMusicbox>());
+                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/BloodCoagulant"), ModContent.ItemType<Items.Placeables.PerforatorMusicbox>(), ModContent.TileType<Tiles.PerforatorMusicbox>());
+                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/PlaguebringerGoliath"), ModContent.ItemType<Items.Placeables.PlaguebringerMusicbox>(), ModContent.TileType<Tiles.PlaguebringerMusicbox>());
+                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/SlimeGod"), ModContent.ItemType<Items.Placeables.SlimeGodMusicbox>(), ModContent.TileType<Tiles.SlimeGodMusicbox>());
 
 				//Biome Music
-				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Sulphur"), ItemType("SulphurousMusicbox"), TileType("SulphurousMusicbox"));
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/TheAbyss"), ItemType("HigherAbyssMusicbox"), TileType("HigherAbyssMusicbox"));
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/TheDeepAbyss"), ItemType("AbyssLowerMusicbox"), TileType("AbyssLowerMusicbox"));
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/TheVoid"), ItemType("VoidMusicbox"), TileType("VoidMusicbox"));
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Astral"), ItemType("AstralMusicbox"), TileType("AstralMusicbox"));
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Calamity"), ItemType("CalamityMusicbox"), TileType("CalamityMusicbox"));
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Crag"), ItemType("CragMusicbox"), TileType("CragMusicbox"));
-				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/SunkenSea"), ItemType("SunkenSeaMusicbox"), TileType("SunkenSeaMusicbox"));
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Sulphur"), ModContent.ItemType<Items.Placeables.SulphurousMusicbox>(), ModContent.TileType<Tiles.SulphurousMusicbox>());
+                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/TheAbyss"), ModContent.ItemType<Items.Placeables.HigherAbyssMusicbox>(), ModContent.TileType<Tiles.HigherAbyssMusicbox>());
+                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/TheDeepAbyss"), ModContent.ItemType<Items.Placeables.AbyssLowerMusicbox>(), ModContent.TileType<Tiles.AbyssLowerMusicbox>());
+                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/TheVoid"), ModContent.ItemType<Items.Placeables.VoidMusicbox>(), ModContent.TileType<Tiles.VoidMusicbox>());
+                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Astral"), ModContent.ItemType<Items.Placeables.AstralMusicbox>(), ModContent.TileType<Tiles.AstralMusicbox>());
+                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Calamity"), ModContent.ItemType<Items.Placeables.CalamityMusicbox>(), ModContent.TileType<Tiles.CalamityMusicbox>());
+                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Crag"), ModContent.ItemType<Items.Placeables.CragMusicbox>(), ModContent.TileType<Tiles.CragMusicbox>());
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/SunkenSea"), ModContent.ItemType<Items.Placeables.SunkenSeaMusicbox>(), ModContent.TileType<Tiles.SunkenSeaMusicbox>());
             }
         }
 
@@ -81,151 +83,151 @@ namespace CalamityModMusic
 				"AddToBossCollection", 
 				calamity.Name, 
 				"Desert Scourge", 
-				ItemType("DesertScourgeMusicbox"));
+				ModContent.ItemType<Items.Placeables.DesertScourgeMusicbox>());
 
 				bossChecklist.Call(
 				"AddToBossCollection", 
 				calamity.Name, 
 				"Giant Clam", 
-				ItemType("SunkenSeaMusicbox"));
+				ModContent.ItemType<Items.Placeables.SunkenSeaMusicbox>());
 
 				bossChecklist.Call(
 				"AddToBossCollection", 
 				calamity.Name, 
 				"Crabulon", 
-				ItemType("CrabulonMusicbox"));
+				ModContent.ItemType<Items.Placeables.CrabulonMusicbox>());
 
 				bossChecklist.Call(
 				"AddToBossCollection", 
 				calamity.Name, 
 				"Hive Mind", 
-				ItemType("HiveMindMusicbox"));
+				ModContent.ItemType<Items.Placeables.HiveMindMusicbox>());
 
 				bossChecklist.Call(
 				"AddToBossCollection", 
 				calamity.Name, 
 				"The Perforators", 
-				ItemType("PerforatorMusicbox"));
+				ModContent.ItemType<Items.Placeables.PerforatorMusicbox>());
 
 				bossChecklist.Call(
 				"AddToBossCollection", 
 				calamity.Name, 
 				"Slime God", 
-				ItemType("SlimeGodMusicbox"));
+				ModContent.ItemType<Items.Placeables.SlimeGodMusicbox>());
 
 				bossChecklist.Call(
 				"AddToBossCollection", 
 				calamity.Name, 
 				"Cryogen", 
-				ItemType("CryogenMusicbox"));
+				ModContent.ItemType<Items.Placeables.CryogenMusicbox>());
 
 				bossChecklist.Call(
 				"AddToBossCollection", 
 				calamity.Name, 
 				"Brimstone Elemental", 
-				ItemType("BrimmyMusicbox"));
+				ModContent.ItemType<Items.Placeables.BrimmyMusicbox>());
 
 				bossChecklist.Call(
 				"AddToBossCollection", 
 				calamity.Name, 
 				"Aquatic Scourge", 
-				ItemType("AquaticScourgeMusicbox"));
+				ModContent.ItemType<Items.Placeables.AquaticScourgeMusicbox>());
 
 				bossChecklist.Call(
 				"AddToBossCollection", 
 				calamity.Name, 
 				"Calamitas", 
-				ItemType("CalamitasMusicbox"));
+				ModContent.ItemType<Items.Placeables.CalamitasMusicbox>());
 
 				bossChecklist.Call(
 				"AddToBossCollection", 
 				calamity.Name, 
 				"Leviathan", 
-				new List<int>() {ItemType("LeviathanMusicbox"), ItemType("SirenMusicbox")});
+				new List<int>() {ModContent.ItemType<Items.Placeables.LeviathanMusicbox>(), ModContent.ItemType<Items.Placeables.SirenMusicbox>()});
 
 				bossChecklist.Call(
 				"AddToBossCollection", 
 				calamity.Name, 
 				"Astrum Aureus", 
-				ItemType("AstrageldonMusicbox"));
+				ModContent.ItemType<Items.Placeables.AstrageldonMusicbox>());
 
 				bossChecklist.Call(
 				"AddToBossCollection", 
 				calamity.Name, 
 				"Plaguebringer Goliath", 
-				ItemType("PlaguebringerMusicbox"));
+				ModContent.ItemType<Items.Placeables.PlaguebringerMusicbox>());
 
 				bossChecklist.Call(
 				"AddToBossCollection", 
 				calamity.Name, 
 				"Ravager", 
-				ItemType("RavagerMusicbox"));
+				ModContent.ItemType<Items.Placeables.RavagerMusicbox>());
 
 				bossChecklist.Call(
 				"AddToBossCollection", 
 				calamity.Name, 
 				"Astrum Deus", 
-				ItemType("AstrumDeusMusicbox"));
+				ModContent.ItemType<Items.Placeables.AstrumDeusMusicbox>());
 
 				bossChecklist.Call(
 				"AddToBossCollection", 
 				calamity.Name, 
 				"Profaned Guardians", 
-				ItemType("ProfanedGuardianMusicbox"));
+				ModContent.ItemType<Items.Placeables.ProfanedGuardianMusicbox>());
 
 				bossChecklist.Call(
 				"AddToBossCollection", 
 				calamity.Name, 
 				"Bumblebirb", 
-				ItemType("BumblebirbMusicbox"));
+				ModContent.ItemType<Items.Placeables.BumblebirbMusicbox>());
 
 				bossChecklist.Call(
 				"AddToBossCollection", 
 				calamity.Name, 
 				"Providence", 
-				ItemType("ProvidenceMusicbox"));
+				ModContent.ItemType<Items.Placeables.ProvidenceMusicbox>());
 
 				bossChecklist.Call(
 				"AddToBossCollection", 
 				calamity.Name, 
 				"Ceaseless Void", 
-				ItemType("CeaselessVoidMusicbox"));
+				ModContent.ItemType<Items.Placeables.CeaselessVoidMusicbox>());
 
 				bossChecklist.Call(
 				"AddToBossCollection", 
 				calamity.Name, 
 				"Storm Weaver", 
-				ItemType("StormWeaverMusicbox"));
+				ModContent.ItemType<Items.Placeables.StormWeaverMusicbox>());
 
 				bossChecklist.Call(
 				"AddToBossCollection", 
 				calamity.Name, 
 				"Signus", 
-				ItemType("SignusMusicbox"));
+				ModContent.ItemType<Items.Placeables.SignusMusicbox>());
 
 				bossChecklist.Call(
 				"AddToBossCollection", 
 				calamity.Name, 
 				"Polterghast", 
-				ItemType("PolterghastMusicbox"));
+				ModContent.ItemType<Items.Placeables.PolterghastMusicbox>());
 
 				bossChecklist.Call(
 				"AddToBossCollection", 
 				calamity.Name, 
 				"Devourer of Gods", 
-				new List<int>() {ItemType("DoGMusicbox"), ItemType("DoGP2Musicbox")});
+				new List<int>() {ModContent.ItemType<Items.Placeables.DoGMusicbox>(), ModContent.ItemType<Items.Placeables.DoGP2Musicbox>()});
 
 				bossChecklist.Call(
 				"AddToBossCollection", 
 				calamity.Name, 
 				"Yharon", 
-				new List<int>() {ItemType("Yharon2Musicbox"), ItemType("Yharon1Musicbox"), ItemType("Yharon3Musicbox")});
+				new List<int>() {ModContent.ItemType<Items.Placeables.Yharon2Musicbox>(), ModContent.ItemType<Items.Placeables.Yharon1Musicbox>(), ModContent.ItemType<Items.Placeables.Yharon3Musicbox>()});
 
 				bossChecklist.Call(
 				"AddToBossCollection", 
 				calamity.Name, 
 				"Supreme Calamitas", 
-				new List<int>() {ItemType("SCalGMusicbox"), ItemType("SCalLMusicbox"), ItemType("SCalEMusicbox"), ItemType("SCalAMusicbox")});
+				new List<int>() {ModContent.ItemType<Items.Placeables.SCalGMusicbox>(), ModContent.ItemType<Items.Placeables.SCalLMusicbox>(), ModContent.ItemType<Items.Placeables.SCalEMusicbox>(), ModContent.ItemType<Items.Placeables.SCalAMusicbox>()});
 			}
 		}
     }

@@ -3,6 +3,7 @@ using Terraria;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 using Terraria.DataStructures;
+using CalamityModMusic.Items.Placeables;
 
 namespace CalamityModMusic.Tiles
 {
@@ -33,7 +34,7 @@ namespace CalamityModMusic.Tiles
             Player player = Main.LocalPlayer;
             player.noThrow = 2;
             player.showItemIcon = true;
-            player.showItemIcon2 = mod.ItemType("CalamitasMusicbox");
+            player.showItemIcon2 = ModContent.ItemType<Items.Placeables.CalamitasMusicbox>();
         }
     }
 }

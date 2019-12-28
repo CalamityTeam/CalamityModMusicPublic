@@ -1,4 +1,5 @@
 using Terraria.ModLoader;
+using CalamityModMusic.Tiles;
 
 namespace CalamityModMusic.Items.Placeables
 {
@@ -17,7 +18,7 @@ namespace CalamityModMusic.Items.Placeables
             item.useTime = 10;
             item.autoReuse = true;
             item.consumable = true;
-            item.createTile = mod.TileType("RavagerMusicbox");
+            item.createTile = ModContent.TileType<Tiles.RavagerMusicbox>();
             item.width = 24;
             item.height = 24;
             item.rare = 4;
