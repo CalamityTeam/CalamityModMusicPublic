@@ -66,8 +66,11 @@ namespace CalamityModMusic
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Calamity"), ModContent.ItemType<Items.Placeables.CalamityMusicbox>(), ModContent.TileType<Tiles.CalamityMusicbox>());
                 AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Crag"), ModContent.ItemType<Items.Placeables.CragMusicbox>(), ModContent.TileType<Tiles.CragMusicbox>());
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/SunkenSea"), ModContent.ItemType<Items.Placeables.SunkenSeaMusicbox>(), ModContent.TileType<Tiles.SunkenSeaMusicbox>());
-            }
-        }
+
+				//Event Music
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/AcidRain1"), ModContent.ItemType<Items.Placeables.AcidRain1Musicbox>(), ModContent.TileType<Tiles.AcidRain1Musicbox>());
+			}
+		}
 
         public override void Unload()
         {
