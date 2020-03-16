@@ -7,7 +7,7 @@ namespace CalamityModMusic.Items.Placeables
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Music Box (UndergroundAstral Biome)");
+            DisplayName.SetDefault("Music Box (Underground Astral Biome)");
         }
 
         public override void SetDefaults()
