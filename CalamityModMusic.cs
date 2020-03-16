@@ -1,19 +1,25 @@
-﻿using System;
+﻿using Microsoft.Xna.Framework.Audio;
+using MonoMod.Cil;
+using System;
 using System.Collections.Generic;
-using System.IO;
-using Microsoft.Xna.Framework;
+using System.Threading;
 using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
-using CalamityModMusic.Tiles;
-using CalamityModMusic.Items.Placeables;
 
 namespace CalamityModMusic
 {
     public class CalamityModMusic : Mod
     {
         public static CalamityModMusic Instance;
+		internal static Config CalamityMusicConfig;
 
-        public CalamityModMusic()
+		private bool stopTitleMusic = false;
+		private ManualResetEvent titleMusicStopped = new ManualResetEvent(false);
+
+		private int customTitleMusicSlot;
+
+		public CalamityModMusic()
     	{
             Instance = this;
         }
@@ -38,7 +44,7 @@ namespace CalamityModMusic
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/DragonGod"), ModContent.ItemType<Items.Placeables.Yharon3Musicbox>(), ModContent.TileType<Tiles.Yharon3Musicbox>());
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/RUIN"), ModContent.ItemType<Items.Placeables.PolterghastMusicbox>(), ModContent.TileType<Tiles.PolterghastMusicbox>());
                 AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Guardians"), ModContent.ItemType<Items.Placeables.ProfanedGuardianMusicbox>(), ModContent.TileType<Tiles.ProfanedGuardianMusicbox>());
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/ProvidenceTheme"), ModContent.ItemType<Items.Placeables.ProvidenceMusicbox>(), ModContent.TileType<Tiles.ProvidenceMusicbox>());
+                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/ProvidenceTheme"), ModContent.ItemType<Items.Placeables.ProvidenceMusicbox>(), ModContent.TileType<Tiles.ProvidenceMusicbox>()); //Seamless
                 AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Ravager"), ModContent.ItemType<Items.Placeables.RavagerMusicbox>(), ModContent.TileType<Tiles.RavagerMusicbox>());
                 AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Signus"), ModContent.ItemType<Items.Placeables.SignusMusicbox>(), ModContent.TileType<Tiles.SignusMusicbox>());
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/SirenLure"), ModContent.ItemType<Items.Placeables.SirenIdleMusicbox>(), ModContent.TileType<Tiles.SirenIdleMusicbox>());
@@ -61,14 +67,14 @@ namespace CalamityModMusic
                 AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/TheAbyss"), ModContent.ItemType<Items.Placeables.HigherAbyssMusicbox>(), ModContent.TileType<Tiles.HigherAbyssMusicbox>());
                 AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/TheDeepAbyss"), ModContent.ItemType<Items.Placeables.AbyssLowerMusicbox>(), ModContent.TileType<Tiles.AbyssLowerMusicbox>());
                 AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/TheVoid"), ModContent.ItemType<Items.Placeables.VoidMusicbox>(), ModContent.TileType<Tiles.VoidMusicbox>());
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Astral"), ModContent.ItemType<Items.Placeables.AstralMusicbox>(), ModContent.TileType<Tiles.AstralMusicbox>());
-				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/AstralUnderground"), ModContent.ItemType<Items.Placeables.AstralUndergroundMusicbox>(), ModContent.TileType<Tiles.AstralUndergroundMusicbox>());
-				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Calamity"), ModContent.ItemType<Items.Placeables.CalamityMusicbox>(), ModContent.TileType<Tiles.CalamityMusicbox>());
+                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Astral"), ModContent.ItemType<Items.Placeables.AstralMusicbox>(), ModContent.TileType<Tiles.AstralMusicbox>()); //Seamless
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/AstralUnderground"), ModContent.ItemType<Items.Placeables.AstralUndergroundMusicbox>(), ModContent.TileType<Tiles.AstralUndergroundMusicbox>()); //Seamless
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Calamity"), ModContent.ItemType<Items.Placeables.CalamityMusicbox>(), ModContent.TileType<Tiles.CalamityMusicbox>()); //Seamless
                 AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Crag"), ModContent.ItemType<Items.Placeables.CragMusicbox>(), ModContent.TileType<Tiles.CragMusicbox>());
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/SunkenSea"), ModContent.ItemType<Items.Placeables.SunkenSeaMusicbox>(), ModContent.TileType<Tiles.SunkenSeaMusicbox>());
 
 				//Event Music
-				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/AcidRain1"), ModContent.ItemType<Items.Placeables.AcidRain1Musicbox>(), ModContent.TileType<Tiles.AcidRain1Musicbox>());
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/AcidRain1"), ModContent.ItemType<Items.Placeables.AcidRain1Musicbox>(), ModContent.TileType<Tiles.AcidRain1Musicbox>()); //Seamless
 			}
 		}
 
@@ -79,6 +85,17 @@ namespace CalamityModMusic
 
         public override void PostSetupContent()
 		{
+			if (CalamityMusicConfig.TitleScreenMusicEnabled)
+			{
+				customTitleMusicSlot = GetSoundSlot(SoundType.Music, "Sounds/Music/Calamity");
+				IL.Terraria.Main.UpdateAudio += il =>
+				{
+					var c = new ILCursor(il);
+					c.GotoNext(MoveType.After, i => i.MatchLdfld<Main>("newMusic"));
+					c.EmitDelegate<Func<int, int>>(newMusic => newMusic == MusicID.Title ? customTitleMusicSlot : newMusic);
+				};
+			}
+
 			Mod bossChecklist = ModLoader.GetMod("BossChecklist");
 			Mod calamity = ModLoader.GetMod("CalamityMod");
 			if (calamity != null && bossChecklist != null)
@@ -234,5 +251,34 @@ namespace CalamityModMusic
 				new List<int>() {ModContent.ItemType<Items.Placeables.SCalGMusicbox>(), ModContent.ItemType<Items.Placeables.SCalLMusicbox>(), ModContent.ItemType<Items.Placeables.SCalEMusicbox>(), ModContent.ItemType<Items.Placeables.SCalAMusicbox>()});
 			}
 		}
-    }
+		public override void Close()
+		{
+			// Close isn't called on the main thread. Who doesn't love a bit of thread safety
+			// Close may be called even if we didn't reach PostSetupContent, so don't try and stop a music track which hasn't been loaded or played
+			if (customTitleMusicSlot > 0)
+			{
+				stopTitleMusic = true;
+				titleMusicStopped.WaitOne();
+			}
+			base.Close();
+		}
+
+		public override void UpdateMusic(ref int music, ref MusicPriority priority)
+		{
+			if (stopTitleMusic)
+			{
+				// prevent our IL hook trying to play the track anymore
+				// we could just remove our IL hook, but then we'd have to save it in a variable. tML removes it for us anyway
+				customTitleMusicSlot = MusicID.Title;
+
+				// stop the music if it's playing (which it probably is)
+				var m = GetMusic("Sounds/Music/Calamity");
+				if (m.IsPlaying)
+					m.Stop(AudioStopOptions.Immediate);
+
+				titleMusicStopped.Set();
+				stopTitleMusic = false;
+			}
+		}
+	}
 }
