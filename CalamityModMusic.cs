@@ -83,7 +83,7 @@ namespace CalamityModMusic
             Instance = null;
         }
 
-        public override void PostSetupContent()
+		private void setTitleMusic()
 		{
 			if (CalamityMusicConfig.TitleScreenMusicEnabled)
 			{
@@ -95,6 +95,11 @@ namespace CalamityModMusic
 					c.EmitDelegate<Func<int, int>>(newMusic => newMusic == MusicID.Title ? customTitleMusicSlot : newMusic);
 				};
 			}
+		}
+
+        public override void PostSetupContent()
+		{
+			setTitleMusic();
 
 			Mod bossChecklist = ModLoader.GetMod("BossChecklist");
 			Mod calamity = ModLoader.GetMod("CalamityMod");
@@ -265,8 +270,13 @@ namespace CalamityModMusic
 
 		public override void UpdateMusic(ref int music, ref MusicPriority priority)
 		{
-			if (stopTitleMusic)
+			if (stopTitleMusic || (!Main.gameMenu && customTitleMusicSlot != MusicID.Title && Main.ActivePlayerFileData != null && Main.ActiveWorldFileData != null))
 			{
+				if (!stopTitleMusic)
+				{
+					music = MusicID.Title;
+				}
+
 				// prevent our IL hook trying to play the track anymore
 				// we could just remove our IL hook, but then we'd have to save it in a variable. tML removes it for us anyway
 				customTitleMusicSlot = MusicID.Title;
@@ -279,6 +289,11 @@ namespace CalamityModMusic
 				titleMusicStopped.Set();
 				stopTitleMusic = false;
 			}
+		}
+
+		public override void PreSaveAndQuit()
+		{
+			setTitleMusic();
 		}
 	}
 }
