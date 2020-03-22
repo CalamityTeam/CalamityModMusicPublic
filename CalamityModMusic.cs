@@ -254,6 +254,18 @@ namespace CalamityModMusic
 				calamity.Name, 
 				"Supreme Calamitas", 
 				new List<int>() {ModContent.ItemType<Items.Placeables.SCalGMusicbox>(), ModContent.ItemType<Items.Placeables.SCalLMusicbox>(), ModContent.ItemType<Items.Placeables.SCalEMusicbox>(), ModContent.ItemType<Items.Placeables.SCalAMusicbox>()});
+
+				bossChecklist.Call(
+				"AddToBossCollection", 
+				calamity.Name, 
+				"Acid Rain", 
+				ModContent.ItemType<Items.Placeables.AcidRain1Musicbox>());
+
+				bossChecklist.Call(
+				"AddToBossCollection", 
+				calamity.Name, 
+				"Acid Rain (Post-AS)", 
+				ModContent.ItemType<Items.Placeables.AcidRain1Musicbox>());
 			}
 		}
 		public override void Close()
