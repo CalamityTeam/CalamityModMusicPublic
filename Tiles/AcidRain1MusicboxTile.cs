@@ -7,7 +7,7 @@ using CalamityModMusic.Items.Placeables;
 
 namespace CalamityModMusic.Tiles
 {
-	public class AcidRain1Musicbox : ModTile
+	public class AcidRain1MusicboxTile : ModTile
 	{
 		public override void SetDefaults()
 		{
@@ -24,9 +24,14 @@ namespace CalamityModMusic.Tiles
             AddMapEntry(new Color(200, 200, 200), name);
         }
 
+        public override void HitWire(int i, int j)
+        {
+            CalamityModMusic.MusicBoxShortcut(Type, i, j, 2, 2);
+        }
+
 		public override void KillMultiTile(int i, int j, int frameX, int frameY)
 		{
-			Item.NewItem(i * 16, j * 16, 16, 48, ModContent.ItemType<Items.Placeables.AcidRain1Musicbox>());
+			Item.NewItem(i * 16, j * 16, 16, 48, ModContent.ItemType<AcidRain1Musicbox>());
 		}
 
         public override void MouseOver(int i, int j)
@@ -34,7 +39,7 @@ namespace CalamityModMusic.Tiles
             Player player = Main.LocalPlayer;
             player.noThrow = 2;
             player.showItemIcon = true;
-            player.showItemIcon2 = ModContent.ItemType<Items.Placeables.AcidRain1Musicbox>();
+            player.showItemIcon2 = ModContent.ItemType<AcidRain1Musicbox>();
         }
     }
 }
