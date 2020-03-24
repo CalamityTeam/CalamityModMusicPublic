@@ -7,6 +7,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using CalamityModMusic.Items.Placeables;
+using Terraria.ModLoader.Exceptions;
 
 namespace CalamityModMusic
 {
@@ -15,8 +16,8 @@ namespace CalamityModMusic
         public static CalamityModMusic Instance;
 		internal static Config CalamityMusicConfig;
 
-		private bool stopTitleMusic = false;
-		private ManualResetEvent titleMusicStopped = new ManualResetEvent(false);
+		private bool stopTitleMusic;
+		private ManualResetEvent titleMusicStopped;
 
 		private int customTitleMusicSlot;
 
@@ -76,12 +77,20 @@ namespace CalamityModMusic
 
 				//Event Music
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/AcidRain1"), ModContent.ItemType<AcidRain1Musicbox>(), ModContent.TileType<Tiles.AcidRain1MusicboxTile>()); //Seamless
+
+
+				stopTitleMusic = false;
+				titleMusicStopped = new ManualResetEvent(false);
 			}
 		}
 
         public override void Unload()
         {
-            Instance = null;
+			customTitleMusicSlot = MusicID.Title;
+			titleMusicStopped.Set();
+			Instance = null;
+			titleMusicStopped = null;
+			CalamityMusicConfig = null;
         }
 
 		private void setTitleMusic()
