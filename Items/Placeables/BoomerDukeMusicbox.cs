@@ -7,7 +7,7 @@ namespace CalamityModMusic.Items.Placeables
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Music Box (Toxic Wisdom)");
+            DisplayName.SetDefault("Music Box (Old Duke)");
         }
 
         public override void SetDefaults()
@@ -18,7 +18,7 @@ namespace CalamityModMusic.Items.Placeables
             item.useTime = 10;
             item.autoReuse = true;
             item.consumable = true;
-            item.createTile = ModContent.TileType<Tiles.BoomerDukeMusicbox>();
+            item.createTile = ModContent.TileType<BoomerDukeMusicboxTile>();
             item.width = 24;
             item.height = 24;
             item.rare = 4;

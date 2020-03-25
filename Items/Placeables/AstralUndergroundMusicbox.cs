@@ -18,7 +18,7 @@ namespace CalamityModMusic.Items.Placeables
             item.useTime = 10;
             item.autoReuse = true;
             item.consumable = true;
-            item.createTile = ModContent.TileType<Tiles.AstralUndergroundMusicbox>();
+            item.createTile = ModContent.TileType<AstralUndergroundMusicboxTile>();
             item.width = 24;
             item.height = 24;
             item.rare = 4;
