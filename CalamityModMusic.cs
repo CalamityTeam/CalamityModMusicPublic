@@ -87,24 +87,30 @@ namespace CalamityModMusic
 
         public override void Unload()
         {
-			customTitleMusicSlot = MusicID.Title;
+			setTitleMusic(true);
 			titleMusicStopped.Set();
 			Instance = null;
 			titleMusicStopped = null;
 			CalamityMusicConfig = null;
         }
 
-		private void setTitleMusic()
+		private void setTitleMusic(bool overrideConfig = false)
 		{
-			if (CalamityMusicConfig.TitleScreenMusicEnabled)
+			if (CalamityMusicConfig.TitleScreenMusicEnabled || overrideConfig)
 			{
-				customTitleMusicSlot = GetSoundSlot(SoundType.Music, "Sounds/Music/Calamity");
+				customTitleMusicSlot = overrideConfig ? MusicID.Title : GetSoundSlot(SoundType.Music, "Sounds/Music/Calamity");
 				IL.Terraria.Main.UpdateAudio += il =>
 				{
 					var c = new ILCursor(il);
 					c.GotoNext(MoveType.After, i => i.MatchLdfld<Main>("newMusic"));
-					c.EmitDelegate<Func<int, int>>(newMusic => newMusic == MusicID.Title ? customTitleMusicSlot : newMusic);
+					c.EmitDelegate<Func<int, int>>(newMusic => newMusic == MusicID.Title && !overrideConfig ? customTitleMusicSlot : newMusic);
 				};
+			}
+			if (overrideConfig)
+			{
+				var m = GetMusic("Sounds/Music/Calamity");
+				if (m.IsPlaying)
+					m.Stop(AudioStopOptions.Immediate);
 			}
 		}
 
@@ -299,7 +305,7 @@ namespace CalamityModMusic
 
 		public override void UpdateMusic(ref int music, ref MusicPriority priority)
 		{
-			if (stopTitleMusic || (!Main.gameMenu && customTitleMusicSlot != MusicID.Title && Main.ActivePlayerFileData != null && Main.ActiveWorldFileData != null))
+			if (stopTitleMusic)
 			{
 				if (!stopTitleMusic)
 				{
