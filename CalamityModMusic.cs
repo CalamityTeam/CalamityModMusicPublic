@@ -287,6 +287,12 @@ namespace CalamityModMusic
 				bossChecklist.Call(
 				"AddToBossCollection", 
 				calamity.Name, 
+				"Acid Rain (Post-Polter)", 
+				ModContent.ItemType<AcidRain1Musicbox>());
+
+				bossChecklist.Call(
+				"AddToBossCollection", 
+				calamity.Name, 
 				"Old Duke", 
 				ModContent.ItemType<BoomerDukeMusicbox>());
 			}
