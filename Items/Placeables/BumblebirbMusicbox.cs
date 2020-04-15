@@ -7,7 +7,7 @@ namespace CalamityModMusic.Items.Placeables
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Music Box (Draconic Swarmer)");
+            DisplayName.SetDefault("Music Box (The Dragonfolly)");
         }
 
         public override void SetDefaults()
