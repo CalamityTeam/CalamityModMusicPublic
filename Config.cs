@@ -12,7 +12,7 @@ namespace CalamityModMusic
         [Header("Music Changes")]
 
         [DefaultValue(true)]
-        [Label("Title Screen - Toggling this requires a reload to take effect")]
+        [Label("Title Screen Override")]
         [Tooltip("Toggles the overriding of the title screen music to be 'The Tale of a Cruel World'")]
         public bool TitleScreenMusicEnabled {   get; set;   }
 
