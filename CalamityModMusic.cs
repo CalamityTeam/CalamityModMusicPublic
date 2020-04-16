@@ -93,7 +93,7 @@ namespace CalamityModMusic
         public override void Unload()
         {
 			swapTitleMusic = stopTitleMusic = true;
-			titleMusicStopped.WaitOne();
+			titleMusicStopped.Set();
 			Instance = null;
 			titleMusicStopped = null;
 			CalamityMusicConfig = null;
@@ -310,7 +310,7 @@ namespace CalamityModMusic
 
 		public override void UpdateMusic(ref int music, ref MusicPriority priority)
 		{
-			if (CalamityMusicConfig != null)
+			if (!Main.dedServ && CalamityMusicConfig != null)
 			{
 				if (titleOverride != CalamityMusicConfig.TitleScreenMusicEnabled)
 				{
