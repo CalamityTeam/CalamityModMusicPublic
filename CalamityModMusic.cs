@@ -93,7 +93,8 @@ namespace CalamityModMusic
         public override void Unload()
         {
 			swapTitleMusic = stopTitleMusic = true;
-			titleMusicStopped.Set();
+			if (!Main.dedServ)
+				titleMusicStopped.Set();
 			Instance = null;
 			titleMusicStopped = null;
 			CalamityMusicConfig = null;
@@ -105,8 +106,11 @@ namespace CalamityModMusic
 			{
 				titleOverride = true;
 				swapTitleMusic = true;
-				titleMusicStopped.WaitOne();
-				titleMusicStopped.Reset();
+				if (!Main.dedServ)
+				{
+					titleMusicStopped.WaitOne();
+					titleMusicStopped.Reset();
+				}
 			}
 
 			Mod bossChecklist = ModLoader.GetMod("BossChecklist");
@@ -300,7 +304,7 @@ namespace CalamityModMusic
 		{
 			// Close isn't called on the main thread. Who doesn't love a bit of thread safety
 			// Close may be called even if we didn't reach PostSetupContent, so don't try and stop a music track which hasn't been loaded or played
-			if (Main.music[MusicID.Title] == GetMusic("Sounds/Music/Calamity"))
+			if (!Main.dedServ && Main.music[MusicID.Title] == GetMusic("Sounds/Music/Calamity"))
 			{
 				stopTitleMusic = swapTitleMusic = true;
 				titleMusicStopped.WaitOne();
