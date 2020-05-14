@@ -19,11 +19,10 @@ namespace CalamityModMusic
         public static CalamityModMusic Instance;
 		internal static Config CalamityMusicConfig;
 
-		private volatile bool stopTitleMusic;
-		private volatile bool swapTitleMusic;
+		private bool stopTitleMusic;
 		private ManualResetEvent titleMusicStopped;
-		private bool needsSwap = true;
-		private bool titleOverride = false;
+
+		private int customTitleMusicSlot;
 
 		public CalamityModMusic()
     	{
@@ -83,8 +82,7 @@ namespace CalamityModMusic
 				//Event Music
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/AcidRain1"), ModContent.ItemType<AcidRain1Musicbox>(), ModContent.TileType<Tiles.AcidRain1MusicboxTile>()); //Seamless
 
-
-				swapTitleMusic = false;
+				
 				stopTitleMusic = false;
 				titleMusicStopped = new ManualResetEvent(false);
 			}
@@ -92,26 +90,31 @@ namespace CalamityModMusic
 
         public override void Unload()
         {
-			swapTitleMusic = stopTitleMusic = true;
-			if (!Main.dedServ)
-				titleMusicStopped.Set();
-			Instance = null;
+	        customTitleMusicSlot = MusicID.Title;
+	        titleMusicStopped.Set();
+	        Instance = null;
 			titleMusicStopped = null;
 			CalamityMusicConfig = null;
         }
 
+        private void setTitleMusic()
+        {
+	        if (CalamityMusicConfig.TitleScreenMusicEnabled)
+	        {
+		        customTitleMusicSlot = GetSoundSlot(SoundType.Music, "Sounds/Music/Calamity");
+		        IL.Terraria.Main.UpdateAudio += il =>
+		        {
+			        var c = new ILCursor(il);
+			        c.GotoNext(MoveType.After, i => i.MatchLdfld<Main>("newMusic"));
+			        c.EmitDelegate<Func<int, int>>(newMusic =>
+				        newMusic == MusicID.Title ? customTitleMusicSlot : newMusic);
+		        };
+	        }
+        }
+
         public override void PostSetupContent()
 		{
-			if (CalamityMusicConfig.TitleScreenMusicEnabled)
-			{
-				titleOverride = true;
-				swapTitleMusic = true;
-				if (!Main.dedServ)
-				{
-					titleMusicStopped.WaitOne();
-					titleMusicStopped.Reset();
-				}
-			}
+			setTitleMusic();
 
 			Mod bossChecklist = ModLoader.GetMod("BossChecklist");
 			Mod calamity = ModLoader.GetMod("CalamityMod");
@@ -293,20 +296,13 @@ namespace CalamityModMusic
 			}
 		}
 
-		public static void Swap<T>(ref T a, ref T b)
-		{
-			var tmp = a;
-			a = b;
-			b = tmp;
-		}
-
-		public override void Close()
+        public override void Close()
 		{
 			// Close isn't called on the main thread. Who doesn't love a bit of thread safety
 			// Close may be called even if we didn't reach PostSetupContent, so don't try and stop a music track which hasn't been loaded or played
-			if (!Main.dedServ && Main.music[MusicID.Title] == GetMusic("Sounds/Music/Calamity"))
+			if (!Main.dedServ && customTitleMusicSlot > 0)
 			{
-				stopTitleMusic = swapTitleMusic = true;
+				stopTitleMusic = true;
 				titleMusicStopped.WaitOne();
 			}
 			base.Close();
@@ -314,38 +310,30 @@ namespace CalamityModMusic
 
 		public override void UpdateMusic(ref int music, ref MusicPriority priority)
 		{
-			if (!Main.dedServ && CalamityMusicConfig != null)
+			if (stopTitleMusic || (!Main.gameMenu && customTitleMusicSlot != MusicID.Title && Main.ActivePlayerFileData != null && Main.ActiveWorldFileData != null))
 			{
-				if (titleOverride != CalamityMusicConfig.TitleScreenMusicEnabled)
+				if (!stopTitleMusic)
 				{
-					swapTitleMusic = true;
-					titleOverride = !titleOverride;
+					music = MusicID.Title;
 				}
-				if (Main.ActivePlayersCount != 0 && needsSwap)
-				{
-					swapTitleMusic = true;
-					needsSwap = false;
-				}
-				if (swapTitleMusic)
-				{
-					int slot = GetSoundSlot(SoundType.Music, "Sounds/Music/Calamity");
 
-					Swap(ref Main.music[MusicID.Title], ref Main.music[slot]);
-					Swap(ref Main.musicFade[MusicID.Title], ref Main.musicFade[slot]);
+				// prevent our IL hook trying to play the track anymore
+				// we could just remove our IL hook, but then we'd have to save it in a variable. tML removes it for us anyway
+				customTitleMusicSlot = MusicID.Title;
 
-					swapTitleMusic = false;
+				// stop the music if it's playing (which it probably is)
+				var m = GetMusic("Sounds/Music/Calamity");
+				if (m.IsPlaying)
+					m.Stop(AudioStopOptions.Immediate);
 
-					if (stopTitleMusic && Main.music[slot] is MusicStreaming)
-						((MusicStreaming)Main.music[slot]).Dispose();
-
-					titleMusicStopped.Set();
-				}
+				titleMusicStopped.Set();
+				stopTitleMusic = false;
 			}
 		}
 
 		public override void PreSaveAndQuit()
 		{
-			swapTitleMusic = needsSwap = true;
+			setTitleMusic();
 		}
 
 		internal static void SaveConfig(Config CalamityMusicConfig)
