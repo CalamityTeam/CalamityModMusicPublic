@@ -11,6 +11,47 @@ using Terraria.ModLoader.Exceptions;
 using Terraria.ModLoader.Audio;
 using Terraria.ModLoader.Config;
 using System.Reflection;
+using CalamityModMusic.Tiles;
+using AbyssLowerMusicbox = CalamityModMusic.Items.Placeables.AbyssLowerMusicbox;
+using AquaticScourgeMusicbox = CalamityModMusic.Items.Placeables.AquaticScourgeMusicbox;
+using AstrageldonMusicbox = CalamityModMusic.Items.Placeables.AstrageldonMusicbox;
+using AstralMusicbox = CalamityModMusic.Items.Placeables.AstralMusicbox;
+using AstrumDeusMusicbox = CalamityModMusic.Items.Placeables.AstrumDeusMusicbox;
+using BrimmyMusicbox = CalamityModMusic.Items.Placeables.BrimmyMusicbox;
+using BumblebirbMusicbox = CalamityModMusic.Items.Placeables.BumblebirbMusicbox;
+using CalamitasMusicbox = CalamityModMusic.Items.Placeables.CalamitasMusicbox;
+using CalamityMusicbox = CalamityModMusic.Items.Placeables.CalamityMusicbox;
+using CeaselessVoidMusicbox = CalamityModMusic.Items.Placeables.CeaselessVoidMusicbox;
+using CrabulonMusicbox = CalamityModMusic.Items.Placeables.CrabulonMusicbox;
+using CragMusicbox = CalamityModMusic.Items.Placeables.CragMusicbox;
+using CryogenMusicbox = CalamityModMusic.Items.Placeables.CryogenMusicbox;
+using DesertScourgeMusicbox = CalamityModMusic.Items.Placeables.DesertScourgeMusicbox;
+using DoGMusicbox = CalamityModMusic.Items.Placeables.DoGMusicbox;
+using DoGP2Musicbox = CalamityModMusic.Items.Placeables.DoGP2Musicbox;
+using HigherAbyssMusicbox = CalamityModMusic.Items.Placeables.HigherAbyssMusicbox;
+using HiveMindMusicbox = CalamityModMusic.Items.Placeables.HiveMindMusicbox;
+using LeviathanMusicbox = CalamityModMusic.Items.Placeables.LeviathanMusicbox;
+using PerforatorMusicbox = CalamityModMusic.Items.Placeables.PerforatorMusicbox;
+using PlaguebringerMusicbox = CalamityModMusic.Items.Placeables.PlaguebringerMusicbox;
+using PolterghastMusicbox = CalamityModMusic.Items.Placeables.PolterghastMusicbox;
+using ProfanedGuardianMusicbox = CalamityModMusic.Items.Placeables.ProfanedGuardianMusicbox;
+using ProvidenceMusicbox = CalamityModMusic.Items.Placeables.ProvidenceMusicbox;
+using RavagerMusicbox = CalamityModMusic.Items.Placeables.RavagerMusicbox;
+using SCalAMusicbox = CalamityModMusic.Items.Placeables.SCalAMusicbox;
+using SCalEMusicbox = CalamityModMusic.Items.Placeables.SCalEMusicbox;
+using SCalGMusicbox = CalamityModMusic.Items.Placeables.SCalGMusicbox;
+using SCalLMusicbox = CalamityModMusic.Items.Placeables.SCalLMusicbox;
+using SignusMusicbox = CalamityModMusic.Items.Placeables.SignusMusicbox;
+using SirenIdleMusicbox = CalamityModMusic.Items.Placeables.SirenIdleMusicbox;
+using SirenMusicbox = CalamityModMusic.Items.Placeables.SirenMusicbox;
+using SlimeGodMusicbox = CalamityModMusic.Items.Placeables.SlimeGodMusicbox;
+using StormWeaverMusicbox = CalamityModMusic.Items.Placeables.StormWeaverMusicbox;
+using SulphurousMusicbox = CalamityModMusic.Items.Placeables.SulphurousMusicbox;
+using SunkenSeaMusicbox = CalamityModMusic.Items.Placeables.SunkenSeaMusicbox;
+using VoidMusicbox = CalamityModMusic.Items.Placeables.VoidMusicbox;
+using Yharon1Musicbox = CalamityModMusic.Items.Placeables.Yharon1Musicbox;
+using Yharon2Musicbox = CalamityModMusic.Items.Placeables.Yharon2Musicbox;
+using Yharon3Musicbox = CalamityModMusic.Items.Placeables.Yharon3Musicbox;
 
 namespace CalamityModMusic
 {
@@ -81,7 +122,8 @@ namespace CalamityModMusic
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/SunkenSea"), ModContent.ItemType<SunkenSeaMusicbox>(), ModContent.TileType<Tiles.SunkenSeaMusicbox>());
 
 				//Event Music
-				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/AcidRain1"), ModContent.ItemType<AcidRain1Musicbox>(), ModContent.TileType<Tiles.AcidRain1MusicboxTile>()); //Seamless
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/AcidRain1"), ModContent.ItemType<AcidRain1Musicbox>(), ModContent.TileType<AcidRain1MusicboxTile>()); //Seamless
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/AcidRain2"), ModContent.ItemType<AcidRain2Musicbox>(), ModContent.TileType<AcidRain2MusicboxTile>());
 
 
 				swapTitleMusic = false;
@@ -283,7 +325,7 @@ namespace CalamityModMusic
 				"AddToBossCollection", 
 				calamity.Name, 
 				"Acid Rain (Post-Polter)", 
-				ModContent.ItemType<AcidRain1Musicbox>());
+				ModContent.ItemType<AcidRain2Musicbox>());
 
 				bossChecklist.Call(
 				"AddToBossCollection", 
