@@ -63,6 +63,14 @@ namespace CalamityModMusic
 
 		private int customTitleMusicSlot;
 
+		private void TitleMusicIL(ILContext il)
+		{
+			var c = new ILCursor(il);
+			c.GotoNext(MoveType.After, i => i.MatchLdfld<Main>("newMusic"));
+			c.EmitDelegate<Func<int, int>>(newMusic =>
+				newMusic == MusicID.Title ? customTitleMusicSlot : newMusic);
+		}
+
 		public CalamityModMusic()
 		{
 			Instance = this;
@@ -136,18 +144,12 @@ namespace CalamityModMusic
 			titleMusicStopped = null;
 		}
 
-		private void setTitleMusic()
+		private void SetTitleMusic()
 		{
 			if (Config.ReplaceTitleMusic)
 			{
 				customTitleMusicSlot = GetSoundSlot(SoundType.Music, "Sounds/Music/Calamity");
-				IL.Terraria.Main.UpdateAudio += il =>
-				{
-					var c = new ILCursor(il);
-					c.GotoNext(MoveType.After, i => i.MatchLdfld<Main>("newMusic"));
-					c.EmitDelegate<Func<int, int>>(newMusic =>
-						newMusic == MusicID.Title ? customTitleMusicSlot : newMusic);
-				};
+				IL.Terraria.Main.UpdateAudio += TitleMusicIL;
 			}
 		}
 
@@ -161,7 +163,7 @@ namespace CalamityModMusic
 			// Since it's not worth fighting over this, just don't register the IL hook if Overhaul is loaded.
 			// The config notifies players that they cannot hear Calamity title music if Overhaul is enabled.
 			if(overhaul is null)
-				setTitleMusic();
+				SetTitleMusic();
 
 			if (calamity != null && bossChecklist != null)
 			{
@@ -378,7 +380,9 @@ namespace CalamityModMusic
 
 		public override void PreSaveAndQuit()
 		{
-			setTitleMusic();
+			Mod overhaul = ModLoader.GetMod("TerrariaOverhaul");
+			if(overhaul is null)
+				SetTitleMusic();
 		}
 
 		internal static void SaveConfig(CalamityMusicConfig CalamityMusicConfig)
