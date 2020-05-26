@@ -131,7 +131,7 @@ namespace CalamityModMusic
 		public override void Unload()
 		{
 			customTitleMusicSlot = MusicID.Title;
-			titleMusicStopped.Set();
+			titleMusicStopped?.Set();
 			Instance = null;
 			titleMusicStopped = null;
 		}
