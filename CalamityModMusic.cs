@@ -1,17 +1,15 @@
-﻿using Microsoft.Xna.Framework.Audio;
+﻿using CalamityModMusic.Items.Placeables;
+using CalamityModMusic.Tiles;
+using Microsoft.Xna.Framework.Audio;
 using MonoMod.Cil;
 using System;
 using System.Collections.Generic;
+using System.Reflection;
 using System.Threading;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using CalamityModMusic.Items.Placeables;
-using Terraria.ModLoader.Exceptions;
-using Terraria.ModLoader.Audio;
 using Terraria.ModLoader.Config;
-using System.Reflection;
-using CalamityModMusic.Tiles;
 using AbyssLowerMusicbox = CalamityModMusic.Items.Placeables.AbyssLowerMusicbox;
 using AquaticScourgeMusicbox = CalamityModMusic.Items.Placeables.AquaticScourgeMusicbox;
 using AstrageldonMusicbox = CalamityModMusic.Items.Placeables.AstrageldonMusicbox;
@@ -55,10 +53,10 @@ using Yharon3Musicbox = CalamityModMusic.Items.Placeables.Yharon3Musicbox;
 
 namespace CalamityModMusic
 {
-    public class CalamityModMusic : Mod
-    {
-        public static CalamityModMusic Instance;
-		internal static Config CalamityMusicConfig;
+	public class CalamityModMusic : Mod
+	{
+		public static CalamityModMusic Instance;
+		internal static CalamityMusicConfig Config => CalamityMusicConfig.Instance;
 
 		private bool stopTitleMusic;
 		private ManualResetEvent titleMusicStopped;
@@ -66,32 +64,32 @@ namespace CalamityModMusic
 		private int customTitleMusicSlot;
 
 		public CalamityModMusic()
-    	{
-            Instance = this;
-        }
+		{
+			Instance = this;
+		}
 
-        public override void Load()
-        {
-            if (!Main.dedServ)
-            {
-                //Boss Music - Alphabetised
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/AquaticScourge"), ModContent.ItemType<AquaticScourgeMusicbox>(), ModContent.TileType<Tiles.AquaticScourgeMusicbox>());
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Astrageldon"), ModContent.ItemType<AstrageldonMusicbox>(), ModContent.TileType<Tiles.AstrageldonMusicbox>());
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/AstrumDeus"), ModContent.ItemType<AstrumDeusMusicbox>(), ModContent.TileType<Tiles.AstrumDeusMusicbox>());
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/LeftAlone"), ModContent.ItemType<BrimmyMusicbox>(), ModContent.TileType<Tiles.BrimmyMusicbox>());
+		public override void Load()
+		{
+			if (!Main.dedServ)
+			{
+				//Boss Music - Alphabetised
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/AquaticScourge"), ModContent.ItemType<AquaticScourgeMusicbox>(), ModContent.TileType<Tiles.AquaticScourgeMusicbox>());
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Astrageldon"), ModContent.ItemType<AstrageldonMusicbox>(), ModContent.TileType<Tiles.AstrageldonMusicbox>());
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/AstrumDeus"), ModContent.ItemType<AstrumDeusMusicbox>(), ModContent.TileType<Tiles.AstrumDeusMusicbox>());
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/LeftAlone"), ModContent.ItemType<BrimmyMusicbox>(), ModContent.TileType<Tiles.BrimmyMusicbox>());
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Murderswarm"), ModContent.ItemType<BumblebirbMusicbox>(), ModContent.TileType<Tiles.BumblebirbMusicbox>());
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Calamitas"), ModContent.ItemType<CalamitasMusicbox>(), ModContent.TileType<Tiles.CalamitasMusicbox>());
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Void"), ModContent.ItemType<CeaselessVoidMusicbox>(), ModContent.TileType<Tiles.CeaselessVoidMusicbox>());
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Crabulon"), ModContent.ItemType<CrabulonMusicbox>(), ModContent.TileType<Tiles.CrabulonMusicbox>());
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Cryogen"), ModContent.ItemType<CryogenMusicbox>(), ModContent.TileType<Tiles.CryogenMusicbox>());
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/DesertScourge"), ModContent.ItemType<DesertScourgeMusicbox>(), ModContent.TileType<Tiles.DesertScourgeMusicbox>());
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Void"), ModContent.ItemType<CeaselessVoidMusicbox>(), ModContent.TileType<Tiles.CeaselessVoidMusicbox>());
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Crabulon"), ModContent.ItemType<CrabulonMusicbox>(), ModContent.TileType<Tiles.CrabulonMusicbox>());
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Cryogen"), ModContent.ItemType<CryogenMusicbox>(), ModContent.TileType<Tiles.CryogenMusicbox>());
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/DesertScourge"), ModContent.ItemType<DesertScourgeMusicbox>(), ModContent.TileType<Tiles.DesertScourgeMusicbox>());
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/ScourgeofTheUniverse"), ModContent.ItemType<DoGMusicbox>(), ModContent.TileType<Tiles.DoGMusicbox>());
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/UniversalCollapse"), ModContent.ItemType<DoGP2Musicbox>(), ModContent.TileType<Tiles.DoGP2Musicbox>());
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/HiveMind"), ModContent.ItemType<HiveMindMusicbox>(), ModContent.TileType<Tiles.HiveMindMusicbox>());
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/LeviathanAndSiren"), ModContent.ItemType<LeviathanMusicbox>(), ModContent.TileType<Tiles.LeviathanMusicbox>());
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/BoomerDuke"), ModContent.ItemType<BoomerDukeMusicbox>(), ModContent.TileType<Tiles.BoomerDukeMusicboxTile>());
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/BloodCoagulant"), ModContent.ItemType<PerforatorMusicbox>(), ModContent.TileType<Tiles.PerforatorMusicbox>());
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/PlaguebringerGoliath"), ModContent.ItemType<PlaguebringerMusicbox>(), ModContent.TileType<Tiles.PlaguebringerMusicbox>());
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/PlaguebringerGoliath"), ModContent.ItemType<PlaguebringerMusicbox>(), ModContent.TileType<Tiles.PlaguebringerMusicbox>());
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/RUIN"), ModContent.ItemType<PolterghastMusicbox>(), ModContent.TileType<Tiles.PolterghastMusicbox>());
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Guardians"), ModContent.ItemType<ProfanedGuardianMusicbox>(), ModContent.TileType<Tiles.ProfanedGuardianMusicbox>());
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/ProvidenceTheme"), ModContent.ItemType<ProvidenceMusicbox>(), ModContent.TileType<Tiles.ProvidenceMusicbox>()); //Seamless
@@ -111,13 +109,13 @@ namespace CalamityModMusic
 
 				//Biome Music
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Sulphur"), ModContent.ItemType<SulphurousMusicbox>(), ModContent.TileType<Tiles.SulphurousMusicbox>());
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/TheAbyss"), ModContent.ItemType<HigherAbyssMusicbox>(), ModContent.TileType<Tiles.HigherAbyssMusicbox>());
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/TheDeepAbyss"), ModContent.ItemType<AbyssLowerMusicbox>(), ModContent.TileType<Tiles.AbyssLowerMusicbox>());
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/TheVoid"), ModContent.ItemType<VoidMusicbox>(), ModContent.TileType<Tiles.VoidMusicbox>());
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Astral"), ModContent.ItemType<AstralMusicbox>(), ModContent.TileType<Tiles.AstralMusicbox>()); //Seamless
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/TheAbyss"), ModContent.ItemType<HigherAbyssMusicbox>(), ModContent.TileType<Tiles.HigherAbyssMusicbox>());
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/TheDeepAbyss"), ModContent.ItemType<AbyssLowerMusicbox>(), ModContent.TileType<Tiles.AbyssLowerMusicbox>());
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/TheVoid"), ModContent.ItemType<VoidMusicbox>(), ModContent.TileType<Tiles.VoidMusicbox>());
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Astral"), ModContent.ItemType<AstralMusicbox>(), ModContent.TileType<Tiles.AstralMusicbox>()); //Seamless
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/AstralUnderground"), ModContent.ItemType<AstralUndergroundMusicbox>(), ModContent.TileType<Tiles.AstralUndergroundMusicboxTile>()); //Seamless
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Calamity"), ModContent.ItemType<CalamityMusicbox>(), ModContent.TileType<Tiles.CalamityMusicbox>()); //Seamless
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Crag"), ModContent.ItemType<CragMusicbox>(), ModContent.TileType<Tiles.CragMusicbox>());
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Crag"), ModContent.ItemType<CragMusicbox>(), ModContent.TileType<Tiles.CragMusicbox>());
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/SunkenSea"), ModContent.ItemType<SunkenSeaMusicbox>(), ModContent.TileType<Tiles.SunkenSeaMusicbox>());
 
 				//Event Music
@@ -130,36 +128,41 @@ namespace CalamityModMusic
 			}
 		}
 
-        public override void Unload()
-        {
-	        customTitleMusicSlot = MusicID.Title;
-	        titleMusicStopped.Set();
-	        Instance = null;
-			titleMusicStopped = null;
-			CalamityMusicConfig = null;
-        }
-
-        private void setTitleMusic()
-        {
-	        if (CalamityMusicConfig.TitleScreenMusicEnabled)
-	        {
-		        customTitleMusicSlot = GetSoundSlot(SoundType.Music, "Sounds/Music/Calamity");
-		        IL.Terraria.Main.UpdateAudio += il =>
-		        {
-			        var c = new ILCursor(il);
-			        c.GotoNext(MoveType.After, i => i.MatchLdfld<Main>("newMusic"));
-			        c.EmitDelegate<Func<int, int>>(newMusic =>
-				        newMusic == MusicID.Title ? customTitleMusicSlot : newMusic);
-		        };
-	        }
-        }
-
-        public override void PostSetupContent()
+		public override void Unload()
 		{
-			setTitleMusic();
+			customTitleMusicSlot = MusicID.Title;
+			titleMusicStopped.Set();
+			Instance = null;
+			titleMusicStopped = null;
+		}
 
-			Mod bossChecklist = ModLoader.GetMod("BossChecklist");
+		private void setTitleMusic()
+		{
+			if (Config.ReplaceTitleMusic)
+			{
+				customTitleMusicSlot = GetSoundSlot(SoundType.Music, "Sounds/Music/Calamity");
+				IL.Terraria.Main.UpdateAudio += il =>
+				{
+					var c = new ILCursor(il);
+					c.GotoNext(MoveType.After, i => i.MatchLdfld<Main>("newMusic"));
+					c.EmitDelegate<Func<int, int>>(newMusic =>
+						newMusic == MusicID.Title ? customTitleMusicSlot : newMusic);
+				};
+			}
+		}
+
+		public override void PostSetupContent()
+		{
 			Mod calamity = ModLoader.GetMod("CalamityMod");
+			Mod bossChecklist = ModLoader.GetMod("BossChecklist");
+			Mod overhaul = ModLoader.GetMod("TerrariaOverhaul");
+
+			// Overhaul insists on IL editing Calamity Music Mod to disable our music regardless of player choice in the Calamity music config.
+			// Since it's not worth fighting over this, just don't register the IL hook if Overhaul is loaded.
+			// The config notifies players that they cannot hear Calamity title music if Overhaul is enabled.
+			if(overhaul is null)
+				setTitleMusic();
+
 			if (calamity != null && bossChecklist != null)
 			{
 				bossChecklist.Call(
@@ -338,7 +341,7 @@ namespace CalamityModMusic
 			}
 		}
 
-        public override void Close()
+		public override void Close()
 		{
 			// Close isn't called on the main thread. Who doesn't love a bit of thread safety
 			// Close may be called even if we didn't reach PostSetupContent, so don't try and stop a music track which hasn't been loaded or played
@@ -378,7 +381,7 @@ namespace CalamityModMusic
 			setTitleMusic();
 		}
 
-		internal static void SaveConfig(Config CalamityMusicConfig)
+		internal static void SaveConfig(CalamityMusicConfig CalamityMusicConfig)
 		{
 			// in-game ModConfig saving from mod code is not supported yet in tmodloader, and subject to change, so we need to be extra careful.
 			// This code only supports client configs, and doesn't call onchanged. It also doesn't support ReloadRequired or anything else.
@@ -390,40 +393,40 @@ namespace CalamityModMusic
 		}
 
 		public static void MusicBoxShortcut(int type, int i, int j, int tileX, int tileY)
-        {
-            int x = i - Main.tile[i, j].frameX / 18 % tileX;
-            int y = j - Main.tile[i, j].frameY / 18 % tileY;
-            for (int l = x; l < x + tileX; l++)
-            {
-                for (int m = y; m < y + tileY; m++)
-                {
-                    if (Main.tile[l, m] == null)
-                    {
-                        Main.tile[l, m] = new Tile();
-                    }
-                    if (Main.tile[l, m].active() && Main.tile[l, m].type == type)
-                    {
-                        if (Main.tile[l, m].frameX < (18 * tileX))
-                        {
-                            Main.tile[l, m].frameX += (short)(18 * tileX);
-                        }
-                        else
-                        {
-                            Main.tile[l, m].frameX -= (short)(18 * tileX);
-                        }
-                    }
-                }
-            }
-            if (Wiring.running)
-            {
-                for (int k = 0; k < tileX; k++)
-                {
-                    for (int l = 0; l < tileY; l++)
-                    {
-                        Wiring.SkipWire(x + k, y + l);
-                    }
-                }
-            }
-        }
+		{
+			int x = i - Main.tile[i, j].frameX / 18 % tileX;
+			int y = j - Main.tile[i, j].frameY / 18 % tileY;
+			for (int l = x; l < x + tileX; l++)
+			{
+				for (int m = y; m < y + tileY; m++)
+				{
+					if (Main.tile[l, m] == null)
+					{
+						Main.tile[l, m] = new Tile();
+					}
+					if (Main.tile[l, m].active() && Main.tile[l, m].type == type)
+					{
+						if (Main.tile[l, m].frameX < (18 * tileX))
+						{
+							Main.tile[l, m].frameX += (short)(18 * tileX);
+						}
+						else
+						{
+							Main.tile[l, m].frameX -= (short)(18 * tileX);
+						}
+					}
+				}
+			}
+			if (Wiring.running)
+			{
+				for (int k = 0; k < tileX; k++)
+				{
+					for (int l = 0; l < tileY; l++)
+					{
+						Wiring.SkipWire(x + k, y + l);
+					}
+				}
+			}
+		}
 	}
 }
