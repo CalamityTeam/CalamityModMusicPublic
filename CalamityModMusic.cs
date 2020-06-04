@@ -138,7 +138,9 @@ namespace CalamityModMusic
 
 		public override void Unload()
 		{
+			IL.Terraria.Main.UpdateAudio -= TitleMusicIL;
 			customTitleMusicSlot = MusicID.Title;
+			Close();
 			titleMusicStopped?.Set();
 			Instance = null;
 			titleMusicStopped = null;
@@ -345,12 +347,11 @@ namespace CalamityModMusic
 
 		public override void Close()
 		{
-			// Close isn't called on the main thread. Who doesn't love a bit of thread safety
-			// Close may be called even if we didn't reach PostSetupContent, so don't try and stop a music track which hasn't been loaded or played
-			if (!Main.dedServ && customTitleMusicSlot > 0)
+			var slot = GetSoundSlot(SoundType.Music, "Sounds/Music/Calamity");
+
+			if (Main.music.IndexInRange(slot) && Main.music[slot]?.IsPlaying == true)
 			{
-				stopTitleMusic = true;
-				titleMusicStopped.WaitOne();
+				Main.music[slot].Stop(AudioStopOptions.Immediate);
 			}
 			base.Close();
 		}
