@@ -7,7 +7,7 @@ namespace CalamityModMusic.Items.Placeables
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Music Box (Siren Lure)");
+            DisplayName.SetDefault("Music Box (Anahita Lure)");
         }
 
         public override void SetDefaults()
