@@ -396,42 +396,5 @@ namespace CalamityModMusic
 			else
 				Instance.Logger.Warn("In-game SaveConfig failed, code update required");
 		}
-
-		public static void MusicBoxShortcut(int type, int i, int j, int tileX, int tileY)
-		{
-			int x = i - Main.tile[i, j].frameX / 18 % tileX;
-			int y = j - Main.tile[i, j].frameY / 18 % tileY;
-			for (int l = x; l < x + tileX; l++)
-			{
-				for (int m = y; m < y + tileY; m++)
-				{
-					if (Main.tile[l, m] == null)
-					{
-						Main.tile[l, m] = new Tile();
-					}
-					if (Main.tile[l, m].active() && Main.tile[l, m].type == type)
-					{
-						if (Main.tile[l, m].frameX < (18 * tileX))
-						{
-							Main.tile[l, m].frameX += (short)(18 * tileX);
-						}
-						else
-						{
-							Main.tile[l, m].frameX -= (short)(18 * tileX);
-						}
-					}
-				}
-			}
-			if (Wiring.running)
-			{
-				for (int k = 0; k < tileX; k++)
-				{
-					for (int l = 0; l < tileY; l++)
-					{
-						Wiring.SkipWire(x + k, y + l);
-					}
-				}
-			}
-		}
 	}
 }
