@@ -11,6 +11,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Config;
 using AbyssLowerMusicbox = CalamityModMusic.Items.Placeables.AbyssLowerMusicbox;
+using AdultEidolonWyrmMusicbox = CalamityModMusic.Items.Placeables.AdultEidolonWyrmMusicbox;
 using AquaticScourgeMusicbox = CalamityModMusic.Items.Placeables.AquaticScourgeMusicbox;
 using AstrageldonMusicbox = CalamityModMusic.Items.Placeables.AstrageldonMusicbox;
 using AstralMusicbox = CalamityModMusic.Items.Placeables.AstralMusicbox;
@@ -81,6 +82,7 @@ namespace CalamityModMusic
 			if (!Main.dedServ)
 			{
 				//Boss Music - Alphabetised
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/AdultEidolonWyrm"), ModContent.ItemType<AdultEidolonWyrmMusicbox>(), ModContent.TileType<Tiles.AdultEidolonWyrmMusicbox>());
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/AquaticScourge"), ModContent.ItemType<AquaticScourgeMusicbox>(), ModContent.TileType<Tiles.AquaticScourgeMusicbox>());
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Astrageldon"), ModContent.ItemType<AstrageldonMusicbox>(), ModContent.TileType<Tiles.AstrageldonMusicbox>());
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/AstrumDeus"), ModContent.ItemType<AstrumDeusMusicbox>(), ModContent.TileType<Tiles.AstrumDeusMusicbox>());
@@ -318,6 +320,12 @@ namespace CalamityModMusic
 				calamity.Name, 
 				"Supreme Calamitas", 
 				new List<int>() {ModContent.ItemType<SCalGMusicbox>(), ModContent.ItemType<SCalLMusicbox>(), ModContent.ItemType<SCalEMusicbox>(), ModContent.ItemType<SCalAMusicbox>()});
+
+				bossChecklist.Call(
+				"AddToBossCollection",
+				calamity.Name,
+				"Adult Eidolon Wyrm",
+				ModContent.ItemType<AdultEidolonWyrmMusicbox>());
 
 				bossChecklist.Call(
 				"AddToBossCollection", 
