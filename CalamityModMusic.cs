@@ -17,6 +17,11 @@ using AstrageldonMusicbox = CalamityModMusic.Items.Placeables.AstrageldonMusicbo
 using AstralMusicbox = CalamityModMusic.Items.Placeables.AstralMusicbox;
 using AstrumDeusMusicbox = CalamityModMusic.Items.Placeables.AstrumDeusMusicbox;
 using BrimmyMusicbox = CalamityModMusic.Items.Placeables.BrimmyMusicbox;
+using BossRush1Musicbox = CalamityModMusic.Items.Placeables.BossRushTier1MusicboxItem;
+using BossRush2Musicbox = CalamityModMusic.Items.Placeables.BossRushTier2MusicboxItem;
+using BossRush3Musicbox = CalamityModMusic.Items.Placeables.BossRushTier3MusicboxItem;
+using BossRush4Musicbox = CalamityModMusic.Items.Placeables.BossRushTier4MusicboxItem;
+using BossRush5Musicbox = CalamityModMusic.Items.Placeables.BossRushTier5MusicboxItem;
 using BumblebirbMusicbox = CalamityModMusic.Items.Placeables.BumblebirbMusicbox;
 using CalamitasMusicbox = CalamityModMusic.Items.Placeables.CalamitasMusicbox;
 using CalamityMusicbox = CalamityModMusic.Items.Placeables.CalamityMusicbox;
@@ -81,7 +86,7 @@ namespace CalamityModMusic
 		{
 			if (!Main.dedServ)
 			{
-				//Boss Music - Alphabetised
+				// Boss Music - Alphabetised.
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/AdultEidolonWyrm"), ModContent.ItemType<AdultEidolonWyrmMusicbox>(), ModContent.TileType<Tiles.AdultEidolonWyrmMusicbox>());
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/AquaticScourge"), ModContent.ItemType<AquaticScourgeMusicbox>(), ModContent.TileType<Tiles.AquaticScourgeMusicbox>());
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Astrageldon"), ModContent.ItemType<AstrageldonMusicbox>(), ModContent.TileType<Tiles.AstrageldonMusicbox>());
@@ -117,7 +122,7 @@ namespace CalamityModMusic
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/YHARONREBIRTH"), ModContent.ItemType<Yharon2Musicbox>(), ModContent.TileType<Tiles.Yharon2Musicbox>());
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/DragonGod"), ModContent.ItemType<Yharon3Musicbox>(), ModContent.TileType<Tiles.Yharon3Musicbox>());
 
-				//Biome Music
+				// Biome Music.
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Sulphur"), ModContent.ItemType<SulphurousMusicbox>(), ModContent.TileType<Tiles.SulphurousMusicbox>());
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/TheAbyss"), ModContent.ItemType<HigherAbyssMusicbox>(), ModContent.TileType<Tiles.HigherAbyssMusicbox>());
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/TheDeepAbyss"), ModContent.ItemType<AbyssLowerMusicbox>(), ModContent.TileType<Tiles.AbyssLowerMusicbox>());
@@ -128,11 +133,16 @@ namespace CalamityModMusic
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Crag"), ModContent.ItemType<CragMusicbox>(), ModContent.TileType<Tiles.CragMusicbox>());
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/SunkenSea"), ModContent.ItemType<SunkenSeaMusicbox>(), ModContent.TileType<Tiles.SunkenSeaMusicbox>());
 
-				//Event Music
+				// Event Music.
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/AcidRain1"), ModContent.ItemType<AcidRain1Musicbox>(), ModContent.TileType<AcidRain1MusicboxTile>()); //Seamless
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/AcidRain2"), ModContent.ItemType<AcidRain2Musicbox>(), ModContent.TileType<AcidRain2MusicboxTile>());
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/BossRushTier1"), ModContent.ItemType<BossRush1Musicbox>(), ModContent.TileType<BossRushTier1Musicbox>());
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/BossRushTier2"), ModContent.ItemType<BossRush2Musicbox>(), ModContent.TileType<BossRushTier2Musicbox>());
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/BossRushTier3"), ModContent.ItemType<BossRush3Musicbox>(), ModContent.TileType<BossRushTier3Musicbox>());
+				//AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/BossRushTier4"), ModContent.ItemType<BossRush4Musicbox>(), ModContent.TileType<BossRushTier4Musicbox>());
+				//AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/BossRushTier5"), ModContent.ItemType<BossRush5Musicbox>(), ModContent.TileType<BossRushTier5Musicbox>());
 
-				
+
 				stopTitleMusic = false;
 				titleMusicStopped = new ManualResetEvent(false);
 			}
