@@ -6,7 +6,11 @@ namespace CalamityModMusic.Items.Placeables
 {
     public class BossRushTier5MusicboxItem : ModItem
     {
-        public override void SetStaticDefaults() => DisplayName.SetDefault("Music Box (Boss Rush - Tier 5)");
+        public override void SetStaticDefaults()
+        {
+            DisplayName.SetDefault("Music Box (Boss Rush - Tier 5)"); // Unobtainable.
+            Tooltip.SetDefault("This music box is unfinished and does not work");
+        }
 
         public override void SetDefaults()
         {
