@@ -16,12 +16,12 @@ using AquaticScourgeMusicbox = CalamityModMusic.Items.Placeables.AquaticScourgeM
 using AstrageldonMusicbox = CalamityModMusic.Items.Placeables.AstrageldonMusicbox;
 using AstralMusicbox = CalamityModMusic.Items.Placeables.AstralMusicbox;
 using AstrumDeusMusicbox = CalamityModMusic.Items.Placeables.AstrumDeusMusicbox;
-using BrimmyMusicbox = CalamityModMusic.Items.Placeables.BrimmyMusicbox;
 using BossRush1Musicbox = CalamityModMusic.Items.Placeables.BossRushTier1MusicboxItem;
 using BossRush2Musicbox = CalamityModMusic.Items.Placeables.BossRushTier2MusicboxItem;
 using BossRush3Musicbox = CalamityModMusic.Items.Placeables.BossRushTier3MusicboxItem;
 using BossRush4Musicbox = CalamityModMusic.Items.Placeables.BossRushTier4MusicboxItem;
 using BossRush5Musicbox = CalamityModMusic.Items.Placeables.BossRushTier5MusicboxItem;
+using BrimmyMusicbox = CalamityModMusic.Items.Placeables.BrimmyMusicbox;
 using BumblebirbMusicbox = CalamityModMusic.Items.Placeables.BumblebirbMusicbox;
 using CalamitasMusicbox = CalamityModMusic.Items.Placeables.CalamitasMusicbox;
 using CalamityMusicbox = CalamityModMusic.Items.Placeables.CalamityMusicbox;
@@ -32,6 +32,7 @@ using CryogenMusicbox = CalamityModMusic.Items.Placeables.CryogenMusicbox;
 using DesertScourgeMusicbox = CalamityModMusic.Items.Placeables.DesertScourgeMusicbox;
 using DoGMusicbox = CalamityModMusic.Items.Placeables.DoGMusicbox;
 using DoGP2Musicbox = CalamityModMusic.Items.Placeables.DoGP2Musicbox;
+using ExoMechsMusicbox = CalamityModMusic.Items.Placeables.ExoMechsMusicboxItem;
 using HigherAbyssMusicbox = CalamityModMusic.Items.Placeables.HigherAbyssMusicbox;
 using HiveMindMusicbox = CalamityModMusic.Items.Placeables.HiveMindMusicbox;
 using LeviathanMusicbox = CalamityModMusic.Items.Placeables.LeviathanMusicbox;
@@ -100,6 +101,7 @@ namespace CalamityModMusic
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/DesertScourge"), ModContent.ItemType<DesertScourgeMusicbox>(), ModContent.TileType<Tiles.DesertScourgeMusicbox>());
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/ScourgeofTheUniverse"), ModContent.ItemType<DoGMusicbox>(), ModContent.TileType<Tiles.DoGMusicbox>());
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/UniversalCollapse"), ModContent.ItemType<DoGP2Musicbox>(), ModContent.TileType<Tiles.DoGP2Musicbox>());
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/ExoMechs"), ModContent.ItemType<ExoMechsMusicboxItem>(), ModContent.TileType<Tiles.ExoMechsMusicbox>());
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/HiveMind"), ModContent.ItemType<HiveMindMusicbox>(), ModContent.TileType<Tiles.HiveMindMusicbox>());
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/LeviathanAndSiren"), ModContent.ItemType<LeviathanMusicbox>(), ModContent.TileType<Tiles.LeviathanMusicbox>());
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/BoomerDuke"), ModContent.ItemType<BoomerDukeMusicbox>(), ModContent.TileType<Tiles.BoomerDukeMusicboxTile>());
@@ -324,6 +326,12 @@ namespace CalamityModMusic
 				calamity.Name, 
 				"Yharon", 
 				new List<int>() {ModContent.ItemType<Yharon2Musicbox>(), ModContent.ItemType<Yharon1Musicbox>(), ModContent.ItemType<Yharon3Musicbox>()});
+
+				bossChecklist.Call(
+				"AddToBossCollection",
+				calamity.Name,
+				"Exo Mechs",
+				new List<int>() { ModContent.ItemType<ExoMechsMusicbox>() });
 
 				bossChecklist.Call(
 				"AddToBossCollection", 
