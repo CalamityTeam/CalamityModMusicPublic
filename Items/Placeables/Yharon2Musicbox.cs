@@ -35,7 +35,7 @@ namespace CalamityModMusic.Items.Placeables
 				recipe.AddIngredient(calamityMod.ItemType("DarksunFragment"), 5);
 				recipe.AddIngredient(calamityMod.ItemType("CosmiliteBar"), 3);
 				recipe.SetResult(this);
-				recipe.AddTile(calamityMod.TileType("DraedonsForge"));
+				recipe.AddTile(calamityMod.TileType("CosmicAnvil"));
 				recipe.AddRecipe();
 			}
 		}
