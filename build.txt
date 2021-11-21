@@ -1,5 +1,5 @@
 author = Fabsol and the Dev Team
-version = 1.5.0.001
+version = 1.5.0.002
 displayName = Calamity Mod Music
 homepage = https://forums.terraria.org/index.php?threads/calamity-mod.44065/
 hideCode = true
