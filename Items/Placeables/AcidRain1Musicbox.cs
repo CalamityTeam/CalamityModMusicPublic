@@ -35,7 +35,7 @@ namespace CalamityModMusic.Items.Placeables
                 ModRecipe recipe = new ModRecipe(mod);
                 recipe.AddIngredient(calamity.GetItem("RuinousSoul"));
                 recipe.AddIngredient(calamity.GetItem("Acidwood"), 10);
-                recipe.AddIngredient(calamity.GetItem("CorrodedFossil"), 10); 
+                recipe.AddIngredient(calamity.GetItem("CorrodedFossil"), 10);
                 recipe.AddIngredient(calamity.GetItem("SulfuricScale"), 10);
                 recipe.AddIngredient(ItemID.MusicBox);
                 recipe.AddTile(TileID.LunarCraftingStation);
