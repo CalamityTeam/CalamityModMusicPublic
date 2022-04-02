@@ -2,7 +2,7 @@ using Terraria.ModLoader;
 
 namespace CalamityModMusic.Items.Placeables
 {
-	public class RavagerMusicbox: ModItem
+    public class RavagerMusicbox: ModItem
     {
         public override void SetStaticDefaults()
         {

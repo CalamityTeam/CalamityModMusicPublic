@@ -2,7 +2,7 @@ using Terraria.ModLoader;
 
 namespace CalamityModMusic.Items.Placeables
 {
-	public class SCalEMusicbox : ModItem
+    public class SCalEMusicbox : ModItem
     {
         public override void SetStaticDefaults()
         {

@@ -7,10 +7,10 @@ using Terraria.DataStructures;
 
 namespace CalamityModMusic.Tiles
 {
-	public class BossRushTier3Musicbox : ModTile
-	{
-		public override void SetDefaults()
-		{
+    public class BossRushTier3Musicbox : ModTile
+    {
+        public override void SetDefaults()
+        {
             Main.tileFrameImportant[Type] = true;
             Main.tileObsidianKill[Type] = true;
             TileObjectData.newTile.CopyFrom(TileObjectData.Style2x2);
@@ -24,10 +24,10 @@ namespace CalamityModMusic.Tiles
             AddMapEntry(new Color(200, 200, 200), name);
         }
 
-		public override void KillMultiTile(int i, int j, int frameX, int frameY)
-		{
-			Item.NewItem(i * 16, j * 16, 16, 48, ModContent.ItemType<BossRushTier3MusicboxItem>());
-		}
+        public override void KillMultiTile(int i, int j, int frameX, int frameY)
+        {
+            Item.NewItem(i * 16, j * 16, 16, 48, ModContent.ItemType<BossRushTier3MusicboxItem>());
+        }
 
         public override void MouseOver(int i, int j)
         {

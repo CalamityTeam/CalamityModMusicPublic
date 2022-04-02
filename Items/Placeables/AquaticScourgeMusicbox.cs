@@ -2,7 +2,7 @@ using Terraria.ModLoader;
 
 namespace CalamityModMusic.Items.Placeables
 {
-	public class AquaticScourgeMusicbox: ModItem
+    public class AquaticScourgeMusicbox: ModItem
     {
         public override void SetStaticDefaults()
         {

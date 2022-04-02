@@ -2,7 +2,7 @@ using Terraria.ModLoader;
 
 namespace CalamityModMusic.Items.Placeables
 {
-	public class HiveMindMusicbox : ModItem
+    public class HiveMindMusicbox : ModItem
     {
         public override void SetStaticDefaults()
         {

@@ -2,7 +2,7 @@ using Terraria.ModLoader;
 
 namespace CalamityModMusic.Items.Placeables
 {
-	public class HigherAbyssMusicbox : ModItem
+    public class HigherAbyssMusicbox : ModItem
     {
         public override void SetStaticDefaults()
         {

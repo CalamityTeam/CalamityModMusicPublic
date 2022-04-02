@@ -2,7 +2,7 @@ using Terraria.ModLoader;
 
 namespace CalamityModMusic.Items.Placeables
 {
-	public class SignusMusicbox : ModItem
+    public class SignusMusicbox : ModItem
     {
         public override void SetStaticDefaults()
         {

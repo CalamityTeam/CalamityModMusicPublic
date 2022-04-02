@@ -2,7 +2,7 @@ using Terraria.ModLoader;
 
 namespace CalamityModMusic.Items.Placeables
 {
-	public class SulphurousMusicbox : ModItem
+    public class SulphurousMusicbox : ModItem
     {
         public override void SetStaticDefaults()
         {
