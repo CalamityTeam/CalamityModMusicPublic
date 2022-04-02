@@ -8,7 +8,7 @@ namespace CalamityModMusic.Tiles
 {
     public class RavagerMusicbox : ModTile
     {
-        public override void SetDefaults()
+        public override void SetStaticDefaults()
         {
             Main.tileFrameImportant[Type] = true;
             Main.tileObsidianKill[Type] = true;

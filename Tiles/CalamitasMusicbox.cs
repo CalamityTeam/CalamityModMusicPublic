@@ -8,7 +8,7 @@ namespace CalamityModMusic.Tiles
 {
     public class CalamitasMusicbox : ModTile
     {
-        public override void SetDefaults()
+        public override void SetStaticDefaults()
         {
             Main.tileFrameImportant[Type] = true;
             Main.tileObsidianKill[Type] = true;
@@ -25,7 +25,7 @@ namespace CalamityModMusic.Tiles
 
         public override void KillMultiTile(int i, int j, int frameX, int frameY)
         {
-            Item.NewItem(i * 16, j * 16, 16, 48, mod.ItemType("CalamitasMusicbox"));
+            Item.NewItem(i * 16, j * 16, 16, 48, Mod.Find<ModItem>("CalamitasMusicbox").Type);
         }
 
         public override void MouseOver(int i, int j)

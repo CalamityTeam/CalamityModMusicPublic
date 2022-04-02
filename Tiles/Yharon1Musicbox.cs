@@ -8,7 +8,7 @@ namespace CalamityModMusic.Tiles
 {
     public class Yharon1Musicbox : ModTile
     {
-        public override void SetDefaults()
+        public override void SetStaticDefaults()
         {
             Main.tileFrameImportant[Type] = true;
             Main.tileObsidianKill[Type] = true;
