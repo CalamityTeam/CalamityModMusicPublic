@@ -1,9 +1,8 @@
 using Terraria.ModLoader;
-using CalamityModMusic.Tiles;
 
 namespace CalamityModMusic.Items.Placeables
 {
-    public class AstrumDeusMusicbox : ModItem
+	public class AstrumDeusMusicbox : ModItem
     {
         public override void SetStaticDefaults()
         {

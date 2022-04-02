@@ -1,10 +1,9 @@
 using Terraria.ModLoader;
-using Terraria.ID;
 using CalamityModMusic.Tiles;
 
 namespace CalamityModMusic.Items.Placeables
 {
-    public class AcidRain2Musicbox : ModItem
+	public class AcidRain2Musicbox : ModItem
     {
         public override void SetStaticDefaults()
         {

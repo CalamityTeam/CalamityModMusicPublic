@@ -3,7 +3,6 @@ using Terraria;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 using Terraria.DataStructures;
-using CalamityModMusic.Items.Placeables;
 
 namespace CalamityModMusic.Tiles
 {

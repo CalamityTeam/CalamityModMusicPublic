@@ -1,9 +1,8 @@
 using Terraria.ModLoader;
-using CalamityModMusic.Tiles;
 
 namespace CalamityModMusic.Items.Placeables
 {
-    public class AstrageldonMusicbox : ModItem
+	public class AstrageldonMusicbox : ModItem
     {
         public override void SetStaticDefaults()
         {

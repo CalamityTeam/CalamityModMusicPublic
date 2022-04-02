@@ -1,9 +1,8 @@
 using Terraria.ModLoader;
-using CalamityModMusic.Tiles;
 
 namespace CalamityModMusic.Items.Placeables
 {
-    public class AdultEidolonWyrmMusicbox : ModItem
+	public class AdultEidolonWyrmMusicbox : ModItem
     {
         public override void SetStaticDefaults()
         {
