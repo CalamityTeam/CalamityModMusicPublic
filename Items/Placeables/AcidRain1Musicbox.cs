@@ -13,7 +13,7 @@ namespace CalamityModMusic.Items.Placeables
 
         public override void SetDefaults()
         {
-            Item.useStyle = 1;
+            Item.useStyle = ItemUseStyleID.Swing;
             Item.useTurn = true;
             Item.useAnimation = 15;
             Item.useTime = 10;
@@ -22,7 +22,7 @@ namespace CalamityModMusic.Items.Placeables
             Item.createTile = ModContent.TileType<AcidRain1MusicboxTile>();
             Item.width = 24;
             Item.height = 24;
-            Item.rare = 4;
+            Item.rare = ItemRarityID.LightRed;
             Item.value = 100000;
             Item.accessory = true;
         }

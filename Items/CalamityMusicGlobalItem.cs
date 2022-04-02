@@ -8,6 +8,6 @@ namespace CalamityModMusic.Items
     {
         // No items from this mod are capable of receiving reforges.
         public override bool? PrefixChance(Item item, int pre, UnifiedRandom rand) =>
-            item.modItem != null && item.modItem.Mod == CalamityModMusic.Instance ? false : (bool?)null;
+            item.ModItem != null && item.ModItem.Mod == CalamityModMusic.Instance ? false : (bool?)null;
     }
 }
