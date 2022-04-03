@@ -8,10 +8,10 @@ namespace CalamityModMusic
     {
         public override void PostSetupContent()
         {
-            Mod calamity = ModLoader.GetMod("CalamityMod");
-            Mod bossChecklist = ModLoader.GetMod("BossChecklist");
+            bool calamityExists = ModLoader.TryGetMod("CalamityMod", out var calamity);
+            bool bossChecklistExists = ModLoader.TryGetMod("BossChecklist", out var bossChecklist);
 
-            if (calamity != null && bossChecklist != null)
+            if (calamityExists && bossChecklistExists)
             {
                 bossChecklist.Call(
                 "AddToBossCollection",

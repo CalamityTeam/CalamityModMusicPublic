@@ -57,11 +57,12 @@ namespace CalamityModMusic
     {
         private static void AddMusicBox(string musicFile, int itemID, int tileID)
         {
-            int musicID = SoundLoader.GetSoundSlot(CalamityModMusic.Instance, musicFile);
-            MusicLoader.AddMusicBox(CalamityModMusic.Instance, musicID, itemID, tileID);
+            Mod musicMod = CalamityModMusic.Instance;
+            int musicID = MusicLoader.GetMusicSlot(musicMod, musicFile);
+            MusicLoader.AddMusicBox(musicMod, musicID, itemID, tileID);
         }
-        
-        public override void Load()
+
+        public override void PostSetupContent()
         {
             if (!Main.dedServ)
             {
