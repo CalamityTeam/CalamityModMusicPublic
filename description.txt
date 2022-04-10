@@ -1,1 +1,7 @@
-Music for the Calamity Mod
+This mod adds the Calamity soundtrack and music boxes for each song on the soundtrack.
+
+It is intended to be used alongside the Calamity Mod, but can be used alone.
+You will need to cheat in the music boxes if you do not use the Calamity Mod.
+
+PLEASE NOTE THAT THIS MOD DOES NOT ADD ANY CALAMITY GAME CONTENT.
+You need to install the Calamity Mod for items, bosses, and so on.
