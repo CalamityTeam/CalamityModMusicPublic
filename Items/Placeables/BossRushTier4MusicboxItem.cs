@@ -1,4 +1,5 @@
 using Terraria.ModLoader;
+using Terraria.GameContent.Creative;
 using CalamityModMusic.Tiles;
 using Terraria.ID;
 
@@ -8,6 +9,7 @@ namespace CalamityModMusic.Items.Placeables
     {
         public override void SetStaticDefaults()
         {
+            //CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
             DisplayName.SetDefault("Music Box (Boss Rush - Tier 4)"); // Unobtainable.
             Tooltip.SetDefault("This music box is unfinished and does not work");
         }

@@ -1,4 +1,5 @@
 using Terraria.ModLoader;
+using Terraria.GameContent.Creative;
 using Terraria.ID;
 using CalamityModMusic.Tiles;
 
@@ -8,6 +9,7 @@ namespace CalamityModMusic.Items.Placeables
     {
         public override void SetStaticDefaults()
         {
+            CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
             DisplayName.SetDefault("Music Box (Acidic Downpour)");
         }
 

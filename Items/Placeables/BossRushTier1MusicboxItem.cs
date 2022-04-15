@@ -1,4 +1,5 @@
 using Terraria.ModLoader;
+using Terraria.GameContent.Creative;
 using CalamityModMusic.Tiles;
 using Terraria.ID;
 
@@ -6,7 +7,11 @@ namespace CalamityModMusic.Items.Placeables
 {
     public class BossRushTier1MusicboxItem : ModItem
     {
-        public override void SetStaticDefaults() => DisplayName.SetDefault("Music Box (Boss Rush - Tier 1)"); // Unobtainable.
+        public override void SetStaticDefaults()
+        {
+            //CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
+            DisplayName.SetDefault("Music Box (Boss Rush - Tier 1)"); // Unobtainable.
+        }
 
         public override void SetDefaults()
         {
