@@ -1,8 +1,8 @@
 author = Fabsol and the Dev Team
 version = 2.0.0.001
-displayName = Calamity Mod Music
+displayName = Calamity Mod Music [1.4 BETA]
 homepage = https://discord.gg/calamity
 hideCode = true
 hideResources = true
 includeSource = false
-includePDB = false
+includePDB = true
