@@ -1,5 +1,4 @@
 ﻿using Terraria.ModLoader;
-using Terraria.GameContent.Creative;
 using CalamityModMusic.Tiles;
 using Terraria.ID;
 
@@ -9,7 +8,7 @@ namespace CalamityModMusic.Items.Placeables
     {
         public override void SetStaticDefaults()
         {
-            CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
+            SacrificeTotal = 1;
             DisplayName.SetDefault("Music Box (Old Duke)");
         }
 
