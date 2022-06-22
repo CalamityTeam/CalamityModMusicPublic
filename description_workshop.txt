@@ -1,0 +1,53 @@
+﻿[h1]Calamity Mod Music[/h1]
+
+[b]This mod adds the Calamity soundtrack and music boxes for each song on the soundtrack.[/b] It is intended to be used alongside the Calamity Mod, but can be used alone. You will need to cheat in the music boxes if you do not use the Calamity Mod.
+
+This mod is [b]NOT[/b] the Calamity Mod and does not add any game content, e.g. items or bosses.
+
+[hr]
+
+Full list of tracks:
+[olist]
+[*] DM Dokuro - The Tale of a Cruel World
+[*] DM Dokuro - sanctuary
+[*] DM Dokuro - wasteland
+[*] DM Dokuro - The Step Below Hell
+[*] DM Dokuro - Guardian of the Former Seas
+[*] RoverdriveX - corrosion!
+[*] DM Dokuro - Infestation
+[*] DM Dokuro ft. SixteenInMono - Blood Coagulant
+[*] DM Dokuro ft. SixteenInMono - The Filthy Mind
+[*] DM Dokuro - Hadopelagic Pressure
+[*] DM Dokuro ft. SixteenInMono - Return to Slime
+[*] DM Dokuro - The Heaven-Sent Abomination
+[*] DM Dokuro - Treasures Within the Abomination
+[*] DM Dokuro - Antarctic Reinforcement
+[*] DM Dokuro - Outcast of the Sulphurous Seas
+[*] DM Dokuro - Left Alone
+[*] DM Dokuro - Raw, Unfiltered Calamity
+[*] RoverdriveX - R'LYEH
+[*] DM Dokuro - The Leviathan Trilogy (split into three songs)
+[*] DM Dokuro - Interstellar Stomper
+[*] DM Dokuro - Fly of Beelzebub
+[*] DM Dokuro - Open Frenzy
+[*] DM Dokuro - Pest of the Cosmos
+[*] DM Dokuro - Unholy Ambush
+[*] DM Dokuro - Murderswarm
+[*] DM Dokuro - Unholy Insurgency
+[*] DM Dokuro - Servants of the Scourge (split into three songs)
+[*] DM Dokuro - Feral Amalgamation
+[*] DM Dokuro - void
+[*] PinpinNeon - nuclear monsoon
+[*] DM Dokuro - Toxic Wisdom
+[*] DM Dokuro - Scourge of the Universe
+[*] DM Dokuro - Universal Collapse
+[*] DM Dokuro - Infernal Catharsis
+[*] DM Dokuro - Infernal Catharsis (Rebirth)
+[*] DM Dokuro - Roar of the Jungle Dragon
+[*] PinpinNeon - Inferior Fabrications
+[*] DM Dokuro - Stained, Brutal Calamity
+[*] DM Dokuro - Threats of the Ocean Floor
+[*] CDMusic - Ensemble of Fools
+[*] CDMusic - Onslaught of Beasts
+[*] CDMusic - Reign of Lords
+[/olist]
