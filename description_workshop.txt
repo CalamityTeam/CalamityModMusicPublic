@@ -1,4 +1,5 @@
 ﻿[h1]Calamity Mod Music[/h1]
+[url=https://discord.gg/calamity]Discord[/url] [url=https://calamitymod.wiki.gg]Official Wiki[/url]
 
 [b]This mod adds the Calamity soundtrack and music boxes for each song on the soundtrack.[/b] It is intended to be used alongside the Calamity Mod, but can be used alone. You will need to cheat in the music boxes if you do not use the Calamity Mod.
 
