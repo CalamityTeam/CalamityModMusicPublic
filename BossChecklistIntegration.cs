@@ -58,14 +58,14 @@ namespace CalamityModMusic
                 bossChecklist.Call(
                 "AddToBossCollection",
                 calamity.Name,
-                "Brimstone Elemental",
-                ModContent.ItemType<BrimmyMusicbox>());
+                "Aquatic Scourge",
+                ModContent.ItemType<AquaticScourgeMusicbox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
                 calamity.Name,
-                "Aquatic Scourge",
-                ModContent.ItemType<AquaticScourgeMusicbox>());
+                "Brimstone Elemental",
+                ModContent.ItemType<BrimmyMusicbox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
