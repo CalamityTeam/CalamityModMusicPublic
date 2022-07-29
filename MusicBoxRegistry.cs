@@ -75,7 +75,7 @@ namespace CalamityModMusic
                 AddMusicBox("Sounds/Music/AstrumDeus", ModContent.ItemType<AstrumDeusMusicbox>(), ModContent.TileType<Tiles.AstrumDeusMusicbox>());
                 AddMusicBox("Sounds/Music/BrimstoneElemental", ModContent.ItemType<BrimmyMusicbox>(), ModContent.TileType<Tiles.BrimmyMusicbox>());
                 AddMusicBox("Sounds/Music/Calamitas", ModContent.ItemType<CalamitasMusicbox>(), ModContent.TileType<Tiles.CalamitasMusicbox>());
-                AddMusicBox("Sounds/Music/Void", ModContent.ItemType<CeaselessVoidMusicbox>(), ModContent.TileType<Tiles.CeaselessVoidMusicbox>());
+                AddMusicBox("Sounds/Music/CeaselessVoid", ModContent.ItemType<CeaselessVoidMusicbox>(), ModContent.TileType<Tiles.CeaselessVoidMusicbox>());
                 AddMusicBox("Sounds/Music/Crabulon", ModContent.ItemType<CrabulonMusicbox>(), ModContent.TileType<Tiles.CrabulonMusicbox>());
                 AddMusicBox("Sounds/Music/Cryogen", ModContent.ItemType<CryogenMusicbox>(), ModContent.TileType<Tiles.CryogenMusicbox>());
                 AddMusicBox("Sounds/Music/DesertScourge", ModContent.ItemType<DesertScourgeMusicbox>(), ModContent.TileType<Tiles.DesertScourgeMusicbox>());
