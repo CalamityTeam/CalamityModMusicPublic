@@ -1,3 +1,4 @@
+using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -29,6 +30,15 @@ namespace CalamityModMusic.Items.Placeables
 
         public override void AddRecipes()
         {
+            Mod calamity = CalamityModMusic.Instance.calamity;
+			if (calamity != null)
+			{
+				CreateRecipe().
+					AddIngredient(ItemID.MusicBox).
+					AddIngredient(calamity.Find<ModItem>("YharonSoulFragment").Type, 3).
+					AddTile(calamity.Find<ModTile>("CosmicAnvil").Type).
+					Register();
+			}
         }
     }
 }

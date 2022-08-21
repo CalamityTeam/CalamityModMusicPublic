@@ -1,5 +1,6 @@
-using Terraria.ModLoader;
+using Terraria;
 using Terraria.ID;
+using Terraria.ModLoader;
 
 namespace CalamityModMusic.Items.Placeables
 {
@@ -29,6 +30,16 @@ namespace CalamityModMusic.Items.Placeables
 
         public override void AddRecipes()
         {
+            Mod calamity = CalamityModMusic.Instance.calamity;
+			if (calamity != null)
+			{
+				CreateRecipe().
+					AddIngredient(ItemID.MusicBox).
+					AddIngredient(calamity.Find<ModItem>("BrimstoneSlag").Type, 12).
+					AddIngredient(calamity.Find<ModItem>("EssenceofChaos").Type, 3).
+					AddTile(calamity.Find<ModTile>("AshenAltar").Type).
+					Register();
+			}
         }
     }
 }

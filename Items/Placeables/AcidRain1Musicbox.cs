@@ -1,6 +1,7 @@
-using Terraria.ModLoader;
-using Terraria.ID;
 using CalamityModMusic.Tiles;
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
 
 namespace CalamityModMusic.Items.Placeables
 {
@@ -30,6 +31,18 @@ namespace CalamityModMusic.Items.Placeables
 
         public override void AddRecipes()
         {
+            Mod calamity = CalamityModMusic.Instance.calamity;
+			if (calamity != null)
+			{
+				CreateRecipe().
+					AddIngredient(ItemID.MusicBox).
+					AddIngredient(calamity.Find<ModItem>("Acidwood").Type, 10).
+					AddIngredient(calamity.Find<ModItem>("SulphuricScale").Type, 10).
+					AddIngredient(calamity.Find<ModItem>("CorrodedFossil").Type, 10).
+					AddIngredient(calamity.Find<ModItem>("RuinousSoul").Type).
+					AddTile(TileID.LunarCraftingStation).
+					Register();
+			}
         }
     }
 }
