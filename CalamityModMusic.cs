@@ -10,13 +10,19 @@ namespace CalamityModMusic
         public const string CalamityWikiURL = "calamitymod.wiki.gg";
 
         internal Mod wikithis = null;
+        internal Mod calamity = null;
+        internal Mod bossChecklist = null;
 
         public CalamityModMusic() => Instance = this;
 
         public override void Load()
         {
             wikithis = null;
+            calamity = null;
+            bossChecklist = null;
             ModLoader.TryGetMod("Wikithis", out wikithis);
+            ModLoader.TryGetMod("CalamityMod", out calamity);
+            ModLoader.TryGetMod("BossChecklist", out bossChecklist);
 
             if (!Main.dedServ)
             {
@@ -29,6 +35,8 @@ namespace CalamityModMusic
         public override void Unload()
         {
             wikithis = null;
+            calamity = null;
+            bossChecklist = null;
             Instance = null;
         }
     }

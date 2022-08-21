@@ -8,196 +8,165 @@ namespace CalamityModMusic
     {
         public override void PostSetupContent()
         {
-            bool calamityExists = ModLoader.TryGetMod("CalamityMod", out var calamity);
-            bool bossChecklistExists = ModLoader.TryGetMod("BossChecklist", out var bossChecklist);
+            Mod calamity = CalamityModMusic.Instance.calamity;
+            Mod bossChecklist = CalamityModMusic.Instance.bossChecklist;
 
-            if (calamityExists && bossChecklistExists)
+            if (calamity != null && bossChecklist != null)
             {
                 bossChecklist.Call(
                 "AddToBossCollection",
-                calamity.Name,
-                "Desert Scourge",
+                "CalamityMod Desert Scourge",
                 ModContent.ItemType<DesertScourgeMusicbox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                calamity.Name,
-                "Giant Clam",
+                "CalamityMod Giant Clam",
                 ModContent.ItemType<SunkenSeaMusicbox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                calamity.Name,
-                "Crabulon",
+                "CalamityMod Crabulon",
                 ModContent.ItemType<CrabulonMusicbox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                calamity.Name,
-                "Hive Mind",
+                "CalamityMod Hive Mind",
                 ModContent.ItemType<HiveMindMusicbox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                calamity.Name,
-                "The Perforators",
+                "CalamityMod The Perforators",
                 ModContent.ItemType<PerforatorMusicbox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                calamity.Name,
-                "Slime God",
+                "CalamityMod Slime God",
                 ModContent.ItemType<SlimeGodMusicbox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                calamity.Name,
-                "Cryogen",
+                "CalamityMod Cryogen",
                 ModContent.ItemType<CryogenMusicbox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                calamity.Name,
-                "Aquatic Scourge",
+                "CalamityMod Aquatic Scourge",
                 ModContent.ItemType<AquaticScourgeMusicbox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                calamity.Name,
-                "Brimstone Elemental",
+                "CalamityMod Brimstone Elemental",
                 ModContent.ItemType<BrimmyMusicbox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                calamity.Name,
-                "Calamitas",
+                "CalamityMod The Calamitas Clone",
                 ModContent.ItemType<CalamitasMusicbox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                calamity.Name,
-                "Leviathan",
+                "CalamityMod Leviathan",
                 new List<int>() { ModContent.ItemType<LeviathanMusicbox>(), ModContent.ItemType<SirenMusicbox>() });
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                calamity.Name,
-                "Astrum Aureus",
+                "CalamityMod Astrum Aureus",
                 ModContent.ItemType<AstrageldonMusicbox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                calamity.Name,
-                "Plaguebringer Goliath",
+                "CalamityMod Plaguebringer Goliath",
                 ModContent.ItemType<PlaguebringerMusicbox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                calamity.Name,
-                "Ravager",
+                "CalamityMod Ravager",
                 ModContent.ItemType<RavagerMusicbox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                calamity.Name,
-                "Astrum Deus",
+                "CalamityMod Astrum Deus",
                 ModContent.ItemType<AstrumDeusMusicbox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                calamity.Name,
-                "Profaned Guardians",
+                "CalamityMod Profaned Guardians",
                 ModContent.ItemType<ProfanedGuardianMusicbox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                calamity.Name,
-                "Dragonfolly",
+                "CalamityMod Dragonfolly",
                 ModContent.ItemType<BumblebirbMusicbox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                calamity.Name,
-                "Providence",
+                "CalamityMod Providence",
                 ModContent.ItemType<ProvidenceMusicbox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                calamity.Name,
-                "Ceaseless Void",
+                "CalamityMod Ceaseless Void",
                 ModContent.ItemType<CeaselessVoidMusicbox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                calamity.Name,
-                "Storm Weaver",
+                "CalamityMod Storm Weaver",
                 ModContent.ItemType<StormWeaverMusicbox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                calamity.Name,
-                "Signus",
+                "CalamityMod Signus",
                 ModContent.ItemType<SignusMusicbox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                calamity.Name,
-                "Polterghast",
+                "CalamityMod Polterghast",
                 ModContent.ItemType<PolterghastMusicbox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                calamity.Name,
-                "Devourer of Gods",
+                "CalamityMod Old Duke",
+                ModContent.ItemType<BoomerDukeMusicbox>());
+
+                bossChecklist.Call(
+                "AddToBossCollection",
+                "CalamityMod Devourer of Gods",
                 new List<int>() { ModContent.ItemType<DoGMusicbox>(), ModContent.ItemType<DoGP2Musicbox>() });
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                calamity.Name,
-                "Yharon",
+                "CalamityMod Yharon",
                 new List<int>() { ModContent.ItemType<Yharon2Musicbox>(), ModContent.ItemType<Yharon3Musicbox>() });
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                calamity.Name,
-                "Exo Mechs",
+                "CalamityMod Exo Mechs",
                 new List<int>() { ModContent.ItemType<ExoMechsMusicboxItem>() });
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                calamity.Name,
-                "Supreme Calamitas",
+                "CalamityMod Supreme Calamitas",
                 new List<int>() { ModContent.ItemType<SCalGMusicbox>(), ModContent.ItemType<SCalLMusicbox>(), ModContent.ItemType<SCalEMusicbox>(), ModContent.ItemType<SCalAMusicbox>() });
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                calamity.Name,
-                "Adult Eidolon Wyrm",
+                "CalamityMod Adult Eidolon Wyrm",
                 ModContent.ItemType<AdultEidolonWyrmMusicbox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                calamity.Name,
-                "Acid Rain",
+                "CalamityMod Acid Rain",
                 ModContent.ItemType<AcidRain1Musicbox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                calamity.Name,
-                "Acid Rain (Post-AS)",
+                "CalamityMod Acid Rain (Post-AS)",
                 ModContent.ItemType<AcidRain1Musicbox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                calamity.Name,
-                "Acid Rain (Post-Polter)",
+                "CalamityMod Acid Rain (Post-Polter)",
                 ModContent.ItemType<AcidRain2Musicbox>());
-
-                bossChecklist.Call(
-                "AddToBossCollection",
-                calamity.Name,
-                "Old Duke",
-                ModContent.ItemType<BoomerDukeMusicbox>());
             }
         }
     }
