@@ -28,7 +28,7 @@ namespace CalamityModMusic.Items.Placeables
             Item.accessory = true;
         }
 
-        public override void AddRecipes()
+        /*public override void AddRecipes()
         {
             Mod calamity = CalamityModMusic.Instance.calamity;
 			if (calamity != null)
@@ -39,6 +39,6 @@ namespace CalamityModMusic.Items.Placeables
 					AddTile(calamity.Find<ModTile>("CosmicAnvil").Type).
 					Register();
 			}
-        }
+        }*/
     }
 }
