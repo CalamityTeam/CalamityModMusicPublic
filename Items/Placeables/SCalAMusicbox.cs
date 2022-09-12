@@ -1,5 +1,6 @@
-using Terraria.ModLoader;
+using Terraria;
 using Terraria.ID;
+using Terraria.ModLoader;
 
 namespace CalamityModMusic.Items.Placeables
 {
@@ -25,6 +26,17 @@ namespace CalamityModMusic.Items.Placeables
             Item.rare = ItemRarityID.LightRed;
             Item.value = 100000;
             Item.accessory = true;
+        }
+
+        public override void AddRecipes()
+        {
+			CreateRecipe().
+				AddIngredient(ItemID.MusicBox).
+				AddIngredient(ModContent.ItemType<SCalGMusicbox>()).
+				AddIngredient(ModContent.ItemType<SCalLMusicbox>()).
+				AddIngredient(ModContent.ItemType<SCalEMusicbox>()).
+				AddTile(TileID.TinkerersWorkbench).
+				Register();
         }
     }
 }
