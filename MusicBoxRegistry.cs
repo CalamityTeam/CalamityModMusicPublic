@@ -4,7 +4,6 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.ModLoader;
 using AbyssLowerMusicbox = CalamityModMusic.Items.Placeables.AbyssLowerMusicbox;
-using AdultEidolonWyrmMusicbox = CalamityModMusic.Items.Placeables.AdultEidolonWyrmMusicbox;
 using AquaticScourgeMusicbox = CalamityModMusic.Items.Placeables.AquaticScourgeMusicbox;
 using AstrageldonMusicbox = CalamityModMusic.Items.Placeables.AstrageldonMusicbox;
 using AstralMusicbox = CalamityModMusic.Items.Placeables.AstralMusicbox;
@@ -67,7 +66,6 @@ namespace CalamityModMusic
             if (!Main.dedServ)
             {
                 // Boss Music - Alphabetised.
-                AddMusicBox("Sounds/Music/AdultEidolonWyrm", ModContent.ItemType<AdultEidolonWyrmMusicbox>(), ModContent.TileType<Tiles.AdultEidolonWyrmMusicbox>());
                 AddMusicBox("Sounds/Music/Anahita", ModContent.ItemType<SirenMusicbox>(), ModContent.TileType<Tiles.SirenMusicbox>());
                 AddMusicBox("Sounds/Music/AnahitaPreboss", ModContent.ItemType<SirenIdleMusicbox>(), ModContent.TileType<Tiles.SirenIdleMusicbox>());
                 AddMusicBox("Sounds/Music/AquaticScourge", ModContent.ItemType<AquaticScourgeMusicbox>(), ModContent.TileType<Tiles.AquaticScourgeMusicbox>());

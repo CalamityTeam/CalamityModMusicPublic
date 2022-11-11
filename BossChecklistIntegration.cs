@@ -150,11 +150,6 @@ namespace CalamityModMusic
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                "CalamityMod Adult Eidolon Wyrm",
-                ModContent.ItemType<AdultEidolonWyrmMusicbox>());
-
-                bossChecklist.Call(
-                "AddToBossCollection",
                 "CalamityMod Acid Rain",
                 ModContent.ItemType<AcidRain1Musicbox>());
 
