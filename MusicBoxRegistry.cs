@@ -9,6 +9,7 @@ using AquaticScourgeMusicbox = CalamityModMusic.Items.Placeables.AquaticScourgeM
 using AstrageldonMusicbox = CalamityModMusic.Items.Placeables.AstrageldonMusicbox;
 using AstralMusicbox = CalamityModMusic.Items.Placeables.AstralMusicbox;
 using AstrumDeusMusicbox = CalamityModMusic.Items.Placeables.AstrumDeusMusicbox;
+using BioLabMusicbox = CalamityModMusic.Items.Placeables.BioLabMusicbox;
 using BossRush1Musicbox = CalamityModMusic.Items.Placeables.BossRushTier1MusicboxItem;
 using BossRush2Musicbox = CalamityModMusic.Items.Placeables.BossRushTier2MusicboxItem;
 using BossRush3Musicbox = CalamityModMusic.Items.Placeables.BossRushTier3MusicboxItem;
@@ -109,6 +110,7 @@ namespace CalamityModMusic
                 AddMusicBox("Sounds/Music/Abyss3", ModContent.ItemType<VoidMusicbox>(), ModContent.TileType<Tiles.VoidMusicbox>());
                 AddMusicBox("Sounds/Music/Astral", ModContent.ItemType<AstralMusicbox>(), ModContent.TileType<Tiles.AstralMusicbox>()); //Seamless
                 AddMusicBox("Sounds/Music/AstralUnderground", ModContent.ItemType<AstralUndergroundMusicbox>(), ModContent.TileType<Tiles.AstralUndergroundMusicboxTile>()); //Seamless
+                AddMusicBox("Sounds/Music/BioLab", ModContent.ItemType<BioLabMusicbox>(), ModContent.TileType<Tiles.BioLabMusicbox>());
                 AddMusicBox("Sounds/Music/Crag", ModContent.ItemType<CragMusicbox>(), ModContent.TileType<Tiles.CragMusicbox>());
                 AddMusicBox("Sounds/Music/Calamity", ModContent.ItemType<CalamityMusicbox>(), ModContent.TileType<Tiles.CalamityMusicbox>()); //Seamless
                 AddMusicBox("Sounds/Music/SulphurousSea", ModContent.ItemType<SulphurousMusicbox>(), ModContent.TileType<Tiles.SulphurousMusicbox>());

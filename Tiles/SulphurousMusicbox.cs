@@ -21,7 +21,7 @@ namespace CalamityModMusic.Tiles
             TileID.Sets.DisableSmartCursor[Type] = true;
             ModTranslation name = CreateMapEntryName();
             name.SetDefault("Music Box");
-            AddMapEntry(new Color(200, 200, 200), name);
+            AddMapEntry(new Color(191, 142, 111), name);
         }
 
         public override void KillMultiTile(int i, int j, int frameX, int frameY)
@@ -36,5 +36,10 @@ namespace CalamityModMusic.Tiles
             player.cursorItemIconEnabled = true;
             player.cursorItemIconID = ModContent.ItemType<Items.Placeables.SulphurousMusicbox>();
         }
+		
+		public override bool CreateDust(int i, int j, ref int type)
+		{
+			return false;
+		}
     }
 }
