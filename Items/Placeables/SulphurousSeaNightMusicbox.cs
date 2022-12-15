@@ -3,12 +3,12 @@ using Terraria.ID;
 
 namespace CalamityModMusic.Items.Placeables
 {
-    public class SulphurousMusicbox : ModItem
+    public class SulphurousSeaNightMusicbox : ModItem
     {
         public override void SetStaticDefaults()
         {
             SacrificeTotal = 1;
-            DisplayName.SetDefault("Music Box (Sulphurous Sea Day)");
+            DisplayName.SetDefault("Music Box (Sulphurous Sea Night)");
         }
 
         public override void SetDefaults()
@@ -19,7 +19,7 @@ namespace CalamityModMusic.Items.Placeables
             Item.useTime = 10;
             Item.autoReuse = true;
             Item.consumable = true;
-            Item.createTile = ModContent.TileType<Tiles.SulphurousMusicbox>();
+            Item.createTile = ModContent.TileType<Tiles.SulphurousSeaNightMusicbox>();
             Item.width = 24;
             Item.height = 24;
             Item.rare = ItemRarityID.LightRed;

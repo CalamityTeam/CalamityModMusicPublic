@@ -12,7 +12,9 @@ Full list of tracks:
 [olist]
 [*] DM Dokuro - The Tale of a Cruel World
 [*] DM Dokuro - sanctuary
+[*] Heart Plus Up! - Engineer's Sanctum
 [*] DM Dokuro - wasteland
+[*] Heart Plus Up! - caustic tides
 [*] DM Dokuro - The Step Below Hell
 [*] DM Dokuro - Guardian of the Former Seas
 [*] RoverdriveX - corrosion!

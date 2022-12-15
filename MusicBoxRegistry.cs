@@ -46,6 +46,7 @@ using SirenMusicbox = CalamityModMusic.Items.Placeables.SirenMusicbox;
 using SlimeGodMusicbox = CalamityModMusic.Items.Placeables.SlimeGodMusicbox;
 using StormWeaverMusicbox = CalamityModMusic.Items.Placeables.StormWeaverMusicbox;
 using SulphurousMusicbox = CalamityModMusic.Items.Placeables.SulphurousMusicbox;
+using SulphurousSeaNightMusicbox = CalamityModMusic.Items.Placeables.SulphurousSeaNightMusicbox;
 using SunkenSeaMusicbox = CalamityModMusic.Items.Placeables.SunkenSeaMusicbox;
 using VoidMusicbox = CalamityModMusic.Items.Placeables.VoidMusicbox;
 using Yharon1Musicbox = CalamityModMusic.Items.Placeables.Yharon1Musicbox;
@@ -113,7 +114,8 @@ namespace CalamityModMusic
                 AddMusicBox("Sounds/Music/BioLab", ModContent.ItemType<BioLabMusicbox>(), ModContent.TileType<Tiles.BioLabMusicbox>());
                 AddMusicBox("Sounds/Music/Crag", ModContent.ItemType<CragMusicbox>(), ModContent.TileType<Tiles.CragMusicbox>());
                 AddMusicBox("Sounds/Music/Calamity", ModContent.ItemType<CalamityMusicbox>(), ModContent.TileType<Tiles.CalamityMusicbox>()); //Seamless
-                AddMusicBox("Sounds/Music/SulphurousSea", ModContent.ItemType<SulphurousMusicbox>(), ModContent.TileType<Tiles.SulphurousMusicbox>());
+                AddMusicBox("Sounds/Music/SulphurousSeaDay", ModContent.ItemType<SulphurousMusicbox>(), ModContent.TileType<Tiles.SulphurousMusicbox>());
+                AddMusicBox("Sounds/Music/SulphurousSeaNight", ModContent.ItemType<SulphurousSeaNightMusicbox>(), ModContent.TileType<Tiles.SulphurousSeaNightMusicbox>());
                 AddMusicBox("Sounds/Music/SunkenSea", ModContent.ItemType<SunkenSeaMusicbox>(), ModContent.TileType<Tiles.SunkenSeaMusicbox>());
 
                 // Event Music.
