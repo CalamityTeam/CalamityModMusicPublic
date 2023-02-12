@@ -3,12 +3,14 @@ using Terraria.ID;
 
 namespace CalamityModMusic.Items.Placeables
 {
-    public class AquaticScourgeMusicbox: ModItem
+    [LegacyName("AquaticScourgeMusicbox")]
+    public class AquaticScourgeMusicBox : ModItem
     {
         public override void SetStaticDefaults()
         {
             SacrificeTotal = 1;
             DisplayName.SetDefault("Music Box (Aquatic Scourge)");
+            Tooltip.SetDefault("Plays 'Outcast of the Sulphurous Seas' by DM DOKURO");
         }
 
         public override void SetDefaults()
@@ -19,9 +21,9 @@ namespace CalamityModMusic.Items.Placeables
             Item.useTime = 10;
             Item.autoReuse = true;
             Item.consumable = true;
-            Item.createTile = ModContent.TileType<Tiles.AquaticScourgeMusicbox>();
-            Item.width = 24;
-            Item.height = 24;
+            Item.createTile = ModContent.TileType<Tiles.AquaticScourgeMusicBox>();
+            Item.width = 32;
+            Item.height = 30;
             Item.rare = ItemRarityID.LightRed;
             Item.value = 100000;
             Item.accessory = true;

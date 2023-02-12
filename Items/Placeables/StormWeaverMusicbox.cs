@@ -3,12 +3,14 @@ using Terraria.ID;
 
 namespace CalamityModMusic.Items.Placeables
 {
-    public class StormWeaverMusicbox : ModItem
+    [LegacyName("StormWeaverMusicbox")]
+    public class StormWeaverMusicBox : ModItem
     {
         public override void SetStaticDefaults()
         {
             SacrificeTotal = 1;
             DisplayName.SetDefault("Music Box (Storm Weaver)");
+            Tooltip.SetDefault("Plays 'Servants of the Scourge (Type W)' by DM DOKURO");
         }
 
         public override void SetDefaults()
@@ -19,9 +21,9 @@ namespace CalamityModMusic.Items.Placeables
             Item.useTime = 10;
             Item.autoReuse = true;
             Item.consumable = true;
-            Item.createTile = ModContent.TileType<Tiles.StormWeaverMusicbox>();
-            Item.width = 24;
-            Item.height = 24;
+            Item.createTile = ModContent.TileType<Tiles.StormWeaverMusicBox>();
+            Item.width = 32;
+            Item.height = 18;
             Item.rare = ItemRarityID.LightRed;
             Item.value = 100000;
             Item.accessory = true;

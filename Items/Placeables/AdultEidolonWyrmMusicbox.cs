@@ -3,12 +3,14 @@ using Terraria.ID;
 
 namespace CalamityModMusic.Items.Placeables
 {
-    public class AdultEidolonWyrmMusicbox : ModItem
+    [LegacyName("AdultEidolonWyrmMusicbox")]
+    public class AdultEidolonWyrmMusicBox : ModItem
     {
         public override void SetStaticDefaults()
         {
             SacrificeTotal = 1;
             DisplayName.SetDefault("Music Box (Adult Eidolon Wyrm)");
+            Tooltip.SetDefault("Plays 'Threats of the Ocean Floor' by DM DOKURO");
         }
 
         public override void SetDefaults()
@@ -19,9 +21,9 @@ namespace CalamityModMusic.Items.Placeables
             Item.useTime = 10;
             Item.autoReuse = true;
             Item.consumable = true;
-            Item.createTile = ModContent.TileType<Tiles.AdultEidolonWyrmMusicbox>();
-            Item.width = 24;
-            Item.height = 24;
+            Item.createTile = ModContent.TileType<Tiles.AdultEidolonWyrmMusicBox>();
+            Item.width = 32;
+            Item.height = 32;
             Item.rare = ItemRarityID.LightRed;
             Item.value = 100000;
             Item.accessory = true;

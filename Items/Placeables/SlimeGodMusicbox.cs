@@ -3,12 +3,14 @@ using Terraria.ID;
 
 namespace CalamityModMusic.Items.Placeables
 {
-    public class SlimeGodMusicbox : ModItem
+    [LegacyName("SlimeGodMusicbox")]
+    public class SlimeGodMusicBox : ModItem
     {
         public override void SetStaticDefaults()
         {
             SacrificeTotal = 1;
             DisplayName.SetDefault("Music Box (Slime God)");
+            Tooltip.SetDefault("Plays 'Return to Slime' by DM DOKURO and SixteenInMono");
         }
 
         public override void SetDefaults()
@@ -19,7 +21,7 @@ namespace CalamityModMusic.Items.Placeables
             Item.useTime = 10;
             Item.autoReuse = true;
             Item.consumable = true;
-            Item.createTile = ModContent.TileType<Tiles.SlimeGodMusicbox>();
+            Item.createTile = ModContent.TileType<Tiles.SlimeGodMusicBox>();
             Item.width = 24;
             Item.height = 24;
             Item.rare = ItemRarityID.LightRed;

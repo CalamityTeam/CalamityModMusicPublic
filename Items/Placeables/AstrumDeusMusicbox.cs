@@ -3,12 +3,14 @@ using Terraria.ID;
 
 namespace CalamityModMusic.Items.Placeables
 {
-    public class AstrumDeusMusicbox : ModItem
+    [LegacyName("AstrumDeusMusicbox")]
+    public class AstrumDeusMusicBox : ModItem
     {
         public override void SetStaticDefaults()
         {
             SacrificeTotal = 1;
             DisplayName.SetDefault("Music Box (Astrum Deus)");
+            Tooltip.SetDefault("Plays 'Pest of the Cosmos' by DM DOKURO");
         }
 
         public override void SetDefaults()
@@ -19,9 +21,9 @@ namespace CalamityModMusic.Items.Placeables
             Item.useTime = 10;
             Item.autoReuse = true;
             Item.consumable = true;
-            Item.createTile = ModContent.TileType<Tiles.AstrumDeusMusicbox>();
-            Item.width = 24;
-            Item.height = 24;
+            Item.createTile = ModContent.TileType<Tiles.AstrumDeusMusicBox>();
+            Item.width = 30;
+            Item.height = 26;
             Item.rare = ItemRarityID.LightRed;
             Item.value = 100000;
             Item.accessory = true;

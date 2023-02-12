@@ -16,152 +16,152 @@ namespace CalamityModMusic
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod Desert Scourge",
-                ModContent.ItemType<DesertScourgeMusicbox>());
+                ModContent.ItemType<DesertScourgeMusicBox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod Giant Clam",
-                ModContent.ItemType<SunkenSeaMusicbox>());
+                ModContent.ItemType<SunkenSeaMusicBox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod Crabulon",
-                ModContent.ItemType<CrabulonMusicbox>());
+                ModContent.ItemType<CrabulonMusicBox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                "CalamityMod Hive Mind",
-                ModContent.ItemType<HiveMindMusicbox>());
+                "CalamityMod The Hive Mind",
+                ModContent.ItemType<HiveMindMusicBox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod The Perforators",
-                ModContent.ItemType<PerforatorMusicbox>());
+                ModContent.ItemType<PerforatorsMusicBox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod Slime God",
-                ModContent.ItemType<SlimeGodMusicbox>());
+                ModContent.ItemType<SlimeGodMusicBox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod Cryogen",
-                ModContent.ItemType<CryogenMusicbox>());
+                ModContent.ItemType<CryogenMusicBox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod Aquatic Scourge",
-                ModContent.ItemType<AquaticScourgeMusicbox>());
+                ModContent.ItemType<AquaticScourgeMusicBox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod Brimstone Elemental",
-                ModContent.ItemType<BrimmyMusicbox>());
+                ModContent.ItemType<BrimstoneElementalMusicBox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod The Calamitas Clone",
-                ModContent.ItemType<CalamitasMusicbox>());
+                ModContent.ItemType<CalamitasCloneMusicBox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod Leviathan",
-                new List<int>() { ModContent.ItemType<LeviathanMusicbox>(), ModContent.ItemType<SirenMusicbox>() });
+                new List<int>() { ModContent.ItemType<LeviathanMusicBox>(), ModContent.ItemType<AnahitaMusicBox>() });
 
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod Astrum Aureus",
-                ModContent.ItemType<AstrageldonMusicbox>());
+                ModContent.ItemType<AstrumAureusMusicBox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod Plaguebringer Goliath",
-                ModContent.ItemType<PlaguebringerMusicbox>());
+                ModContent.ItemType<PlaguebringerGoliathMusicBox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod Ravager",
-                ModContent.ItemType<RavagerMusicbox>());
+                ModContent.ItemType<RavagerMusicBox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod Astrum Deus",
-                ModContent.ItemType<AstrumDeusMusicbox>());
+                ModContent.ItemType<AstrumDeusMusicBox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod Profaned Guardians",
-                ModContent.ItemType<ProfanedGuardianMusicbox>());
+                ModContent.ItemType<ProfanedGuardiansMusicBox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod Dragonfolly",
-                ModContent.ItemType<BumblebirbMusicbox>());
+                ModContent.ItemType<DragonfollyMusicBox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod Providence",
-                ModContent.ItemType<ProvidenceMusicbox>());
+                ModContent.ItemType<ProvidenceMusicBox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod Ceaseless Void",
-                ModContent.ItemType<CeaselessVoidMusicbox>());
+                ModContent.ItemType<CeaselessVoidMusicBox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod Storm Weaver",
-                ModContent.ItemType<StormWeaverMusicbox>());
+                ModContent.ItemType<StormWeaverMusicBox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod Signus",
-                ModContent.ItemType<SignusMusicbox>());
+                ModContent.ItemType<SignusMusicBox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod Polterghast",
-                ModContent.ItemType<PolterghastMusicbox>());
+                ModContent.ItemType<PolterghastMusicBox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod Old Duke",
-                ModContent.ItemType<BoomerDukeMusicbox>());
+                ModContent.ItemType<OldDukeMusicBox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod Devourer of Gods",
-                new List<int>() { ModContent.ItemType<DoGMusicbox>(), ModContent.ItemType<DoGP2Musicbox>() });
+                new List<int>() { ModContent.ItemType<DevourerofGodsPhase1MusicBox>(), ModContent.ItemType<DevourerofGodsPhase2MusicBox>() });
 
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod Yharon",
-                new List<int>() { ModContent.ItemType<Yharon2Musicbox>(), ModContent.ItemType<Yharon3Musicbox>() });
+                new List<int>() { ModContent.ItemType<YharonPhase1MusicBox>(), ModContent.ItemType<YharonPhase2MusicBox>() });
 
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod Exo Mechs",
-                new List<int>() { ModContent.ItemType<ExoMechsMusicboxItem>() });
+                new List<int>() { ModContent.ItemType<ExoMechsMusicBox>() });
 
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod Supreme Calamitas",
-                new List<int>() { ModContent.ItemType<SCalGMusicbox>(), ModContent.ItemType<SCalLMusicbox>(), ModContent.ItemType<SCalEMusicbox>(), ModContent.ItemType<SCalAMusicbox>() });
+                new List<int>() { ModContent.ItemType<CalamitasPhase1MusicBox>(), ModContent.ItemType<CalamitasPhase2MusicBox>(), ModContent.ItemType<CalamitasPhase3MusicBox>(), ModContent.ItemType<CalamitasDefeatMusicBox>() });
 
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod Acid Rain",
-                ModContent.ItemType<AcidRain1Musicbox>());
+                ModContent.ItemType<AcidRainTier1MusicBox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod Acid Rain (Post-AS)",
-                ModContent.ItemType<AcidRain1Musicbox>());
+                ModContent.ItemType<AcidRainTier1MusicBox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod Acid Rain (Post-Polter)",
-                ModContent.ItemType<AcidRain2Musicbox>());
+                ModContent.ItemType<AcidRainTier3MusicBox>());
             }
         }
     }

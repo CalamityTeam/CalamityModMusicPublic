@@ -7,7 +7,8 @@ using Terraria.DataStructures;
 
 namespace CalamityModMusic.Tiles
 {
-    public class SlimeGodMusicbox : ModTile
+    [LegacyName("SlimeGodMusicbox")]
+    public class SlimeGodMusicBox : ModTile
     {
         public override void SetStaticDefaults()
         {
@@ -26,7 +27,7 @@ namespace CalamityModMusic.Tiles
 
         public override void KillMultiTile(int i, int j, int frameX, int frameY)
         {
-            Item.NewItem(new EntitySource_TileBreak(i * 16, j * 16), i * 16, j * 16, 16, 48, ModContent.ItemType<Items.Placeables.SlimeGodMusicbox>());
+            Item.NewItem(new EntitySource_TileBreak(i * 16, j * 16), i * 16, j * 16, 16, 48, ModContent.ItemType<Items.Placeables.SlimeGodMusicBox>());
         }
 
         public override void MouseOver(int i, int j)
@@ -34,7 +35,7 @@ namespace CalamityModMusic.Tiles
             Player player = Main.LocalPlayer;
             player.noThrow = 2;
             player.cursorItemIconEnabled = true;
-            player.cursorItemIconID = ModContent.ItemType<Items.Placeables.SlimeGodMusicbox>();
+            player.cursorItemIconID = ModContent.ItemType<Items.Placeables.SlimeGodMusicBox>();
         }
 		
 		public override bool CreateDust(int i, int j, ref int type)

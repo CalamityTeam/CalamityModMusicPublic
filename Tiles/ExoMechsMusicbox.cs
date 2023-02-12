@@ -1,5 +1,4 @@
-﻿using CalamityModMusic.Items.Placeables;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -8,7 +7,8 @@ using Terraria.DataStructures;
 
 namespace CalamityModMusic.Tiles
 {
-    public class ExoMechsMusicbox : ModTile
+    [LegacyName("ExoMechsMusicbox")]
+    public class ExoMechsMusicBox : ModTile
     {
         public override void SetStaticDefaults()
         {
@@ -27,7 +27,7 @@ namespace CalamityModMusic.Tiles
 
         public override void KillMultiTile(int i, int j, int frameX, int frameY)
         {
-            Item.NewItem(new EntitySource_TileBreak(i * 16, j * 16), i * 16, j * 16, 16, 48, ModContent.ItemType<ExoMechsMusicboxItem>());
+            Item.NewItem(new EntitySource_TileBreak(i * 16, j * 16), i * 16, j * 16, 16, 48, ModContent.ItemType<Items.Placeables.ExoMechsMusicBox>());
         }
 
         public override void MouseOver(int i, int j)
@@ -35,7 +35,7 @@ namespace CalamityModMusic.Tiles
             Player player = Main.LocalPlayer;
             player.noThrow = 2;
             player.cursorItemIconEnabled = true;
-            player.cursorItemIconID = ModContent.ItemType<ExoMechsMusicboxItem>();
+            player.cursorItemIconID = ModContent.ItemType<Items.Placeables.ExoMechsMusicBox>();
         }
 		
 		public override bool CreateDust(int i, int j, ref int type)

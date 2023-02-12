@@ -1,4 +1,3 @@
-using CalamityModMusic.Items.Placeables;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
@@ -8,7 +7,8 @@ using Terraria.DataStructures;
 
 namespace CalamityModMusic.Tiles
 {
-    public class BossRushTier1Musicbox : ModTile
+    [LegacyName("BossRushTier1Musicbox")]
+    public class BossRushTier1MusicBox : ModTile
     {
         public override void SetStaticDefaults()
         {
@@ -27,7 +27,7 @@ namespace CalamityModMusic.Tiles
 
         public override void KillMultiTile(int i, int j, int frameX, int frameY)
         {
-            Item.NewItem(new EntitySource_TileBreak(i * 16, j * 16), i * 16, j * 16, 16, 48, ModContent.ItemType<BossRushTier1MusicboxItem>());
+            Item.NewItem(new EntitySource_TileBreak(i * 16, j * 16), i * 16, j * 16, 16, 48, ModContent.ItemType<Items.Placeables.BossRushTier1MusicBox>());
         }
 
         public override void MouseOver(int i, int j)
@@ -35,7 +35,7 @@ namespace CalamityModMusic.Tiles
             Player player = Main.LocalPlayer;
             player.noThrow = 2;
             player.cursorItemIconEnabled = true;
-            player.cursorItemIconID = ModContent.ItemType<BossRushTier1MusicboxItem>();
+            player.cursorItemIconID = ModContent.ItemType<Items.Placeables.BossRushTier1MusicBox>();
         }
 		
 		public override bool CreateDust(int i, int j, ref int type)
