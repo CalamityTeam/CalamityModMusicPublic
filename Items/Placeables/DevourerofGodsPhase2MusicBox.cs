@@ -10,7 +10,7 @@ namespace CalamityModMusic.Items.Placeables
         {
             SacrificeTotal = 1;
             DisplayName.SetDefault("Music Box (Devourer of Gods - Phase 2)");
-            Tooltip.SetDefault("Plays 'UNIVERSAL COLLAPSE' by DM DOKURO");
+            Tooltip.SetDefault("Plays 'Universal Collapse' by DM DOKURO");
         }
 
         public override void SetDefaults()

@@ -10,7 +10,7 @@ namespace CalamityModMusic.Items.Placeables
         {
             SacrificeTotal = 1;
             DisplayName.SetDefault("Music Box (Crabulon)");
-            Tooltip.SetDefault("Plays '1NF3S+@+!0N' by DM DOKURO");
+            Tooltip.SetDefault("Plays 'Infestation' by DM DOKURO");
         }
 
         public override void SetDefaults()
