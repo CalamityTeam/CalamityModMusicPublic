@@ -73,61 +73,64 @@ namespace CalamityModMusic
                 // Boss Music - Alphabetised.
                 AddMusicBox("Sounds/Music/AdultEidolonWyrm", ModContent.ItemType<AdultEidolonWyrmMusicBox>(), ModContent.TileType<Tiles.AdultEidolonWyrmMusicBox>());
                 AddMusicBox("Sounds/Music/Anahita", ModContent.ItemType<AnahitaMusicBox>(), ModContent.TileType<Tiles.AnahitaMusicBox>());
-                AddMusicBox("Sounds/Music/AnahitaPreboss", ModContent.ItemType<AnahitasLureMusicBox>(), ModContent.TileType<Tiles.AnahitasLureMusicBox>());
+                AddMusicBox("Sounds/Music/AnahitasLure", ModContent.ItemType<AnahitasLureMusicBox>(), ModContent.TileType<Tiles.AnahitasLureMusicBox>());
                 AddMusicBox("Sounds/Music/AquaticScourge", ModContent.ItemType<AquaticScourgeMusicBox>(), ModContent.TileType<Tiles.AquaticScourgeMusicBox>());
                 AddMusicBox("Sounds/Music/AstrumAureus", ModContent.ItemType<AstrumAureusMusicBox>(), ModContent.TileType<Tiles.AstrumAureusMusicBox>());
                 AddMusicBox("Sounds/Music/AstrumDeus", ModContent.ItemType<AstrumDeusMusicBox>(), ModContent.TileType<Tiles.AstrumDeusMusicBox>());
                 AddMusicBox("Sounds/Music/BrimstoneElemental", ModContent.ItemType<BrimstoneElementalMusicBox>(), ModContent.TileType<Tiles.BrimstoneElementalMusicBox>());
-                AddMusicBox("Sounds/Music/Calamitas", ModContent.ItemType<CalamitasCloneMusicBox>(), ModContent.TileType<Tiles.CalamitasCloneMusicBox>());
+                AddMusicBox("Sounds/Music/CalamitasClone", ModContent.ItemType<CalamitasCloneMusicBox>(), ModContent.TileType<Tiles.CalamitasCloneMusicBox>());
+                AddMusicBox("Sounds/Music/CalamitasDefeat", ModContent.ItemType<CalamitasDefeatMusicBox>(), ModContent.TileType<Tiles.CalamitasDefeatMusicBox>());
+                AddMusicBox("Sounds/Music/CalamitasPhase1", ModContent.ItemType<CalamitasPhase1MusicBox>(), ModContent.TileType<Tiles.CalamitasPhase1MusicBox>());
+                AddMusicBox("Sounds/Music/CalamitasPhase2", ModContent.ItemType<CalamitasPhase2MusicBox>(), ModContent.TileType<Tiles.CalamitasPhase2MusicBox>());
+                AddMusicBox("Sounds/Music/CalamitasPhase3", ModContent.ItemType<CalamitasPhase3MusicBox>(), ModContent.TileType<Tiles.CalamitasPhase3MusicBox>());
                 AddMusicBox("Sounds/Music/CeaselessVoid", ModContent.ItemType<CeaselessVoidMusicBox>(), ModContent.TileType<Tiles.CeaselessVoidMusicBox>());
                 AddMusicBox("Sounds/Music/Crabulon", ModContent.ItemType<CrabulonMusicBox>(), ModContent.TileType<Tiles.CrabulonMusicBox>());
                 AddMusicBox("Sounds/Music/Cryogen", ModContent.ItemType<CryogenMusicBox>(), ModContent.TileType<Tiles.CryogenMusicBox>());
                 AddMusicBox("Sounds/Music/DesertScourge", ModContent.ItemType<DesertScourgeMusicBox>(), ModContent.TileType<Tiles.DesertScourgeMusicBox>());
-                AddMusicBox("Sounds/Music/DevourerOfGodsP1", ModContent.ItemType<DevourerofGodsPhase1MusicBox>(), ModContent.TileType<Tiles.DevourerofGodsPhase1MusicBox>());
-                AddMusicBox("Sounds/Music/DevourerOfGodsP2", ModContent.ItemType<DevourerofGodsPhase2MusicBox>(), ModContent.TileType<Tiles.DevourerofGodsPhase2MusicBox>());
+                AddMusicBox("Sounds/Music/DevourerofGodsPhase1", ModContent.ItemType<DevourerofGodsPhase1MusicBox>(), ModContent.TileType<Tiles.DevourerofGodsPhase1MusicBox>());
+                AddMusicBox("Sounds/Music/DevourerofGodsPhase2", ModContent.ItemType<DevourerofGodsPhase2MusicBox>(), ModContent.TileType<Tiles.DevourerofGodsPhase2MusicBox>());
                 AddMusicBox("Sounds/Music/Dragonfolly", ModContent.ItemType<DragonfollyMusicBox>(), ModContent.TileType<Tiles.DragonfollyMusicBox>());
                 AddMusicBox("Sounds/Music/ExoMechs", ModContent.ItemType<ExoMechsMusicBox>(), ModContent.TileType<Tiles.ExoMechsMusicBox>());
                 AddMusicBox("Sounds/Music/HiveMind", ModContent.ItemType<HiveMindMusicBox>(), ModContent.TileType<Tiles.HiveMindMusicBox>());
-                AddMusicBox("Sounds/Music/LeviathanAndAnahita", ModContent.ItemType<LeviathanMusicBox>(), ModContent.TileType<Tiles.LeviathanMusicBox>());
-                AddMusicBox("Sounds/Music/BoomerDuke", ModContent.ItemType<OldDukeMusicBox>(), ModContent.TileType<Tiles.OldDukeMusicBox>());
+                AddMusicBox("Sounds/Music/Leviathan", ModContent.ItemType<LeviathanMusicBox>(), ModContent.TileType<Tiles.LeviathanMusicBox>());
+                AddMusicBox("Sounds/Music/OldDuke", ModContent.ItemType<OldDukeMusicBox>(), ModContent.TileType<Tiles.OldDukeMusicBox>());
                 AddMusicBox("Sounds/Music/Perforators", ModContent.ItemType<PerforatorsMusicBox>(), ModContent.TileType<Tiles.PerforatorsMusicBox>());
                 AddMusicBox("Sounds/Music/PlaguebringerGoliath", ModContent.ItemType<PlaguebringerGoliathMusicBox>(), ModContent.TileType<Tiles.PlaguebringerGoliathMusicBox>());
                 AddMusicBox("Sounds/Music/Polterghast", ModContent.ItemType<PolterghastMusicBox>(), ModContent.TileType<Tiles.PolterghastMusicBox>());
-                AddMusicBox("Sounds/Music/Guardians", ModContent.ItemType<ProfanedGuardiansMusicBox>(), ModContent.TileType<Tiles.ProfanedGuardiansMusicBox>());
+                AddMusicBox("Sounds/Music/ProfanedGuardians", ModContent.ItemType<ProfanedGuardiansMusicBox>(), ModContent.TileType<Tiles.ProfanedGuardiansMusicBox>());
                 AddMusicBox("Sounds/Music/Providence", ModContent.ItemType<ProvidenceMusicBox>(), ModContent.TileType<Tiles.ProvidenceMusicBox>()); //Seamless
                 AddMusicBox("Sounds/Music/Ravager", ModContent.ItemType<RavagerMusicBox>(), ModContent.TileType<Tiles.RavagerMusicBox>());
-                AddMusicBox("Sounds/Music/SupremeCalamitas1", ModContent.ItemType<CalamitasPhase1MusicBox>(), ModContent.TileType<Tiles.CalamitasPhase1MusicBox>());
-                AddMusicBox("Sounds/Music/SupremeCalamitas2", ModContent.ItemType<CalamitasPhase2MusicBox>(), ModContent.TileType<Tiles.CalamitasPhase2MusicBox>());
-                AddMusicBox("Sounds/Music/SupremeCalamitas3", ModContent.ItemType<CalamitasPhase3MusicBox>(), ModContent.TileType<Tiles.CalamitasPhase3MusicBox>());
-                AddMusicBox("Sounds/Music/SupremeCalamitas4", ModContent.ItemType<CalamitasDefeatMusicBox>(), ModContent.TileType<Tiles.CalamitasDefeatMusicBox>());
                 AddMusicBox("Sounds/Music/Signus", ModContent.ItemType<SignusMusicBox>(), ModContent.TileType<Tiles.SignusMusicBox>());
                 AddMusicBox("Sounds/Music/SlimeGod", ModContent.ItemType<SlimeGodMusicBox>(), ModContent.TileType<Tiles.SlimeGodMusicBox>());
-                AddMusicBox("Sounds/Music/Weaver", ModContent.ItemType<StormWeaverMusicBox>(), ModContent.TileType<Tiles.StormWeaverMusicBox>());
+                AddMusicBox("Sounds/Music/StormWeaver", ModContent.ItemType<StormWeaverMusicBox>(), ModContent.TileType<Tiles.StormWeaverMusicBox>());
                 AddMusicBox("Sounds/Music/YharonLegacy", ModContent.ItemType<YharonLegacyMusicBox>(), ModContent.TileType<Tiles.YharonLegacyMusicBox>());
-                AddMusicBox("Sounds/Music/YharonP1", ModContent.ItemType<YharonPhase1MusicBox>(), ModContent.TileType<Tiles.YharonPhase1MusicBox>());
-                AddMusicBox("Sounds/Music/YharonP2", ModContent.ItemType<YharonPhase2MusicBox>(), ModContent.TileType<Tiles.YharonPhase2MusicBox>());
+                AddMusicBox("Sounds/Music/YharonPhase1", ModContent.ItemType<YharonPhase1MusicBox>(), ModContent.TileType<Tiles.YharonPhase1MusicBox>());
+                AddMusicBox("Sounds/Music/YharonPhase2", ModContent.ItemType<YharonPhase2MusicBox>(), ModContent.TileType<Tiles.YharonPhase2MusicBox>());
 
                 // Biome Music.
-                AddMusicBox("Sounds/Music/Abyss1", ModContent.ItemType<ShallowAbyssMusicBox>(), ModContent.TileType<Tiles.ShallowAbyssMusicBox>());
-                AddMusicBox("Sounds/Music/Abyss2", ModContent.ItemType<DeepAbyssMusicBox>(), ModContent.TileType<Tiles.DeepAbyssMusicBox>());
-                AddMusicBox("Sounds/Music/Abyss3", ModContent.ItemType<VoidAbyssMusicBox>(), ModContent.TileType<Tiles.VoidAbyssMusicBox>());
-                AddMusicBox("Sounds/Music/Astral", ModContent.ItemType<AstralInfectionMusicBox>(), ModContent.TileType<Tiles.AstralInfectionMusicBox>()); //Seamless
-                AddMusicBox("Sounds/Music/AstralUnderground", ModContent.ItemType<UndergroundAstralInfectionMusicBox>(), ModContent.TileType<Tiles.UndergroundAstralInfectionMusicBox>()); //Seamless
+                AddMusicBox("Sounds/Music/AstralInfection", ModContent.ItemType<AstralInfectionMusicBox>(), ModContent.TileType<Tiles.AstralInfectionMusicBox>()); //Seamless
                 AddMusicBox("Sounds/Music/BioLab", ModContent.ItemType<BioLabMusicBox>(), ModContent.TileType<Tiles.BioLabMusicBox>());
-                AddMusicBox("Sounds/Music/Crag", ModContent.ItemType<BrimstoneCragsMusicBox>(), ModContent.TileType<Tiles.BrimstoneCragsMusicBox>());
-                AddMusicBox("Sounds/Music/Calamity", ModContent.ItemType<CalamityTitleMusicBox>(), ModContent.TileType<Tiles.CalamityTitleMusicBox>()); //Seamless
+                AddMusicBox("Sounds/Music/BrimstoneCrags", ModContent.ItemType<BrimstoneCragsMusicBox>(), ModContent.TileType<Tiles.BrimstoneCragsMusicBox>());
+                AddMusicBox("Sounds/Music/DeepAbyss", ModContent.ItemType<DeepAbyssMusicBox>(), ModContent.TileType<Tiles.DeepAbyssMusicBox>());
+                AddMusicBox("Sounds/Music/ShallowAbyss", ModContent.ItemType<ShallowAbyssMusicBox>(), ModContent.TileType<Tiles.ShallowAbyssMusicBox>());
                 AddMusicBox("Sounds/Music/SulphurousSeaDay", ModContent.ItemType<SulphurousSeaDayMusicBox>(), ModContent.TileType<Tiles.SulphurousSeaDayMusicBox>());
                 AddMusicBox("Sounds/Music/SulphurousSeaNight", ModContent.ItemType<SulphurousSeaNightMusicBox>(), ModContent.TileType<Tiles.SulphurousSeaNightMusicBox>());
                 AddMusicBox("Sounds/Music/SunkenSea", ModContent.ItemType<SunkenSeaMusicBox>(), ModContent.TileType<Tiles.SunkenSeaMusicBox>());
+                AddMusicBox("Sounds/Music/UndergroundAstralInfection", ModContent.ItemType<UndergroundAstralInfectionMusicBox>(), ModContent.TileType<Tiles.UndergroundAstralInfectionMusicBox>()); //Seamless
+                AddMusicBox("Sounds/Music/VoidAbyss", ModContent.ItemType<VoidAbyssMusicBox>(), ModContent.TileType<Tiles.VoidAbyssMusicBox>());
 
                 // Event Music.
-                AddMusicBox("Sounds/Music/AcidRain1", ModContent.ItemType<AcidRainTier1MusicBox>(), ModContent.TileType<Tiles.AcidRainTier1MusicBox>()); //Seamless
-                AddMusicBox("Sounds/Music/AcidRain2", ModContent.ItemType<AcidRainTier3MusicBox>(), ModContent.TileType<Tiles.AcidRainTier3MusicBox>());
+                AddMusicBox("Sounds/Music/AcidRainTier1", ModContent.ItemType<AcidRainTier1MusicBox>(), ModContent.TileType<Tiles.AcidRainTier1MusicBox>()); //Seamless
+                //AddMusicBox("Sounds/Music/AcidRainTier2", ModContent.ItemType<AcidRainTier2MusicBox>(), ModContent.TileType<Tiles.AcidRainTier2MusicBox>());
+                AddMusicBox("Sounds/Music/AcidRainTier3", ModContent.ItemType<AcidRainTier3MusicBox>(), ModContent.TileType<Tiles.AcidRainTier3MusicBox>());
                 AddMusicBox("Sounds/Music/BossRushTier1", ModContent.ItemType<BossRushTier1MusicBox>(), ModContent.TileType<Tiles.BossRushTier1MusicBox>());
                 AddMusicBox("Sounds/Music/BossRushTier2", ModContent.ItemType<BossRushTier2MusicBox>(), ModContent.TileType<Tiles.BossRushTier2MusicBox>());
                 AddMusicBox("Sounds/Music/BossRushTier3", ModContent.ItemType<BossRushTier3MusicBox>(), ModContent.TileType<Tiles.BossRushTier3MusicBox>());
                 //AddMusicBox("Sounds/Music/BossRushTier4", ModContent.ItemType<BossRushTier4MusicBox>(), ModContent.TileType<BossRushTier4MusicBox>());
                 //AddMusicBox("Sounds/Music/BossRushTier5", ModContent.ItemType<BossRushTier5MusicBox>(), ModContent.TileType<BossRushTier5MusicBox>());
+
+                // Other Music.
+                AddMusicBox("Sounds/Music/CalamityTitle", ModContent.ItemType<CalamityTitleMusicBox>(), ModContent.TileType<Tiles.CalamityTitleMusicBox>()); //Seamless
             }
         }
     }

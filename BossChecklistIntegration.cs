@@ -145,7 +145,7 @@ namespace CalamityModMusic
 
                 bossChecklist.Call(
                 "AddToBossCollection",
-                "CalamityMod Supreme Calamitas",
+                "CalamityMod Supreme Witch, Calamitas",
                 new List<int>() { ModContent.ItemType<CalamitasPhase1MusicBox>(), ModContent.ItemType<CalamitasPhase2MusicBox>(), ModContent.ItemType<CalamitasPhase3MusicBox>(), ModContent.ItemType<CalamitasDefeatMusicBox>() });
 
                 bossChecklist.Call(
@@ -156,12 +156,18 @@ namespace CalamityModMusic
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod Acid Rain (Post-AS)",
+                //ModContent.ItemType<AcidRainTier2MusicBox>());
                 ModContent.ItemType<AcidRainTier1MusicBox>());
 
                 bossChecklist.Call(
                 "AddToBossCollection",
                 "CalamityMod Acid Rain (Post-Polter)",
                 ModContent.ItemType<AcidRainTier3MusicBox>());
+
+                bossChecklist.Call(
+                "AddToBossCollection",
+                "CalamityMod Boss Rush",
+                new List<int>() { ModContent.ItemType<BossRushTier1MusicBox>(), ModContent.ItemType<BossRushTier2MusicBox>(), ModContent.ItemType<BossRushTier3MusicBox>()/*, ModContent.ItemType<BossRushTier4MusicBox>()*//*, ModContent.ItemType<BossRushTier5MusicBox>() */});
             }
         }
     }

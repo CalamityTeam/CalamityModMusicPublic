@@ -22,7 +22,7 @@ namespace CalamityModMusic.Items.Placeables
             Item.autoReuse = true;
             Item.consumable = true;
             Item.createTile = ModContent.TileType<Tiles.SlimeGodMusicBox>();
-            Item.width = 24;
+            Item.width = 32;
             Item.height = 24;
             Item.rare = ItemRarityID.LightRed;
             Item.value = 100000;
