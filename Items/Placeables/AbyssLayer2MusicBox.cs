@@ -4,12 +4,12 @@ using Terraria.ID;
 namespace CalamityModMusic.Items.Placeables
 {
     [LegacyName("HigherAbyssMusicbox")]
-    public class ShallowAbyssMusicBox : ModItem
+    public class AbyssLayer2MusicBox : ModItem
     {
         public override void SetStaticDefaults()
         {
             SacrificeTotal = 1;
-            DisplayName.SetDefault("Music Box (Shallow Abyss)");
+            DisplayName.SetDefault("Music Box (Abyss - Layer 2)");
             Tooltip.SetDefault("Plays 'Hadopelagic Pressure' by DM DOKURO");
         }
 
@@ -21,7 +21,7 @@ namespace CalamityModMusic.Items.Placeables
             Item.useTime = 10;
             Item.autoReuse = true;
             Item.consumable = true;
-            Item.createTile = ModContent.TileType<Tiles.ShallowAbyssMusicBox>();
+            Item.createTile = ModContent.TileType<Tiles.AbyssLayer2MusicBox>();
             Item.width = 32;
             Item.height = 28;
             Item.rare = ItemRarityID.LightRed;

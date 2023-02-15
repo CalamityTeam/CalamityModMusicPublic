@@ -4,12 +4,12 @@ using Terraria.ID;
 namespace CalamityModMusic.Items.Placeables
 {
     [LegacyName("AbyssLowerMusicbox")]
-    public class DeepAbyssMusicBox : ModItem
+    public class AbyssLayer3MusicBox : ModItem
     {
         public override void SetStaticDefaults()
         {
             SacrificeTotal = 1;
-            DisplayName.SetDefault("Music Box (Deep Abyss)");
+            DisplayName.SetDefault("Music Box (Abyss - Layer 3)");
             Tooltip.SetDefault("Plays 'R'LYEH' by RoverdriveX");
         }
 
@@ -21,7 +21,7 @@ namespace CalamityModMusic.Items.Placeables
             Item.useTime = 10;
             Item.autoReuse = true;
             Item.consumable = true;
-            Item.createTile = ModContent.TileType<Tiles.DeepAbyssMusicBox>();
+            Item.createTile = ModContent.TileType<Tiles.AbyssLayer3MusicBox>();
             Item.width = 32;
             Item.height = 28;
             Item.rare = ItemRarityID.LightRed;
