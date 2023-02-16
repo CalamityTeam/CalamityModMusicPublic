@@ -1,5 +1,6 @@
 ﻿using Terraria;
 using Terraria.ModLoader;
+// using AbyssLayer1MusicBox = CalamityModMusic.Items.Placeables.AbyssLayer1MusicBox;
 using AbyssLayer2MusicBox = CalamityModMusic.Items.Placeables.AbyssLayer2MusicBox;
 using AbyssLayer3MusicBox = CalamityModMusic.Items.Placeables.AbyssLayer3MusicBox;
 using AbyssLayer4MusicBox = CalamityModMusic.Items.Placeables.AbyssLayer4MusicBox;
@@ -11,6 +12,7 @@ using AnahitaMusicBox = CalamityModMusic.Items.Placeables.AnahitaMusicBox;
 using AnahitasLureMusicBox = CalamityModMusic.Items.Placeables.AnahitasLureMusicBox;
 using AquaticScourgeMusicBox = CalamityModMusic.Items.Placeables.AquaticScourgeMusicBox;
 using AstralInfectionMusicBox = CalamityModMusic.Items.Placeables.AstralInfectionMusicBox;
+using AstralInfectionUndergroundMusicBox = CalamityModMusic.Items.Placeables.AstralInfectionUndergroundMusicBox;
 using AstrumAureusMusicBox = CalamityModMusic.Items.Placeables.AstrumAureusMusicBox;
 using AstrumDeusMusicBox = CalamityModMusic.Items.Placeables.AstrumDeusMusicBox;
 using BioLabMusicBox = CalamityModMusic.Items.Placeables.BioLabMusicBox;
@@ -50,7 +52,6 @@ using StormWeaverMusicBox = CalamityModMusic.Items.Placeables.StormWeaverMusicBo
 using SulphurousSeaDayMusicBox = CalamityModMusic.Items.Placeables.SulphurousSeaDayMusicBox;
 using SulphurousSeaNightMusicBox = CalamityModMusic.Items.Placeables.SulphurousSeaNightMusicBox;
 using SunkenSeaMusicBox = CalamityModMusic.Items.Placeables.SunkenSeaMusicBox;
-using UndergroundAstralInfectionMusicBox = CalamityModMusic.Items.Placeables.UndergroundAstralInfectionMusicBox;
 using YharonLegacyMusicBox = CalamityModMusic.Items.Placeables.YharonLegacyMusicBox;
 using YharonPhase1MusicBox = CalamityModMusic.Items.Placeables.YharonPhase1MusicBox;
 using YharonPhase2MusicBox = CalamityModMusic.Items.Placeables.YharonPhase2MusicBox;
@@ -108,16 +109,17 @@ namespace CalamityModMusic
                 AddMusicBox("Sounds/Music/YharonPhase2", ModContent.ItemType<YharonPhase2MusicBox>(), ModContent.TileType<Tiles.YharonPhase2MusicBox>());
 
                 // Biome Music.
+                //AddMusicBox("Sounds/Music/AbyssLayer1", ModContent.ItemType<AbyssLayer1MusicBox>(), ModContent.TileType<Tiles.AbyssLayer1MusicBox>());
                 AddMusicBox("Sounds/Music/AbyssLayer2", ModContent.ItemType<AbyssLayer2MusicBox>(), ModContent.TileType<Tiles.AbyssLayer2MusicBox>());
                 AddMusicBox("Sounds/Music/AbyssLayer3", ModContent.ItemType<AbyssLayer3MusicBox>(), ModContent.TileType<Tiles.AbyssLayer3MusicBox>());
                 AddMusicBox("Sounds/Music/AbyssLayer4", ModContent.ItemType<AbyssLayer4MusicBox>(), ModContent.TileType<Tiles.AbyssLayer4MusicBox>());
                 AddMusicBox("Sounds/Music/AstralInfection", ModContent.ItemType<AstralInfectionMusicBox>(), ModContent.TileType<Tiles.AstralInfectionMusicBox>()); //Seamless
+                AddMusicBox("Sounds/Music/AstralInfectionUnderground", ModContent.ItemType<AstralInfectionUndergroundMusicBox>(), ModContent.TileType<Tiles.AstralInfectionUndergroundMusicBox>()); //Seamless
                 AddMusicBox("Sounds/Music/BioLab", ModContent.ItemType<BioLabMusicBox>(), ModContent.TileType<Tiles.BioLabMusicBox>());
                 AddMusicBox("Sounds/Music/BrimstoneCrags", ModContent.ItemType<BrimstoneCragsMusicBox>(), ModContent.TileType<Tiles.BrimstoneCragsMusicBox>());
                 AddMusicBox("Sounds/Music/SulphurousSeaDay", ModContent.ItemType<SulphurousSeaDayMusicBox>(), ModContent.TileType<Tiles.SulphurousSeaDayMusicBox>());
                 AddMusicBox("Sounds/Music/SulphurousSeaNight", ModContent.ItemType<SulphurousSeaNightMusicBox>(), ModContent.TileType<Tiles.SulphurousSeaNightMusicBox>());
                 AddMusicBox("Sounds/Music/SunkenSea", ModContent.ItemType<SunkenSeaMusicBox>(), ModContent.TileType<Tiles.SunkenSeaMusicBox>());
-                AddMusicBox("Sounds/Music/UndergroundAstralInfection", ModContent.ItemType<UndergroundAstralInfectionMusicBox>(), ModContent.TileType<Tiles.UndergroundAstralInfectionMusicBox>()); //Seamless
 
                 // Event Music.
                 AddMusicBox("Sounds/Music/AcidRainTier1", ModContent.ItemType<AcidRainTier1MusicBox>(), ModContent.TileType<Tiles.AcidRainTier1MusicBox>()); //Seamless

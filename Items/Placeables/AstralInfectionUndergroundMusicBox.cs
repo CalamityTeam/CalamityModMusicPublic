@@ -4,7 +4,7 @@ using Terraria.ID;
 namespace CalamityModMusic.Items.Placeables
 {
     [LegacyName("AstralUndergroundMusicbox")]
-    public class UndergroundAstralInfectionMusicBox : ModItem
+    public class AstralInfectionUndergroundMusicBox : ModItem
     {
         public override void SetStaticDefaults()
         {
@@ -21,7 +21,7 @@ namespace CalamityModMusic.Items.Placeables
             Item.useTime = 10;
             Item.autoReuse = true;
             Item.consumable = true;
-            Item.createTile = ModContent.TileType<Tiles.UndergroundAstralInfectionMusicBox>();
+            Item.createTile = ModContent.TileType<Tiles.AstralInfectionUndergroundMusicBox>();
             Item.width = 32;
             Item.height = 32;
             Item.rare = ItemRarityID.LightRed;
