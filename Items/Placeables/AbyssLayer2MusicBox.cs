@@ -23,7 +23,7 @@ namespace CalamityModMusic.Items.Placeables
             Item.consumable = true;
             Item.createTile = ModContent.TileType<Tiles.AbyssLayer2MusicBox>();
             Item.width = 32;
-            Item.height = 28;
+            Item.height = 26;
             Item.rare = ItemRarityID.LightRed;
             Item.value = 100000;
             Item.accessory = true;
