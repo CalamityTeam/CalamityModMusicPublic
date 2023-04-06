@@ -9,8 +9,6 @@ namespace CalamityModMusic.Items.Placeables
         public override void SetStaticDefaults()
         {
             Item.ResearchUnlockCount = 1;
-            // DisplayName.SetDefault("Music Box (Anahita's Lure)");
-            // Tooltip.SetDefault("Plays 'Siren's Call' by DM DOKURO");
         }
 
         public override void SetDefaults()

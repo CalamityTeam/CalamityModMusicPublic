@@ -10,8 +10,6 @@ namespace CalamityModMusic.Items.Placeables
         public override void SetStaticDefaults()
         {
             Item.ResearchUnlockCount = 1;
-            // DisplayName.SetDefault("Music Box (Yharon - Legacy)");
-            // Tooltip.SetDefault("Plays 'Infernal Catharsis' by DM DOKURO");
         }
 
         public override void SetDefaults()
@@ -42,6 +40,7 @@ namespace CalamityModMusic.Items.Placeables
 						AddIngredient(ItemID.MusicBox).
 						AddIngredient(calamity.Find<ModItem>("YharonSoulFragment").Type, 3).
 						AddTile(calamity.Find<ModTile>("CosmicAnvil").Type).
+                        AddCustomShimmerResult(ItemID.MusicBox).
 						Register();
 				}
 				catch

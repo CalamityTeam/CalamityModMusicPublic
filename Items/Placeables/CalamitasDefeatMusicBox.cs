@@ -10,8 +10,6 @@ namespace CalamityModMusic.Items.Placeables
         public override void SetStaticDefaults()
         {
             Item.ResearchUnlockCount = 1;
-            // DisplayName.SetDefault("Music Box (Calamitas - Defeat)");
-            // Tooltip.SetDefault("Plays 'Stained, Brutal Calamity (Acceptance)' by DM DOKURO");
         }
 
         public override void SetDefaults()
@@ -38,7 +36,8 @@ namespace CalamityModMusic.Items.Placeables
 				AddIngredient(ModContent.ItemType<CalamitasPhase2MusicBox>()).
 				AddIngredient(ModContent.ItemType<CalamitasPhase3MusicBox>()).
 				AddTile(TileID.TinkerersWorkbench).
-				Register();
+                AddCustomShimmerResult(ItemID.MusicBox).
+                Register();
         }
     }
 }

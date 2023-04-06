@@ -11,8 +11,6 @@ namespace CalamityModMusic.Items.Placeables
         public override void SetStaticDefaults()
         {
             Item.ResearchUnlockCount = 1;
-            // DisplayName.SetDefault("Music Box (Acid Rain - Tiers 1 and 2)"); // Temporary, will change to just Tier 1 once Acid Rain Tier 2 is complete
-            // Tooltip.SetDefault("Plays 'corrosion!' by RoverdriveX");
         }
 
         public override void SetDefaults()
@@ -46,7 +44,8 @@ namespace CalamityModMusic.Items.Placeables
 						AddIngredient(calamity.Find<ModItem>("CorrodedFossil").Type, 10).
 						AddIngredient(calamity.Find<ModItem>("RuinousSoul").Type).
 						AddTile(TileID.LunarCraftingStation).
-						Register();
+                        AddCustomShimmerResult(ItemID.MusicBox).
+                        Register();
 				}
 				catch
 				{

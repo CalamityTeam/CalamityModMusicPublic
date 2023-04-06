@@ -9,8 +9,6 @@ namespace CalamityModMusic.Items.Placeables
         public override void SetStaticDefaults()
         {
             Item.ResearchUnlockCount = 1;
-            // DisplayName.SetDefault("Music Box (Dragonfolly)");
-            // Tooltip.SetDefault("Plays 'Murderswarm' by DM DOKURO");
         }
 
         public override void SetDefaults()

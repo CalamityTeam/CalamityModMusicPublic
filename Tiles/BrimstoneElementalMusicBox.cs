@@ -21,14 +21,8 @@ namespace CalamityModMusic.Tiles
             TileObjectData.newTile.DrawYOffset = 2;
             TileObjectData.addTile(Type);
             TileID.Sets.DisableSmartCursor[Type] = true;
-            LocalizedText name = CreateMapEntryName();
-            // name.SetDefault("Music Box");
-            AddMapEntry(new Color(191, 142, 111), name);
-        }
-
-        public override void KillMultiTile(int i, int j, int frameX, int frameY)
-        {
-            Item.NewItem(new EntitySource_TileBreak(i * 16, j * 16), i * 16, j * 16, 16, 48, ModContent.ItemType<Items.Placeables.BrimstoneElementalMusicBox>());
+            
+            AddMapEntry(new Color(191, 142, 111), Language.GetOrRegister("Mods.CalamityModMusic.Tiles.MusicBoxes.MapEntry"));
         }
 
         public override void MouseOver(int i, int j)

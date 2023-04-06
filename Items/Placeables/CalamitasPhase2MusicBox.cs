@@ -9,8 +9,6 @@ namespace CalamityModMusic.Items.Placeables
         public override void SetStaticDefaults()
         {
             Item.ResearchUnlockCount = 1;
-            // DisplayName.SetDefault("Music Box (Calamitas - Phase 2)");
-            // Tooltip.SetDefault("Plays 'Stained, Brutal Calamity (Lament)' by DM DOKURO");
         }
 
         public override void SetDefaults()

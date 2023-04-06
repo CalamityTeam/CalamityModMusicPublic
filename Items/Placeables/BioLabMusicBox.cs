@@ -8,8 +8,6 @@ namespace CalamityModMusic.Items.Placeables
         public override void SetStaticDefaults()
         {
             Item.ResearchUnlockCount = 1;
-            // DisplayName.SetDefault("Music Box (Bio Lab)");
-            // Tooltip.SetDefault("Plays 'Engineer's Sanctum' by Heart Plus Up!");
         }
 
         public override void SetDefaults()

@@ -9,8 +9,6 @@ namespace CalamityModMusic.Items.Placeables
         public override void SetStaticDefaults()
         {
             Item.ResearchUnlockCount = 1;
-            // DisplayName.SetDefault("Music Box (Slime God)");
-            // Tooltip.SetDefault("Plays 'Return to Slime' by DM DOKURO and SixteenInMono");
         }
 
         public override void SetDefaults()

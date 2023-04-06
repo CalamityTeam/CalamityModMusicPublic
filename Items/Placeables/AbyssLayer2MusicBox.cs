@@ -9,8 +9,6 @@ namespace CalamityModMusic.Items.Placeables
         public override void SetStaticDefaults()
         {
             Item.ResearchUnlockCount = 1;
-            // DisplayName.SetDefault("Music Box (Abyss - Layer 2)");
-            // Tooltip.SetDefault("Plays 'Hadopelagic Pressure' by DM DOKURO");
         }
 
         public override void SetDefaults()

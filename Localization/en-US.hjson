@@ -268,60 +268,6 @@ Mods: {
 			}
 		}
 
-		Tiles: {
-			AbyssLayer2MusicBox.MapEntry: Music Box
-			AbyssLayer3MusicBox.MapEntry: Music Box
-			AbyssLayer4MusicBox.MapEntry: Music Box
-			AcidRainTier1MusicBox.MapEntry: Music Box
-			AcidRainTier3MusicBox.MapEntry: Music Box
-			AdultEidolonWyrmMusicBox.MapEntry: Music Box
-			AnahitaMusicBox.MapEntry: Music Box
-			AnahitasLureMusicBox.MapEntry: Music Box
-			AquaticScourgeMusicBox.MapEntry: Music Box
-			AstralInfectionMusicBox.MapEntry: Music Box
-			AstralInfectionUndergroundMusicBox.MapEntry: Music Box
-			AstrumAureusMusicBox.MapEntry: Music Box
-			AstrumDeusMusicBox.MapEntry: Music Box
-			BioLabMusicBox.MapEntry: Music Box
-			BossRushTier1MusicBox.MapEntry: Music Box
-			BossRushTier2MusicBox.MapEntry: Music Box
-			BossRushTier3MusicBox.MapEntry: Music Box
-			BossRushTier4MusicBox.MapEntry: Music Box
-			BossRushTier5MusicBox.MapEntry: Music Box
-			BrimstoneCragsMusicBox.MapEntry: Music Box
-			BrimstoneElementalMusicBox.MapEntry: Music Box
-			CalamitasCloneMusicBox.MapEntry: Music Box
-			CalamitasDefeatMusicBox.MapEntry: Music Box
-			CalamitasPhase1MusicBox.MapEntry: Music Box
-			CalamitasPhase2MusicBox.MapEntry: Music Box
-			CalamitasPhase3MusicBox.MapEntry: Music Box
-			CalamityTitleMusicBox.MapEntry: Music Box
-			CeaselessVoidMusicBox.MapEntry: Music Box
-			CrabulonMusicBox.MapEntry: Music Box
-			CryogenMusicBox.MapEntry: Music Box
-			DesertScourgeMusicBox.MapEntry: Music Box
-			DevourerofGodsPhase1MusicBox.MapEntry: Music Box
-			DevourerofGodsPhase2MusicBox.MapEntry: Music Box
-			DragonfollyMusicBox.MapEntry: Music Box
-			ExoMechsMusicBox.MapEntry: Music Box
-			HiveMindMusicBox.MapEntry: Music Box
-			LeviathanMusicBox.MapEntry: Music Box
-			OldDukeMusicBox.MapEntry: Music Box
-			PerforatorsMusicBox.MapEntry: Music Box
-			PlaguebringerGoliathMusicBox.MapEntry: Music Box
-			PolterghastMusicBox.MapEntry: Music Box
-			ProfanedGuardiansMusicBox.MapEntry: Music Box
-			ProvidenceMusicBox.MapEntry: Music Box
-			RavagerMusicBox.MapEntry: Music Box
-			SignusMusicBox.MapEntry: Music Box
-			SlimeGodMusicBox.MapEntry: Music Box
-			StormWeaverMusicBox.MapEntry: Music Box
-			SulphurousSeaDayMusicBox.MapEntry: Music Box
-			SulphurousSeaNightMusicBox.MapEntry: Music Box
-			SunkenSeaMusicBox.MapEntry: Music Box
-			YharonLegacyMusicBox.MapEntry: Music Box
-			YharonPhase1MusicBox.MapEntry: Music Box
-			YharonPhase2MusicBox.MapEntry: Music Box
-		}
+		Tiles.MusicBoxes.MapEntry: Music Box
 	}
 }

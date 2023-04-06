@@ -9,8 +9,6 @@ namespace CalamityModMusic.Items.Placeables
         public override void SetStaticDefaults()
         {
             Item.ResearchUnlockCount = 1;
-            // DisplayName.SetDefault("Music Box (Adult Eidolon Wyrm)");
-            // Tooltip.SetDefault("Plays 'Threats of the Ocean Floor' by DM DOKURO");
         }
 
         public override void SetDefaults()
@@ -42,6 +40,7 @@ namespace CalamityModMusic.Items.Placeables
                         AddIngredient(calamity.Find<ModItem>("Lumenyl").Type, 15).
                         AddIngredient(calamity.Find<ModItem>("RuinousSoul").Type, 3).
                         AddTile(TileID.LunarCraftingStation).
+                        AddCustomShimmerResult(ItemID.MusicBox).
                         Register();
                 }
                 catch

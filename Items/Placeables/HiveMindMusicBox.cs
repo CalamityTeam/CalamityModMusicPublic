@@ -9,8 +9,6 @@ namespace CalamityModMusic.Items.Placeables
         public override void SetStaticDefaults()
         {
             Item.ResearchUnlockCount = 1;
-            // DisplayName.SetDefault("Music Box (Hive Mind)");
-            // Tooltip.SetDefault("Plays 'The Filthy Mind' by DM DOKURO and SixteenInMono");
         }
 
         public override void SetDefaults()

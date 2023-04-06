@@ -9,8 +9,6 @@ namespace CalamityModMusic.Items.Placeables
         public override void SetStaticDefaults()
         {
             Item.ResearchUnlockCount = 1;
-            // DisplayName.SetDefault("Music Box (Devourer of Gods - Phase 2)");
-            // Tooltip.SetDefault("Plays 'Universal Collapse' by DM DOKURO");
         }
 
         public override void SetDefaults()

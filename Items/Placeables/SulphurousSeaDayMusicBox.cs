@@ -9,8 +9,6 @@ namespace CalamityModMusic.Items.Placeables
         public override void SetStaticDefaults()
         {
             Item.ResearchUnlockCount = 1;
-            // DisplayName.SetDefault("Music Box (Sulphurous Sea Day)");
-            // Tooltip.SetDefault("Plays 'wasteland' by DM DOKURO");
         }
 
         public override void SetDefaults()

@@ -8,9 +8,7 @@ namespace CalamityModMusic.Items.Placeables
     {
         public override void SetStaticDefaults()
         {
-            //SacrificeTotal = 1;
-            // DisplayName.SetDefault("Music Box (Boss Rush - Tier 5)"); // Unobtainable.
-            // Tooltip.SetDefault("This music box is unfinished and does not work");
+            //Item.ResearchUnlockCount = 1;
         }
 
         public override void SetDefaults()

@@ -9,8 +9,6 @@ namespace CalamityModMusic.Items.Placeables
         public override void SetStaticDefaults()
         {
             Item.ResearchUnlockCount = 1;
-            // DisplayName.SetDefault("Music Box (Yharon - Phase 2)");
-            // Tooltip.SetDefault("Plays 'Roar of the Jungle Dragon' by DM DOKURO");
         }
 
         public override void SetDefaults()

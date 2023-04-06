@@ -10,8 +10,6 @@ namespace CalamityModMusic.Items.Placeables
         public override void SetStaticDefaults()
         {
             Item.ResearchUnlockCount = 1;
-            // DisplayName.SetDefault("Music Box (Calamity Title)");
-            // Tooltip.SetDefault("Plays 'The Tale of a Cruel World' by DM DOKURO");
         }
 
         public override void SetDefaults()
@@ -43,7 +41,8 @@ namespace CalamityModMusic.Items.Placeables
 						AddIngredient(calamity.Find<ModItem>("BrimstoneSlag").Type, 12).
 						AddIngredient(calamity.Find<ModItem>("EssenceofChaos").Type, 3).
 						AddTile(calamity.Find<ModTile>("AshenAltar").Type).
-						Register();
+                        AddCustomShimmerResult(ItemID.MusicBox).
+                        Register();
 				}
 				catch
 				{
