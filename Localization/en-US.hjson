@@ -1,0 +1,327 @@
+
+Mods: {
+	CalamityModMusic: {
+		Items: {
+			AbyssLayer2MusicBox: {
+				DisplayName: Music Box (Abyss - Layer 2)
+				Tooltip: Plays 'Hadopelagic Pressure' by DM DOKURO
+			}
+
+			AbyssLayer3MusicBox: {
+				DisplayName: Music Box (Abyss - Layer 3)
+				Tooltip: Plays 'R'LYEH' by RoverdriveX
+			}
+
+			AbyssLayer4MusicBox: {
+				DisplayName: Music Box (Abyss - Layer 4)
+				Tooltip: Plays 'void' by DM DOKURO
+			}
+
+			AcidRainTier1MusicBox: {
+				DisplayName: Music Box (Acid Rain - Tiers 1 and 2)
+				Tooltip: Plays 'corrosion!' by RoverdriveX
+			}
+
+			AcidRainTier3MusicBox: {
+				DisplayName: Music Box (Acid Rain - Tier 3)
+				Tooltip: Plays 'nuclear monsoon' by PinpinNeon
+			}
+
+			AdultEidolonWyrmMusicBox: {
+				DisplayName: Music Box (Adult Eidolon Wyrm)
+				Tooltip: Plays 'Threats of the Ocean Floor' by DM DOKURO
+			}
+
+			AnahitaMusicBox: {
+				DisplayName: Music Box (Anahita)
+				Tooltip: Plays 'Siren's War Cry' by DM DOKURO
+			}
+
+			AnahitasLureMusicBox: {
+				DisplayName: Music Box (Anahita's Lure)
+				Tooltip: Plays 'Siren's Call' by DM DOKURO
+			}
+
+			AquaticScourgeMusicBox: {
+				DisplayName: Music Box (Aquatic Scourge)
+				Tooltip: Plays 'Outcast of the Sulphurous Seas' by DM DOKURO
+			}
+
+			AstralInfectionMusicBox: {
+				DisplayName: Music Box (Astral Infection)
+				Tooltip: Plays 'The Heaven-Sent Abomination' by DM DOKURO
+			}
+
+			AstralInfectionUndergroundMusicBox: {
+				DisplayName: Music Box (Underground Astral Infection)
+				Tooltip: Plays 'Treasures Within the Abomination' by DM DOKURO
+			}
+
+			AstrumAureusMusicBox: {
+				DisplayName: Music Box (Astrum Aureus)
+				Tooltip: Plays 'Interstellar Stomper' by DM DOKURO
+			}
+
+			AstrumDeusMusicBox: {
+				DisplayName: Music Box (Astrum Deus)
+				Tooltip: Plays 'Pest of the Cosmos' by DM DOKURO
+			}
+
+			BioLabMusicBox: {
+				DisplayName: Music Box (Bio Lab)
+				Tooltip: Plays 'Engineer's Sanctum' by Heart Plus Up!
+			}
+
+			BossRushTier1MusicBox: {
+				DisplayName: Music Box (Boss Rush - Tier 1)
+				Tooltip: Plays 'Ensemble of Fools' by CDMusic
+			}
+
+			BossRushTier2MusicBox: {
+				DisplayName: Music Box (Boss Rush - Tier 2)
+				Tooltip: Plays 'Onslaught of Beasts' by CDMusic
+			}
+
+			BossRushTier3MusicBox: {
+				DisplayName: Music Box (Boss Rush - Tier 3)
+				Tooltip: Plays 'Reign of Lords' by CDMusic
+			}
+
+			BossRushTier4MusicBox: {
+				DisplayName: Music Box (Boss Rush - Tier 4)
+				Tooltip: This music box is unfinished and does not work
+			}
+
+			BossRushTier5MusicBox: {
+				DisplayName: Music Box (Boss Rush - Tier 5)
+				Tooltip: This music box is unfinished and does not work
+			}
+
+			BrimstoneCragsMusicBox: {
+				DisplayName: Music Box (Brimstone Crags)
+				Tooltip: Plays 'The Step Below Hell' by DM DOKURO
+			}
+
+			BrimstoneElementalMusicBox: {
+				DisplayName: Music Box (Brimstone Elemental)
+				Tooltip: Plays 'Left Alone' by DM DOKURO
+			}
+
+			CalamitasCloneMusicBox: {
+				DisplayName: Music Box (Calamitas Clone)
+				Tooltip: Plays 'Raw, Unfiltered Calamity' by DM DOKURO
+			}
+
+			CalamitasDefeatMusicBox: {
+				DisplayName: Music Box (Calamitas - Defeat)
+				Tooltip: Plays 'Stained, Brutal Calamity (Acceptance)' by DM DOKURO
+			}
+
+			CalamitasPhase1MusicBox: {
+				DisplayName: Music Box (Calamitas - Phase 1)
+				Tooltip: Plays 'Stained, Brutal Calamity (Grief)' by DM DOKURO
+			}
+
+			CalamitasPhase2MusicBox: {
+				DisplayName: Music Box (Calamitas - Phase 2)
+				Tooltip: Plays 'Stained, Brutal Calamity (Lament)' by DM DOKURO
+			}
+
+			CalamitasPhase3MusicBox: {
+				DisplayName: Music Box (Calamitas - Phase 3)
+				Tooltip: Plays 'Stained, Brutal Calamity (Epiphany)' by DM DOKURO
+			}
+
+			CalamityTitleMusicBox: {
+				DisplayName: Music Box (Calamity Title)
+				Tooltip: Plays 'The Tale of a Cruel World' by DM DOKURO
+			}
+
+			CeaselessVoidMusicBox: {
+				DisplayName: Music Box (Ceaseless Void)
+				Tooltip: Plays 'Servants of the Scourge (Type V)' by DM DOKURO
+			}
+
+			CrabulonMusicBox: {
+				DisplayName: Music Box (Crabulon)
+				Tooltip: Plays 'Infestation' by DM DOKURO
+			}
+
+			CryogenMusicBox: {
+				DisplayName: Music Box (Cryogen)
+				Tooltip: Plays 'Antarctic Reinforcement' by DM DOKURO
+			}
+
+			DesertScourgeMusicBox: {
+				DisplayName: Music Box (Desert Scourge)
+				Tooltip: Plays 'Guardian of the Former Seas' by DM DOKURO
+			}
+
+			DevourerofGodsPhase1MusicBox: {
+				DisplayName: Music Box (Devourer of Gods - Phase 1)
+				Tooltip: Plays 'Scourge of the Universe' by DM DOKURO
+			}
+
+			DevourerofGodsPhase2MusicBox: {
+				DisplayName: Music Box (Devourer of Gods - Phase 2)
+				Tooltip: Plays 'Universal Collapse' by DM DOKURO
+			}
+
+			DragonfollyMusicBox: {
+				DisplayName: Music Box (Dragonfolly)
+				Tooltip: Plays 'Murderswarm' by DM DOKURO
+			}
+
+			ExoMechsMusicBox: {
+				DisplayName: Music Box (Exo Mechs)
+				Tooltip: Plays 'Inferior Fabrications' by PinpinNeon
+			}
+
+			HiveMindMusicBox: {
+				DisplayName: Music Box (Hive Mind)
+				Tooltip: Plays 'The Filthy Mind' by DM DOKURO and SixteenInMono
+			}
+
+			LeviathanMusicBox: {
+				DisplayName: Music Box (Leviathan)
+				Tooltip: Plays 'Forbidden Lullaby' by DM DOKURO
+			}
+
+			OldDukeMusicBox: {
+				DisplayName: Music Box (Old Duke)
+				Tooltip: Plays 'Toxic Wisdom' by DM DOKURO
+			}
+
+			PerforatorsMusicBox: {
+				DisplayName: Music Box (Perforators)
+				Tooltip: Plays 'Blood Coagulant' by DM DOKURO and SixteenInMono
+			}
+
+			PlaguebringerGoliathMusicBox: {
+				DisplayName: Music Box (Plaguebringer Goliath)
+				Tooltip: Plays 'Fly of Beelzebub' by DM DOKURO
+			}
+
+			PolterghastMusicBox: {
+				DisplayName: Music Box (Polterghast)
+				Tooltip: Plays 'Feral Amalgamation' by DM DOKURO
+			}
+
+			ProfanedGuardiansMusicBox: {
+				DisplayName: Music Box (Profaned Guardians)
+				Tooltip: Plays 'Unholy Ambush' by DM DOKURO
+			}
+
+			ProvidenceMusicBox: {
+				DisplayName: Music Box (Providence)
+				Tooltip: Plays 'Unholy Insurgency' by DM DOKURO
+			}
+
+			RavagerMusicBox: {
+				DisplayName: Music Box (Ravager)
+				Tooltip: Plays 'Open Frenzy' by DM DOKURO
+			}
+
+			SignusMusicBox: {
+				DisplayName: Music Box (Signus)
+				Tooltip: Plays 'Servants of the Scourge (Type S)' by DM DOKURO
+			}
+
+			SlimeGodMusicBox: {
+				DisplayName: Music Box (Slime God)
+				Tooltip: Plays 'Return to Slime' by DM DOKURO and SixteenInMono
+			}
+
+			StormWeaverMusicBox: {
+				DisplayName: Music Box (Storm Weaver)
+				Tooltip: Plays 'Servants of the Scourge (Type W)' by DM DOKURO
+			}
+
+			SulphurousSeaDayMusicBox: {
+				DisplayName: Music Box (Sulphurous Sea Day)
+				Tooltip: Plays 'wasteland' by DM DOKURO
+			}
+
+			SulphurousSeaNightMusicBox: {
+				DisplayName: Music Box (Sulphurous Sea Night)
+				Tooltip: Plays 'caustic tides' by Heart Plus Up!
+			}
+
+			SunkenSeaMusicBox: {
+				DisplayName: Music Box (Sunken Sea)
+				Tooltip: Plays 'sanctuary' by DM DOKURO
+			}
+
+			YharonLegacyMusicBox: {
+				DisplayName: Music Box (Yharon - Legacy)
+				Tooltip: Plays 'Infernal Catharsis' by DM DOKURO
+			}
+
+			YharonPhase1MusicBox: {
+				DisplayName: Music Box (Yharon - Phase 1)
+				Tooltip: Plays 'Infernal Catharsis (Rebirth)' by DM DOKURO
+			}
+
+			YharonPhase2MusicBox: {
+				DisplayName: Music Box (Yharon - Phase 2)
+				Tooltip: Plays 'Roar of the Jungle Dragon' by DM DOKURO
+			}
+		}
+
+		Tiles: {
+			AbyssLayer2MusicBox.MapEntry: Music Box
+			AbyssLayer3MusicBox.MapEntry: Music Box
+			AbyssLayer4MusicBox.MapEntry: Music Box
+			AcidRainTier1MusicBox.MapEntry: Music Box
+			AcidRainTier3MusicBox.MapEntry: Music Box
+			AdultEidolonWyrmMusicBox.MapEntry: Music Box
+			AnahitaMusicBox.MapEntry: Music Box
+			AnahitasLureMusicBox.MapEntry: Music Box
+			AquaticScourgeMusicBox.MapEntry: Music Box
+			AstralInfectionMusicBox.MapEntry: Music Box
+			AstralInfectionUndergroundMusicBox.MapEntry: Music Box
+			AstrumAureusMusicBox.MapEntry: Music Box
+			AstrumDeusMusicBox.MapEntry: Music Box
+			BioLabMusicBox.MapEntry: Music Box
+			BossRushTier1MusicBox.MapEntry: Music Box
+			BossRushTier2MusicBox.MapEntry: Music Box
+			BossRushTier3MusicBox.MapEntry: Music Box
+			BossRushTier4MusicBox.MapEntry: Music Box
+			BossRushTier5MusicBox.MapEntry: Music Box
+			BrimstoneCragsMusicBox.MapEntry: Music Box
+			BrimstoneElementalMusicBox.MapEntry: Music Box
+			CalamitasCloneMusicBox.MapEntry: Music Box
+			CalamitasDefeatMusicBox.MapEntry: Music Box
+			CalamitasPhase1MusicBox.MapEntry: Music Box
+			CalamitasPhase2MusicBox.MapEntry: Music Box
+			CalamitasPhase3MusicBox.MapEntry: Music Box
+			CalamityTitleMusicBox.MapEntry: Music Box
+			CeaselessVoidMusicBox.MapEntry: Music Box
+			CrabulonMusicBox.MapEntry: Music Box
+			CryogenMusicBox.MapEntry: Music Box
+			DesertScourgeMusicBox.MapEntry: Music Box
+			DevourerofGodsPhase1MusicBox.MapEntry: Music Box
+			DevourerofGodsPhase2MusicBox.MapEntry: Music Box
+			DragonfollyMusicBox.MapEntry: Music Box
+			ExoMechsMusicBox.MapEntry: Music Box
+			HiveMindMusicBox.MapEntry: Music Box
+			LeviathanMusicBox.MapEntry: Music Box
+			OldDukeMusicBox.MapEntry: Music Box
+			PerforatorsMusicBox.MapEntry: Music Box
+			PlaguebringerGoliathMusicBox.MapEntry: Music Box
+			PolterghastMusicBox.MapEntry: Music Box
+			ProfanedGuardiansMusicBox.MapEntry: Music Box
+			ProvidenceMusicBox.MapEntry: Music Box
+			RavagerMusicBox.MapEntry: Music Box
+			SignusMusicBox.MapEntry: Music Box
+			SlimeGodMusicBox.MapEntry: Music Box
+			StormWeaverMusicBox.MapEntry: Music Box
+			SulphurousSeaDayMusicBox.MapEntry: Music Box
+			SulphurousSeaNightMusicBox.MapEntry: Music Box
+			SunkenSeaMusicBox.MapEntry: Music Box
+			YharonLegacyMusicBox.MapEntry: Music Box
+			YharonPhase1MusicBox.MapEntry: Music Box
+			YharonPhase2MusicBox.MapEntry: Music Box
+		}
+	}
+}

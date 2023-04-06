@@ -10,9 +10,9 @@ namespace CalamityModMusic.Items.Placeables
     {
         public override void SetStaticDefaults()
         {
-            SacrificeTotal = 1;
-            DisplayName.SetDefault("Music Box (Acid Rain - Tiers 1 and 2)"); // Temporary, will change to just Tier 1 once Acid Rain Tier 2 is complete
-            Tooltip.SetDefault("Plays 'corrosion!' by RoverdriveX");
+            Item.ResearchUnlockCount = 1;
+            // DisplayName.SetDefault("Music Box (Acid Rain - Tiers 1 and 2)"); // Temporary, will change to just Tier 1 once Acid Rain Tier 2 is complete
+            // Tooltip.SetDefault("Plays 'corrosion!' by RoverdriveX");
         }
 
         public override void SetDefaults()

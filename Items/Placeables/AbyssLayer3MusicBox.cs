@@ -8,9 +8,9 @@ namespace CalamityModMusic.Items.Placeables
     {
         public override void SetStaticDefaults()
         {
-            SacrificeTotal = 1;
-            DisplayName.SetDefault("Music Box (Abyss - Layer 3)");
-            Tooltip.SetDefault("Plays 'R'LYEH' by RoverdriveX");
+            Item.ResearchUnlockCount = 1;
+            // DisplayName.SetDefault("Music Box (Abyss - Layer 3)");
+            // Tooltip.SetDefault("Plays 'R'LYEH' by RoverdriveX");
         }
 
         public override void SetDefaults()

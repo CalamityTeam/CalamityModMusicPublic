@@ -8,9 +8,9 @@ namespace CalamityModMusic.Items.Placeables
     {
         public override void SetStaticDefaults()
         {
-            SacrificeTotal = 1;
-            DisplayName.SetDefault("Music Box (Perforators)");
-            Tooltip.SetDefault("Plays 'Blood Coagulant' by DM DOKURO and SixteenInMono");
+            Item.ResearchUnlockCount = 1;
+            // DisplayName.SetDefault("Music Box (Perforators)");
+            // Tooltip.SetDefault("Plays 'Blood Coagulant' by DM DOKURO and SixteenInMono");
         }
 
         public override void SetDefaults()

@@ -8,9 +8,9 @@ namespace CalamityModMusic.Items.Placeables
     {
         public override void SetStaticDefaults()
         {
-            SacrificeTotal = 1;
-            DisplayName.SetDefault("Music Box (Boss Rush - Tier 3)");
-            Tooltip.SetDefault("Plays 'Reign of Lords' by CDMusic");
+            Item.ResearchUnlockCount = 1;
+            // DisplayName.SetDefault("Music Box (Boss Rush - Tier 3)");
+            // Tooltip.SetDefault("Plays 'Reign of Lords' by CDMusic");
         }
 
         public override void SetDefaults()

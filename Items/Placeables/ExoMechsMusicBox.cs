@@ -8,9 +8,9 @@ namespace CalamityModMusic.Items.Placeables
     {
         public override void SetStaticDefaults()
         {
-            SacrificeTotal = 1;
-            DisplayName.SetDefault("Music Box (Exo Mechs)");
-            Tooltip.SetDefault("Plays 'Inferior Fabrications' by PinpinNeon");
+            Item.ResearchUnlockCount = 1;
+            // DisplayName.SetDefault("Music Box (Exo Mechs)");
+            // Tooltip.SetDefault("Plays 'Inferior Fabrications' by PinpinNeon");
         }
 
         public override void SetDefaults()

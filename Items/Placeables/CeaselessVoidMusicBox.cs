@@ -8,9 +8,9 @@ namespace CalamityModMusic.Items.Placeables
     {
         public override void SetStaticDefaults()
         {
-            SacrificeTotal = 1;
-            DisplayName.SetDefault("Music Box (Ceaseless Void)");
-            Tooltip.SetDefault("Plays 'Servants of the Scourge (Type V)' by DM DOKURO");
+            Item.ResearchUnlockCount = 1;
+            // DisplayName.SetDefault("Music Box (Ceaseless Void)");
+            // Tooltip.SetDefault("Plays 'Servants of the Scourge (Type V)' by DM DOKURO");
         }
 
         public override void SetDefaults()

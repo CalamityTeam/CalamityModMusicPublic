@@ -8,9 +8,9 @@ namespace CalamityModMusic.Items.Placeables
     {
         public override void SetStaticDefaults()
         {
-            SacrificeTotal = 1;
-            DisplayName.SetDefault("Music Box (Abyss - Layer 4)");
-            Tooltip.SetDefault("Plays 'void' by DM DOKURO");
+            Item.ResearchUnlockCount = 1;
+            // DisplayName.SetDefault("Music Box (Abyss - Layer 4)");
+            // Tooltip.SetDefault("Plays 'void' by DM DOKURO");
         }
 
         public override void SetDefaults()

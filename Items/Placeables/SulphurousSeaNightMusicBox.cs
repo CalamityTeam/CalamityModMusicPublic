@@ -7,9 +7,9 @@ namespace CalamityModMusic.Items.Placeables
     {
         public override void SetStaticDefaults()
         {
-            SacrificeTotal = 1;
-            DisplayName.SetDefault("Music Box (Sulphurous Sea Night)");
-            Tooltip.SetDefault("Plays 'caustic tides' by Heart Plus Up!");
+            Item.ResearchUnlockCount = 1;
+            // DisplayName.SetDefault("Music Box (Sulphurous Sea Night)");
+            // Tooltip.SetDefault("Plays 'caustic tides' by Heart Plus Up!");
         }
 
         public override void SetDefaults()

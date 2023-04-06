@@ -8,9 +8,9 @@ namespace CalamityModMusic.Items.Placeables
     {
         public override void SetStaticDefaults()
         {
-            SacrificeTotal = 1;
-            DisplayName.SetDefault("Music Box (Signus)");
-            Tooltip.SetDefault("Plays 'Servants of the Scourge (Type S)' by DM DOKURO");
+            Item.ResearchUnlockCount = 1;
+            // DisplayName.SetDefault("Music Box (Signus)");
+            // Tooltip.SetDefault("Plays 'Servants of the Scourge (Type S)' by DM DOKURO");
         }
 
         public override void SetDefaults()

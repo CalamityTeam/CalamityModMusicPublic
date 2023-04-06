@@ -8,9 +8,9 @@ namespace CalamityModMusic.Items.Placeables
     {
         public override void SetStaticDefaults()
         {
-            SacrificeTotal = 1;
-            DisplayName.SetDefault("Music Box (Acid Rain - Tier 3)");
-            Tooltip.SetDefault("Plays 'nuclear monsoon' by PinpinNeon");
+            Item.ResearchUnlockCount = 1;
+            // DisplayName.SetDefault("Music Box (Acid Rain - Tier 3)");
+            // Tooltip.SetDefault("Plays 'nuclear monsoon' by PinpinNeon");
         }
 
         public override void SetDefaults()

@@ -9,9 +9,9 @@ namespace CalamityModMusic.Items.Placeables
     {
         public override void SetStaticDefaults()
         {
-            SacrificeTotal = 1;
-            DisplayName.SetDefault("Music Box (Calamity Title)");
-            Tooltip.SetDefault("Plays 'The Tale of a Cruel World' by DM DOKURO");
+            Item.ResearchUnlockCount = 1;
+            // DisplayName.SetDefault("Music Box (Calamity Title)");
+            // Tooltip.SetDefault("Plays 'The Tale of a Cruel World' by DM DOKURO");
         }
 
         public override void SetDefaults()

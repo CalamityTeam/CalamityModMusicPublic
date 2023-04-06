@@ -8,9 +8,9 @@ namespace CalamityModMusic.Items.Placeables
     {
         public override void SetStaticDefaults()
         {
-            SacrificeTotal = 1;
-            DisplayName.SetDefault("Music Box (Astral Infection)");
-            Tooltip.SetDefault("Plays 'The Heaven-Sent Abomination' by DM DOKURO");
+            Item.ResearchUnlockCount = 1;
+            // DisplayName.SetDefault("Music Box (Astral Infection)");
+            // Tooltip.SetDefault("Plays 'The Heaven-Sent Abomination' by DM DOKURO");
         }
 
         public override void SetDefaults()
