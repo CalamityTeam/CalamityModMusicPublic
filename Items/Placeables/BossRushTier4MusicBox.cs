@@ -8,7 +8,8 @@ namespace CalamityModMusic.Items.Placeables
     {
         public override void SetStaticDefaults()
         {
-            //Item.ResearchUnlockCount = 1;
+            // Unobtainable
+            Item.ResearchUnlockCount = 0;
         }
 
         public override void SetDefaults()
