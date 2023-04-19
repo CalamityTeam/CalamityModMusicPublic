@@ -6,11 +6,6 @@ namespace CalamityModMusic.Items.Placeables
     [LegacyName("ProvidenceMusicbox")]
     public class ProvidenceMusicBox : ModItem
     {
-        public override void SetStaticDefaults()
-        {
-            Item.ResearchUnlockCount = 1;
-        }
-
         public override void SetDefaults()
         {
             Item.useStyle = ItemUseStyleID.Swing;

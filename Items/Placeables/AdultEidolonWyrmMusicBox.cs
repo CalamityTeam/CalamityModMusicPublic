@@ -6,11 +6,6 @@ namespace CalamityModMusic.Items.Placeables
     [LegacyName("AdultEidolonWyrmMusicbox")]
     public class AdultEidolonWyrmMusicBox : ModItem
     {
-        public override void SetStaticDefaults()
-        {
-            Item.ResearchUnlockCount = 1;
-        }
-
         public override void SetDefaults()
         {
             Item.useStyle = ItemUseStyleID.Swing;

@@ -6,11 +6,6 @@ namespace CalamityModMusic.Items.Placeables
     [LegacyName("BossRushTier3MusicboxItem")]
     public class BossRushTier3MusicBox : ModItem
     {
-        public override void SetStaticDefaults()
-        {
-            Item.ResearchUnlockCount = 1;
-        }
-
         public override void SetDefaults()
         {
             Item.useStyle = ItemUseStyleID.Swing;

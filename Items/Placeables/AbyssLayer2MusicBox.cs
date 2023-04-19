@@ -6,11 +6,6 @@ namespace CalamityModMusic.Items.Placeables
     [LegacyName("HigherAbyssMusicbox")]
     public class AbyssLayer2MusicBox : ModItem
     {
-        public override void SetStaticDefaults()
-        {
-            Item.ResearchUnlockCount = 1;
-        }
-
         public override void SetDefaults()
         {
             Item.useStyle = ItemUseStyleID.Swing;
