@@ -22,7 +22,7 @@ namespace CalamityModMusic.Tiles
             TileObjectData.addTile(Type);
             TileID.Sets.DisableSmartCursor[Type] = true;
 
-            AddMapEntry(new Color(191, 142, 111), Language.GetOrRegister("Mods.CalamityModMusic.Tiles.MusicBoxes.MapEntry"));
+            AddMapEntry(new Color(191, 142, 111), Language.GetText("ItemName.MusicBox"));
         }
 
         public override void MouseOver(int i, int j)

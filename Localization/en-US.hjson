@@ -266,7 +266,5 @@ Mods: {
 				Tooltip: Plays 'Roar of the Jungle Dragon' by DM DOKURO
 			}
 		}
-
-		Tiles.MusicBoxes.MapEntry: Music Box
 	}
 }
