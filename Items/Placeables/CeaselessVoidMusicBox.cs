@@ -4,22 +4,8 @@ using Terraria.ID;
 namespace CalamityModMusic.Items.Placeables
 {
     [LegacyName("CeaselessVoidMusicbox")]
-    public class CeaselessVoidMusicBox : ModItem
+    public class CeaselessVoidMusicBox : MusicBox
     {
-        public override void SetDefaults()
-        {
-            Item.useStyle = ItemUseStyleID.Swing;
-            Item.useTurn = true;
-            Item.useAnimation = 15;
-            Item.useTime = 10;
-            Item.autoReuse = true;
-            Item.consumable = true;
-            Item.createTile = ModContent.TileType<Tiles.CeaselessVoidMusicBox>();
-            Item.width = 32;
-            Item.height = 26;
-            Item.rare = ItemRarityID.LightRed;
-            Item.value = 100000;
-            Item.accessory = true;
-        }
+        public override int MusicBoxTile => ModContent.TileType<Tiles.CeaselessVoidMusicBox>();
     }
 }

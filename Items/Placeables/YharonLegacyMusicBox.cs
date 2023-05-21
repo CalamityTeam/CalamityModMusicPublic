@@ -5,23 +5,9 @@ using Terraria.ModLoader;
 namespace CalamityModMusic.Items.Placeables
 {
     [LegacyName("Yharon1Musicbox")]
-    public class YharonLegacyMusicBox : ModItem
+    public class YharonLegacyMusicBox : MusicBox
     {
-        public override void SetDefaults()
-        {
-            Item.useStyle = ItemUseStyleID.Swing;
-            Item.useTurn = true;
-            Item.useAnimation = 15;
-            Item.useTime = 10;
-            Item.autoReuse = true;
-            Item.consumable = true;
-            Item.createTile = ModContent.TileType<Tiles.YharonLegacyMusicBox>();
-            Item.width = 32;
-            Item.height = 20;
-            Item.rare = ItemRarityID.LightRed;
-            Item.value = 100000;
-            Item.accessory = true;
-        }
+        public override int MusicBoxTile => ModContent.TileType<Tiles.YharonLegacyMusicBox>();
 
         public override void AddRecipes()
         {
@@ -35,7 +21,6 @@ namespace CalamityModMusic.Items.Placeables
 						AddIngredient(ItemID.MusicBox).
 						AddIngredient(calamity.Find<ModItem>("YharonSoulFragment").Type, 3).
 						AddTile(calamity.Find<ModTile>("CosmicAnvil").Type).
-                        AddCustomShimmerResult(ItemID.MusicBox).
 						Register();
 				}
 				catch

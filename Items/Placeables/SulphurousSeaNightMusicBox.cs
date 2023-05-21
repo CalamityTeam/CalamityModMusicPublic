@@ -3,22 +3,8 @@ using Terraria.ID;
 
 namespace CalamityModMusic.Items.Placeables
 {
-    public class SulphurousSeaNightMusicBox : ModItem
+    public class SulphurousSeaNightMusicBox : MusicBox
     {
-        public override void SetDefaults()
-        {
-            Item.useStyle = ItemUseStyleID.Swing;
-            Item.useTurn = true;
-            Item.useAnimation = 15;
-            Item.useTime = 10;
-            Item.autoReuse = true;
-            Item.consumable = true;
-            Item.createTile = ModContent.TileType<Tiles.SulphurousSeaNightMusicBox>();
-            Item.width = 32;
-            Item.height = 22;
-            Item.rare = ItemRarityID.LightRed;
-            Item.value = 100000;
-            Item.accessory = true;
-        }
+        public override int MusicBoxTile => ModContent.TileType<Tiles.SulphurousSeaNightMusicBox>();
     }
 }

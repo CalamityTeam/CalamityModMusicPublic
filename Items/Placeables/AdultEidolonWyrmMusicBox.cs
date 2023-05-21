@@ -4,23 +4,10 @@ using Terraria.ID;
 namespace CalamityModMusic.Items.Placeables
 {
     [LegacyName("AdultEidolonWyrmMusicbox")]
-    public class AdultEidolonWyrmMusicBox : ModItem
+    public class AdultEidolonWyrmMusicBox : MusicBox
     {
-        public override void SetDefaults()
-        {
-            Item.useStyle = ItemUseStyleID.Swing;
-            Item.useTurn = true;
-            Item.useAnimation = 15;
-            Item.useTime = 10;
-            Item.autoReuse = true;
-            Item.consumable = true;
-            Item.createTile = ModContent.TileType<Tiles.AdultEidolonWyrmMusicBox>();
-            Item.width = 32;
-            Item.height = 32;
-            Item.rare = ItemRarityID.LightRed;
-            Item.value = 100000;
-            Item.accessory = true;
-        }
+        public override int MusicBoxTile => ModContent.TileType<Tiles.AdultEidolonWyrmMusicBox>();
+
         public override void AddRecipes()
         {
             Mod calamity = CalamityModMusic.Instance.calamity;
@@ -35,7 +22,6 @@ namespace CalamityModMusic.Items.Placeables
                         AddIngredient(calamity.Find<ModItem>("Lumenyl").Type, 15).
                         AddIngredient(calamity.Find<ModItem>("RuinousSoul").Type, 3).
                         AddTile(TileID.LunarCraftingStation).
-                        AddCustomShimmerResult(ItemID.MusicBox).
                         Register();
                 }
                 catch

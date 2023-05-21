@@ -5,23 +5,9 @@ using Terraria.ModLoader;
 namespace CalamityModMusic.Items.Placeables
 {
     [LegacyName("CalamityMusicbox")]
-    public class CalamityTitleMusicBox : ModItem
+    public class CalamityTitleMusicBox : MusicBox
     {
-        public override void SetDefaults()
-        {
-            Item.useStyle = ItemUseStyleID.Swing;
-            Item.useTurn = true;
-            Item.useAnimation = 15;
-            Item.useTime = 10;
-            Item.autoReuse = true;
-            Item.consumable = true;
-            Item.createTile = ModContent.TileType<Tiles.CalamityTitleMusicBox>();
-            Item.width = 32;
-            Item.height = 32;
-            Item.rare = ItemRarityID.LightRed;
-            Item.value = 100000;
-            Item.accessory = true;
-        }
+        public override int MusicBoxTile => ModContent.TileType<Tiles.CalamityTitleMusicBox>();
 
         public override void AddRecipes()
         {
@@ -36,7 +22,6 @@ namespace CalamityModMusic.Items.Placeables
 						AddIngredient(calamity.Find<ModItem>("BrimstoneSlag").Type, 12).
 						AddIngredient(calamity.Find<ModItem>("EssenceofChaos").Type, 3).
 						AddTile(calamity.Find<ModTile>("AshenAltar").Type).
-                        AddCustomShimmerResult(ItemID.MusicBox).
                         Register();
 				}
 				catch

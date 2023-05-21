@@ -4,22 +4,8 @@ using Terraria.ID;
 namespace CalamityModMusic.Items.Placeables
 {
     [LegacyName("CalamitasMusicbox")]
-    public class CalamitasCloneMusicBox : ModItem
+    public class CalamitasCloneMusicBox : MusicBox
     {
-        public override void SetDefaults()
-        {
-            Item.useStyle = ItemUseStyleID.Swing;
-            Item.useTurn = true;
-            Item.useAnimation = 15;
-            Item.useTime = 10;
-            Item.autoReuse = true;
-            Item.consumable = true;
-            Item.createTile = ModContent.TileType<Tiles.CalamitasCloneMusicBox>();
-            Item.width = 32;
-            Item.height = 16;
-            Item.rare = ItemRarityID.LightRed;
-            Item.value = 100000;
-            Item.accessory = true;
-        }
+        public override int MusicBoxTile => ModContent.TileType<Tiles.CalamitasCloneMusicBox>();
     }
 }
