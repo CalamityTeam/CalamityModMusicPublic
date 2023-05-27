@@ -14,9 +14,14 @@ namespace CalamityModMusic.Items.Placeables
             ItemID.Sets.ShimmerTransformToItem[Type] = ItemID.MusicBox;
 
             if (!Obtainable)
+            {
                 Item.ResearchUnlockCount = 0;
+            }
         }
 
-        public override void SetDefaults() => Item.DefaultToMusicBox(MusicBoxTile, 0);
+        public override void SetDefaults()
+        {
+            Item.DefaultToMusicBox(MusicBoxTile, 0);
+        }
     }
 }
