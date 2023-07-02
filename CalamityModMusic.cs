@@ -7,7 +7,7 @@ namespace CalamityModMusic
     {
         public static CalamityModMusic Instance;
 
-        public const string CalamityWikiURL = "calamitymod.wiki.gg";
+        public const string CalamityWikiURL = "https://calamitymod.wiki.gg/wiki/{}";
 
         internal Mod wikithis = null;
         internal Mod calamity = null;
