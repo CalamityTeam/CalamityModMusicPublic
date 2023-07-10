@@ -183,7 +183,6 @@ namespace CalamityModMusic
             if (musicDisplay is null)
                 return;
 
-            Dictionary<string, short> songs = new();
             void AddMusic(string name, string author, string file)
             {
                 short slot = (short)MusicLoader.GetMusicSlot(Mod, $"Sounds/Music/{file}");
