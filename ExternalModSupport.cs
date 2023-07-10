@@ -195,7 +195,7 @@ namespace CalamityModMusic
             AddMusic("corrosion!", "RoverdriveX", "AcidRainTier1");
             AddMusic("nuclear monsoon", "PinpinNeon", "AcidRainTier3");
             AddMusic("Threats of The Ocean Floor", "DM DOKURO", "AdultEidolonWyrm");
-            AddMusic("Siren's War Cry", "DM DOKURO", "DM DOKURO");
+            AddMusic("Siren's War Cry", "DM DOKURO", "Anahita");
             AddMusic("Siren's Call", "DM DOKURO", "AnahitasLure");
             AddMusic("Outcast of the Sulphurous Seas", "DM DOKURO", "AquaticScourge");
             AddMusic("The Heaven-Sent Abomination", "DM DOKURO", "AstralInfection");
