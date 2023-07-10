@@ -12,6 +12,7 @@ namespace CalamityModMusic
         internal Mod wikithis = null;
         internal Mod calamity = null;
         internal Mod bossChecklist = null;
+        internal Mod musicDisplay = null;
 
         public CalamityModMusic() => Instance = this;
 
@@ -20,9 +21,11 @@ namespace CalamityModMusic
             wikithis = null;
             calamity = null;
             bossChecklist = null;
+            musicDisplay = null;
             ModLoader.TryGetMod("Wikithis", out wikithis);
             ModLoader.TryGetMod("CalamityMod", out calamity);
             ModLoader.TryGetMod("BossChecklist", out bossChecklist);
+            ModLoader.TryGetMod("MusicDisplay", out musicDisplay);
 
             if (!Main.dedServ)
             {
