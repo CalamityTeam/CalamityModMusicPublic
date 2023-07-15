@@ -184,10 +184,10 @@ namespace CalamityModMusic
             if (musicDisplay is null)
                 return;
 
-            void AddMusic(string songName, string author)
+            void AddMusic(string songKey, string authorKey)
             {
-                short slot = (short)MusicLoader.GetMusicSlot(Mod, $"Sounds/Music/{songName}");
-                musicDisplay.Call("AddMusic", slot, Language.GetTextValue("Mods.CalamityModMusic.ModSupport.MusicDisplay.SongNames." + songName), Language.GetTextValue("Mods.CalamityModMusic.ModSupport.MusicDisplay.Authors." + author), Mod.DisplayName);
+                short slot = (short)MusicLoader.GetMusicSlot(Mod, $"Sounds/Music/{songKey}");
+                musicDisplay.Call("AddMusic", slot, Language.GetTextValue("Mods.CalamityModMusic.ModSupport.MusicDisplay.SongNames." + songKey), Language.GetTextValue("Mods.CalamityModMusic.ModSupport.MusicDisplay.Authors." + authorKey), Mod.DisplayName);
             }
 
             AddMusic("AbyssLayer2", "DMDOKURO");
