@@ -1,5 +1,6 @@
 ﻿using CalamityModMusic.Items.Placeables;
 using System.Collections.Generic;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace CalamityModMusic
@@ -183,63 +184,63 @@ namespace CalamityModMusic
             if (musicDisplay is null)
                 return;
 
-            void AddMusic(string name, string author, string file)
+            void AddMusic(string songName, string author)
             {
-                short slot = (short)MusicLoader.GetMusicSlot(Mod, $"Sounds/Music/{file}");
-                musicDisplay.Call("AddMusic", slot, name, "by " + author, "Calamity Mod Music");
+                short slot = (short)MusicLoader.GetMusicSlot(Mod, $"Sounds/Music/{songName}");
+                musicDisplay.Call("AddMusic", slot, Language.GetTextValue("Mods.CalamityModMusic.ModSupport.MusicDisplay.SongNames." + songName), Language.GetTextValue("Mods.CalamityModMusic.ModSupport.MusicDisplay.Authors." + author), Mod.DisplayName);
             }
 
-            AddMusic("Hadopelagic Pressure", "DM DOKURO", "AbyssLayer2");
-            AddMusic("R'LYEH", "RoverdriveX", "AbyssLayer3");
-            AddMusic("void", "DM DOKURO", "AbyssLayer4");
-            AddMusic("corrosion!", "RoverdriveX", "AcidRainTier1");
-            AddMusic("nuclear monsoon", "PinpinNeon", "AcidRainTier3");
-            AddMusic("Threats of the Ocean Floor", "DM DOKURO", "AdultEidolonWyrm");
-            AddMusic("Siren's War Cry", "DM DOKURO", "Anahita");
-            AddMusic("Siren's Call", "DM DOKURO", "AnahitasLure");
-            AddMusic("Outcast of the Sulphurous Seas", "DM DOKURO", "AquaticScourge");
-            AddMusic("The Heaven-Sent Abomination", "DM DOKURO", "AstralInfection");
-            AddMusic("Treasures Within the Abomination", "DM DOKURO", "AstralInfectionUnderground");
-            AddMusic("Interstellar Stomper", "DM DOKURO", "AstrumAureus");
-            AddMusic("Pest of the Cosmos", "DM DOKURO", "AstrumDeus");
-            AddMusic("Engineer's Sanctum", "Heart Plus Up!", "BioLab");
-            AddMusic("Ensemble of Fools", "CDMusic", "BossRushTier1");
-            AddMusic("Onslaught of Beasts", "CDMusic", "BossRushTier2");
-            AddMusic("Reign of Lords", "CDMusic", "BossRushTier3");
-            AddMusic("The Step Below Hell", "DM DOKURO", "BrimstoneCrags");
-            AddMusic("Left Alone", "DM DOKURO", "BrimstoneElemental");
-            AddMusic("Raw, Unfiltered Calamity", "DM DOKURO", "CalamitasClone");
-            AddMusic("Stained, Brutal Calamity (Acceptance)", "DM DOKURO", "CalamitasDefeat");
-            AddMusic("Stained, Brutal Calamity (Grief)", "DM DOKURO", "CalamitasPhase1");
-            AddMusic("Stained, Brutal Calamity (Lament)", "DM DOKURO", "CalamitasPhase2");
-            AddMusic("Stained, Brutal Calamity (Epiphany)", "DM DOKURO", "CalamitasPhase3");
-            AddMusic("The Tale of a Cruel World", "DM DOKURO", "CalamityTitle");
-            AddMusic("Servants of the Scourge (Type V)", "DM DOKURO", "CeaselessVoid");
-            AddMusic("Infestation", "DM DOKURO", "Crabulon");
-            AddMusic("Antarctic Reinforcement", "DM DOKURO", "Cryogen");
-            AddMusic("Guardian of the Former Seas", "DM DOKURO", "DesertScourge");
-            AddMusic("Scourge of the Universe", "DM DOKURO", "DevourerofGodsPhase1");
-            AddMusic("Universal Collapse", "DM DOKURO", "DevourerofGodsPhase2");
-            AddMusic("Murderswarm", "DM DOKURO", "Dragonfolly");
-            AddMusic("Inferior Fabrications", "PinpinNeon", "ExoMechs");
-            AddMusic("The Filthy Mind", "DM DOKURO and SixteenInMono", "HiveMind");
-            AddMusic("Forbidden Lullaby", "DM DOKURO", "Leviathan");
-            AddMusic("Toxic Wisdom", "DM DOKURO", "OldDuke");
-            AddMusic("Blood Coagulant", "DM DOKURO and SixteenInMono", "Perforators");
-            AddMusic("Fly of Beelzebub", "DM DOKURO", "PlaguebringerGoliath");
-            AddMusic("Feral Amalgamation", "DM DOKURO", "Polterghast");
-            AddMusic("Unholy Ambush", "DM DOKURO", "ProfanedGuardians");
-            AddMusic("Unholy Insurgency", "DM DOKURO", "Providence");
-            AddMusic("Open Frenzy", "DM DOKURO", "Ravager");
-            AddMusic("Servants of the Scourge (Type S)", "DM DOKURO", "Signus");
-            AddMusic("Return to Slime", "DM DOKURO and SixteenInMono", "SlimeGod");
-            AddMusic("Servants of the Scourge (Type W)", "DM DOKURO", "StormWeaver");
-            AddMusic("wasteland", "DM DOKURO", "SulphurousSeaDay");
-            AddMusic("caustic tides", "Heart Plus Up!", "SulphurousSeaNight");
-            AddMusic("sanctuary", "DM DOKURO", "SunkenSea");
-            AddMusic("Infernal Catharsis", "DM DOKURO", "YharonLegacy");
-            AddMusic("Infernal Catharsis (Rebirth)", "DM DOKURO", "YharonPhase1");
-            AddMusic("Roar of the Jungle Dragon", "DM DOKURO", "YharonPhase2");
+            AddMusic("AbyssLayer2", "DMDOKURO");
+            AddMusic("AbyssLayer3", "RoverdriveX");
+            AddMusic("AbyssLayer4", "DMDOKURO");
+            AddMusic("AcidRainTier1", "RoverdriveX");
+            AddMusic("AcidRainTier3", "PinpinNeon");
+            AddMusic("AdultEidolonWyrm", "DMDOKURO");
+            AddMusic("Anahita", "DMDOKURO");
+            AddMusic("AnahitasLure", "DMDOKURO");
+            AddMusic("AquaticScourge", "DMDOKURO");
+            AddMusic("AstralInfection", "DMDOKURO");
+            AddMusic("AstralInfectionUnderground", "DMDOKURO");
+            AddMusic("AstrumAureus", "DMDOKURO");
+            AddMusic("AstrumDeus", "DMDOKURO");
+            AddMusic("BioLab", "HeartPlusUp");
+            AddMusic("BossRushTier1", "CDMusic");
+            AddMusic("BossRushTier2", "CDMusic");
+            AddMusic("BossRushTier3", "CDMusic");
+            AddMusic("BrimstoneCrags", "DMDOKURO");
+            AddMusic("BrimstoneElemental", "DMDOKURO");
+            AddMusic("CalamitasClone", "DMDOKURO");
+            AddMusic("CalamitasDefeat", "DMDOKURO");
+            AddMusic("CalamitasPhase1", "DMDOKURO");
+            AddMusic("CalamitasPhase2", "DMDOKURO");
+            AddMusic("CalamitasPhase3", "DMDOKURO");
+            AddMusic("CalamityTitle", "DMDOKURO");
+            AddMusic("CeaselessVoid", "DMDOKURO");
+            AddMusic("Crabulon", "DMDOKURO");
+            AddMusic("Cryogen", "DMDOKURO");
+            AddMusic("DesertScourge", "DMDOKURO");
+            AddMusic("DevourerofGodsPhase1", "DMDOKURO");
+            AddMusic("DevourerofGodsPhase2", "DMDOKURO");
+            AddMusic("Dragonfolly", "DMDOKURO");
+            AddMusic("ExoMechs", "PinpinNeon");
+            AddMusic("HiveMind", "DMDOKUROFeature");
+            AddMusic("Leviathan", "DMDOKURO");
+            AddMusic("OldDuke", "DMDOKURO");
+            AddMusic("Perforators", "DMDOKUROFeature");
+            AddMusic("PlaguebringerGoliath", "DMDOKURO");
+            AddMusic("Polterghast", "DMDOKURO");
+            AddMusic("ProfanedGuardians", "DMDOKURO");
+            AddMusic("Providence", "DMDOKURO");
+            AddMusic("Ravager", "DMDOKURO");
+            AddMusic("Signus", "DMDOKURO");
+            AddMusic("SlimeGod", "DMDOKUROFeature");
+            AddMusic("StormWeaver", "DMDOKURO");
+            AddMusic("SulphurousSeaDay", "DMDOKURO");
+            AddMusic("SulphurousSeaNight", "HeartPlusUp");
+            AddMusic("SunkenSea", "DMDOKURO");
+            AddMusic("YharonLegacy", "DMDOKURO");
+            AddMusic("YharonPhase1", "DMDOKURO");
+            AddMusic("YharonPhase2", "DMDOKURO");
         }
     }
 }

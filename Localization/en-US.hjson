@@ -266,5 +266,73 @@ Mods: {
 				Tooltip: Plays 'Roar of the Jungle Dragon' by DM DOKURO
 			}
 		}
+
+		ModSupport: {
+			MusicDisplay: {
+				SongNames: {
+					AbyssLayer2: Hadopelagic Pressure
+					AbyssLayer3: R'LYEH
+					AbyssLayer4: void
+					AcidRainTier1: corrosion!
+					AcidRainTier3: nuclear monsoon
+					AdultEidolonWyrm: Threats of the Ocean Floor
+					Anahita: Siren's War Cry
+					AnahitasLure: Siren's Call
+					AquaticScourge: Outcast of the Sulphurous Seas
+					AstralInfection: The Heaven-Sent Abomination
+					AstralInfectionUnderground: Treasures Within the Abomination
+					AstrumAureus: Interstellar Stomper
+					AstrumDeus: Pest of the Cosmos
+					BioLab: Engineer's Sanctum
+					BossRushTier1: Ensemble of Fools
+					BossRushTier2: Onslaught of Beasts
+					BossRushTier3: Reign of Lords
+					BrimstoneCrags: The Step Below Hell
+					BrimstoneElemental: Left Alone
+					CalamitasClone: Raw, Unfiltered Calamity
+					CalamitasDefeat: Stained, Brutal Calamity (Acceptance)
+					CalamitasPhase1: Stained, Brutal Calamity (Grief)
+					CalamitasPhase2: Stained, Brutal Calamity (Lament)
+					CalamitasPhase3: Stained, Brutal Calamity (Epiphany)
+					CalamityTitle: The Tale of a Cruel World
+					CeaselessVoid: Servants of the Scourge (Type V)
+					Crabulon: Infestation
+					Cryogen: Antarctic Reinforcement
+					DesertScourge: Guardian of the Former Seas
+					DevourerofGodsPhase1: Scourge of the Universe
+					DevourerofGodsPhase2: Universal Collapse
+					Dragonfolly: Murderswarm
+					ExoMechs: Inferior Fabrications
+					HiveMind: The Filthy Mind
+					Leviathan: Forbidden Lullaby
+					OldDuke: Toxic Wisdom
+					Perforators: Blood Coagulant
+					PlaguebringerGoliath: Fly of Beelzebub
+					Polterghast: Feral Amalgamation
+					ProfanedGuardians: Unholy Ambush
+					Providence: Unholy Insurgency
+					Ravager: Open Frenzy
+					Signus: Servants of the Scourge (Type S)
+					SlimeGod: Return to Slime
+					StormWeaver: Servants of the Scourge (Type W)
+					SulphurousSeaDay: wasteland
+					SulphurousSeaNight: caustic tides
+					SunkenSea: sanctuary
+					YharonLegacy: Infernal Catharsis
+					YharonPhase1: Infernal Catharsis (Rebirth)
+					YharonPhase2: Roar of the Jungle Dragon
+				}
+
+				Authors: {
+					AquaSG: by AquaSG
+					CDMusic: by CDMusic
+					DMDOKURO: by DM DOKURO
+					DMDOKUROFeature: by DM DOKURO and SixteenInMono
+					HeartPlusUp: by Heart Plus Up!
+					PinpinNeon: by PinpinNeon
+					RoverdriveX: by RoverdriveX
+				}
+			}
+		}
 	}
 }
