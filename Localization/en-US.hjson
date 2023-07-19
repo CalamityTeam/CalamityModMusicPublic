@@ -1,6 +1,11 @@
 Mods: {
 	CalamityModMusic: {
 		Items: {
+			AbyssLayer1MusicBox: {
+				DisplayName: Music Box (Abyss - Layer 1)
+				Tooltip: Plays 'hesitation' by Heart Plus Up!
+			}
+
 			AbyssLayer2MusicBox: {
 				DisplayName: Music Box (Abyss - Layer 2)
 				Tooltip: Plays 'Hadopelagic Pressure' by DM DOKURO
@@ -270,6 +275,7 @@ Mods: {
 		ModSupport: {
 			MusicDisplay: {
 				SongNames: {
+					AbyssLayer1: hesitation
 					AbyssLayer2: Hadopelagic Pressure
 					AbyssLayer3: R'LYEH
 					AbyssLayer4: void

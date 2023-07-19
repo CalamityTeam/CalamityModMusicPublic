@@ -69,6 +69,7 @@ namespace CalamityModMusic
                 musicDisplay.Call("AddMusic", slot, Language.GetTextValue("Mods.CalamityModMusic.ModSupport.MusicDisplay.SongNames." + songKey), Language.GetTextValue("Mods.CalamityModMusic.ModSupport.MusicDisplay.Authors." + authorKey), Mod.DisplayName);
             }
 
+            AddMusic("AbyssLayer1", "HeartPlusUp");
             AddMusic("AbyssLayer2", "DMDOKURO");
             AddMusic("AbyssLayer3", "RoverdriveX");
             AddMusic("AbyssLayer4", "DMDOKURO");

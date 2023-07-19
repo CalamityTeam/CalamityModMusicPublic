@@ -1,6 +1,6 @@
 ﻿using Terraria;
 using Terraria.ModLoader;
-// using AbyssLayer1MusicBox = CalamityModMusic.Items.Placeables.AbyssLayer1MusicBox;
+using AbyssLayer1MusicBox = CalamityModMusic.Items.Placeables.AbyssLayer1MusicBox;
 using AbyssLayer2MusicBox = CalamityModMusic.Items.Placeables.AbyssLayer2MusicBox;
 using AbyssLayer3MusicBox = CalamityModMusic.Items.Placeables.AbyssLayer3MusicBox;
 using AbyssLayer4MusicBox = CalamityModMusic.Items.Placeables.AbyssLayer4MusicBox;
@@ -109,7 +109,7 @@ namespace CalamityModMusic
                 AddMusicBox("Sounds/Music/YharonPhase2", ModContent.ItemType<YharonPhase2MusicBox>(), ModContent.TileType<Tiles.YharonPhase2MusicBox>());
 
                 // Biome Music.
-                //AddMusicBox("Sounds/Music/AbyssLayer1", ModContent.ItemType<AbyssLayer1MusicBox>(), ModContent.TileType<Tiles.AbyssLayer1MusicBox>());
+                AddMusicBox("Sounds/Music/AbyssLayer1", ModContent.ItemType<AbyssLayer1MusicBox>(), ModContent.TileType<Tiles.AbyssLayer1MusicBox>());
                 AddMusicBox("Sounds/Music/AbyssLayer2", ModContent.ItemType<AbyssLayer2MusicBox>(), ModContent.TileType<Tiles.AbyssLayer2MusicBox>());
                 AddMusicBox("Sounds/Music/AbyssLayer3", ModContent.ItemType<AbyssLayer3MusicBox>(), ModContent.TileType<Tiles.AbyssLayer3MusicBox>());
                 AddMusicBox("Sounds/Music/AbyssLayer4", ModContent.ItemType<AbyssLayer4MusicBox>(), ModContent.TileType<Tiles.AbyssLayer4MusicBox>());
