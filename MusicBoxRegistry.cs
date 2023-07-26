@@ -7,7 +7,6 @@ using AbyssLayer4MusicBox = CalamityModMusic.Items.Placeables.AbyssLayer4MusicBo
 using AcidRainTier1MusicBox = CalamityModMusic.Items.Placeables.AcidRainTier1MusicBox;
 // using AcidRainTier2MusicBox = CalamityModMusic.Items.Placeables.AcidRainTier2MusicBox;
 using AcidRainTier3MusicBox = CalamityModMusic.Items.Placeables.AcidRainTier3MusicBox;
-using AdultEidolonWyrmMusicBox = CalamityModMusic.Items.Placeables.AdultEidolonWyrmMusicBox;
 using AnahitaMusicBox = CalamityModMusic.Items.Placeables.AnahitaMusicBox;
 using AnahitasLureMusicBox = CalamityModMusic.Items.Placeables.AnahitasLureMusicBox;
 using AquaticScourgeMusicBox = CalamityModMusic.Items.Placeables.AquaticScourgeMusicBox;
@@ -43,6 +42,7 @@ using OldDukeMusicBox = CalamityModMusic.Items.Placeables.OldDukeMusicBox;
 using PerforatorsMusicBox = CalamityModMusic.Items.Placeables.PerforatorsMusicBox;
 using PlaguebringerGoliathMusicBox = CalamityModMusic.Items.Placeables.PlaguebringerGoliathMusicBox;
 using PolterghastMusicBox = CalamityModMusic.Items.Placeables.PolterghastMusicBox;
+using PrimordialWyrmMusicBox = CalamityModMusic.Items.Placeables.PrimordialWyrmMusicBox;
 using ProfanedGuardiansMusicBox = CalamityModMusic.Items.Placeables.ProfanedGuardiansMusicBox;
 using ProvidenceMusicBox = CalamityModMusic.Items.Placeables.ProvidenceMusicBox;
 using RavagerMusicBox = CalamityModMusic.Items.Placeables.RavagerMusicBox;
@@ -72,7 +72,6 @@ namespace CalamityModMusic
             if (!Main.dedServ)
             {
                 // Boss Music - Alphabetised.
-                AddMusicBox("Sounds/Music/AdultEidolonWyrm", ModContent.ItemType<AdultEidolonWyrmMusicBox>(), ModContent.TileType<Tiles.AdultEidolonWyrmMusicBox>());
                 AddMusicBox("Sounds/Music/Anahita", ModContent.ItemType<AnahitaMusicBox>(), ModContent.TileType<Tiles.AnahitaMusicBox>());
                 AddMusicBox("Sounds/Music/AnahitasLure", ModContent.ItemType<AnahitasLureMusicBox>(), ModContent.TileType<Tiles.AnahitasLureMusicBox>());
                 AddMusicBox("Sounds/Music/AquaticScourge", ModContent.ItemType<AquaticScourgeMusicBox>(), ModContent.TileType<Tiles.AquaticScourgeMusicBox>());
@@ -98,6 +97,7 @@ namespace CalamityModMusic
                 AddMusicBox("Sounds/Music/Perforators", ModContent.ItemType<PerforatorsMusicBox>(), ModContent.TileType<Tiles.PerforatorsMusicBox>());
                 AddMusicBox("Sounds/Music/PlaguebringerGoliath", ModContent.ItemType<PlaguebringerGoliathMusicBox>(), ModContent.TileType<Tiles.PlaguebringerGoliathMusicBox>());
                 AddMusicBox("Sounds/Music/Polterghast", ModContent.ItemType<PolterghastMusicBox>(), ModContent.TileType<Tiles.PolterghastMusicBox>());
+                AddMusicBox("Sounds/Music/PrimordialWyrm", ModContent.ItemType<PrimordialWyrmMusicBox>(), ModContent.TileType<Tiles.PrimordialWyrmMusicBox>());
                 AddMusicBox("Sounds/Music/ProfanedGuardians", ModContent.ItemType<ProfanedGuardiansMusicBox>(), ModContent.TileType<Tiles.ProfanedGuardiansMusicBox>());
                 AddMusicBox("Sounds/Music/Providence", ModContent.ItemType<ProvidenceMusicBox>(), ModContent.TileType<Tiles.ProvidenceMusicBox>()); //Seamless
                 AddMusicBox("Sounds/Music/Ravager", ModContent.ItemType<RavagerMusicBox>(), ModContent.TileType<Tiles.RavagerMusicBox>());

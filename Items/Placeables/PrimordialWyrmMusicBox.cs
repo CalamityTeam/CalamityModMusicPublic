@@ -3,10 +3,10 @@ using Terraria.ID;
 
 namespace CalamityModMusic.Items.Placeables
 {
-    [LegacyName("AdultEidolonWyrmMusicbox")]
-    public class AdultEidolonWyrmMusicBox : MusicBox
+    [LegacyName("AdultEidolonWyrmMusicbox", "AdultEidolonWyrmMusicBox")]
+    public class PrimordialWyrmMusicBox : MusicBox
     {
-        public override int MusicBoxTile => ModContent.TileType<Tiles.AdultEidolonWyrmMusicBox>();
+        public override int MusicBoxTile => ModContent.TileType<Tiles.PrimordialWyrmMusicBox>();
 
         public override void AddRecipes()
         {

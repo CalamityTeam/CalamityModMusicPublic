@@ -74,7 +74,6 @@ namespace CalamityModMusic
             AddMusic("AbyssLayer4", "DMDOKURO");
             AddMusic("AcidRainTier1", "RoverdriveX");
             AddMusic("AcidRainTier3", "PinpinNeon");
-            AddMusic("AdultEidolonWyrm", "DMDOKURO");
             AddMusic("Anahita", "DMDOKURO");
             AddMusic("AnahitasLure", "DMDOKURO");
             AddMusic("AquaticScourge", "DMDOKURO");
@@ -108,6 +107,7 @@ namespace CalamityModMusic
             AddMusic("Perforators", "DMDOKUROFeature");
             AddMusic("PlaguebringerGoliath", "DMDOKURO");
             AddMusic("Polterghast", "DMDOKURO");
+            AddMusic("PrimordialWyrm", "DMDOKURO");
             AddMusic("ProfanedGuardians", "DMDOKURO");
             AddMusic("Providence", "DMDOKURO");
             AddMusic("Ravager", "DMDOKURO");

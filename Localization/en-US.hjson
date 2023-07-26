@@ -26,11 +26,6 @@ Mods: {
 				Tooltip: Plays 'nuclear monsoon' by PinpinNeon
 			}
 
-			AdultEidolonWyrmMusicBox: {
-				DisplayName: Music Box (Adult Eidolon Wyrm)
-				Tooltip: Plays 'Threats of the Ocean Floor' by DM DOKURO
-			}
-
 			AnahitaMusicBox: {
 				DisplayName: Music Box (Anahita)
 				Tooltip: Plays 'Siren's War Cry' by DM DOKURO
@@ -206,6 +201,11 @@ Mods: {
 				Tooltip: Plays 'Feral Amalgamation' by DM DOKURO
 			}
 
+			PrimordialWyrmMusicBox: {
+				DisplayName: Music Box (Primordial Wyrm)
+				Tooltip: Plays 'Threats of the Ocean Floor' by DM DOKURO
+			}
+
 			ProfanedGuardiansMusicBox: {
 				DisplayName: Music Box (Profaned Guardians)
 				Tooltip: Plays 'Unholy Ambush' by DM DOKURO
@@ -275,7 +275,6 @@ Mods: {
 					AbyssLayer4: void
 					AcidRainTier1: corrosion!
 					AcidRainTier3: nuclear monsoon
-					AdultEidolonWyrm: Threats of the Ocean Floor
 					Anahita: Siren's War Cry
 					AnahitasLure: Siren's Call
 					AquaticScourge: Outcast of the Sulphurous Seas
@@ -309,6 +308,7 @@ Mods: {
 					Perforators: Blood Coagulant
 					PlaguebringerGoliath: Fly of Beelzebub
 					Polterghast: Feral Amalgamation
+					PrimordialWyrm: Threats of the Ocean Floor
 					ProfanedGuardians: Unholy Ambush
 					Providence: Unholy Insurgency
 					Ravager: Open Frenzy
