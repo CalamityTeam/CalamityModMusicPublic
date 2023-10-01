@@ -1,6 +1,8 @@
-# CalamityModMusic
+# Calamity Music Mod
 - [Official site](https://calamitymod.com/)
 - [Steam Workshop](https://calamitymod.com/downloadmusic/)
+- [Discord](https://discord.gg/calamity)
+- [Official Wiki](https://calamitymod.wiki.gg/)
 
 This is the source code for the Calamity Music Mod.
 
