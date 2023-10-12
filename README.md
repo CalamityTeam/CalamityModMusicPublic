@@ -1,4 +1,5 @@
 # Calamity Music Mod
+[![Discord](https://img.shields.io/discord/225030931008847874)](https://discord.gg/calamity)
 - [Official site](https://calamitymod.com/)
 - [Steam Workshop](https://calamitymod.com/downloadmusic/)
 - [Discord](https://discord.gg/calamity)
