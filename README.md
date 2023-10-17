@@ -4,7 +4,10 @@
 - [Steam Workshop](https://calamitymod.com/downloadmusic/)
 - [Discord](https://discord.gg/calamity)
 - [Official Wiki](https://calamitymod.wiki.gg/)
+- [Patreon](https://patreon.com/fabsol)
 
-This is the source code for the Calamity Music Mod.
+The Calamity Music Mod is a small Terraria mod which adds Calamity's soundtrack to the game, along with music boxes for each song on the soundtrack. It is intended to be used alongside the Calamity Mod, but can be used alone. The mod must be installed using [tModLoader](https://github.com/tModLoader/tModLoader).
 
-The Calamity Dev Team does not expect any collaboration on the Music Mod, but this repository exists for transparency and visibility.
+**Note:** This repository contains only the latest public release of the Calamity Music Mod and any public contributions made since then.
+
+Active development by Calamity developers occurs on a separate, private repository. Contributions made here will be cherry picked into that repository. When an update is released to the Steam Workshop, the `1.4.4-release` branch is replaced with the matching branch from the private repository.
