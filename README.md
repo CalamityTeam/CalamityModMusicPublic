@@ -12,6 +12,8 @@ The Calamity Music Mod is a small Terraria mod which adds Calamity's soundtrack 
 
 Active development by Calamity developers occurs on a separate, private repository. Contributions made here will be cherry picked into that repository. When an update is released to the Steam Workshop, the `1.4.4-release` branch is replaced with the matching branch from the private repository.
 
+Please do not submit resprites via pull requests. Instead, go to the [Calamity Art Discord](https://discord.gg/CKByxd5) and use the Asset Submission system if you want to propose a resprite for Calamity.
+
 **Do not redistribute the Calamity Music Mod.** Creating your own builds of the mod from an in-development sourcetree will cause confusion in the community and will make players' mods fail to sync in multiplayer. We will take down any copies of the Calamity Music Mod published to Steam Workshop or rehosted elsewhere, and reserve the right to take legal action as we see fit.
 
 **Do not reupload music tracks from the Calamity Music Mod to YouTube or other websites.** This is a violation of copyright and the composers will take legal action.
