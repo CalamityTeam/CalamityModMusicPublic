@@ -23,12 +23,20 @@ Mods: {
 
 			AcidRainTier1MusicBox: {
 				DisplayName: Music Box (Acid Rain - Tiers 1 and 2)
-				Tooltip: Plays 'corrosion!' by RoverdriveX
+				Tooltip:
+					'''
+					Plays 'corrosion!' by RoverdriveX
+					This music box contains a placeholder song
+					'''
 			}
 
 			AcidRainTier3MusicBox: {
 				DisplayName: Music Box (Acid Rain - Tier 3)
-				Tooltip: Plays 'nuclear monsoon' by PinpinNeon
+				Tooltip:
+					'''
+					Plays 'nuclear monsoon' by PinpinNeon
+					This music box contains a placeholder song
+					'''
 			}
 
 			AnahitaMusicBox: {
@@ -173,7 +181,11 @@ Mods: {
 
 			ExoMechsMusicBox: {
 				DisplayName: Music Box (Exo Mechs)
-				Tooltip: Plays 'Inferior Fabrications' by PinpinNeon
+				Tooltip:
+					'''
+					Plays 'Inferior Fabrications' by PinpinNeon
+					This music box contains a placeholder song
+					'''
 			}
 
 			HiveMindMusicBox: {
