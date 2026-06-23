@@ -1,13 +1,18 @@
-**The Calamity Music Mod and all associated source code, visual assets and audio assets, is all rights reserved (ARR).**
+The Calamity Music Mod and all associated source code, visual assets, audio assets, characters, names, logos, trademarks, branding, and related materials are proprietary to Azafure, LLC, a Virginia limited liability company (*"Azafure"*), and are protected by applicable intellectual property laws. All rights reserved. Except for the limited permission necessary to access and contribute to the repository in accordance with these terms, nothing in these terms grants any license, permission, or ownership interest in or to Azafure’s intellectual property.
 
-The following stipulations apply to *contributing* to the Calamity Music Mod:
-- Open source contributions to this repository are welcome.
-- If you contribute to the Calamity Music Mod, you expressly give the Calamity Team permission to use and reproduce your code and/or assets.
-- You certify that all code contributed to the Calamity Music Mod is your own work or appropriately licensed for inclusion.
-- We will make good faith efforts to honor reasonable requests to remove contributions from the Calamity Music Mod. Requests for your work to be excluded are a *privilege*, not a *right*, and we will ignore requests we deem unreasonable.
+Contributions (defined hereafter) to this repository for Calamity Music Mod (*"Project"*) are welcome. By submitting any original code, artwork, audio, documentation, suggestions, or other materials, including modifications or additions thereof, to the Calamity Music Mod repository (*"Contributions"*), you acknowledge and agree to the following:
 
-The following stipulations apply to the Calamity Music Mod as a whole:
-- You may use the source code of the Calamity Music Mod as a reference for building or developing Terraria mods or other software.
-- Code lifted from the Calamity Music Mod repository must be credited to the Calamity Team.
+1. **Assignment.** Upon submission, you assign to Azafure all right, title and interest in any copyright you have in the Contributions, and you waive any rights that may affect our ownership of the copyright in the Contributions.
+
+2. **License to Azafure.** If your assignment in Section 1 is ineffective for any reason, you grant to Azafure an exclusive, perpetual, worldwide, transferable, sublicensable, no-charge, royalty-free, and irrevocable license to use, reproduce, prepare derivative works of, publicly display, publicly perform, and distribute your Contributions and any derivative work created based on your Contributions. If your license grant is ineffective for any reason, you irrevocably waive and consent not to assert any claim you may have against Azafure, its successors in interest, or its licensees arising out of their use, reproduction, preparation of derivative works, public display, public performance, or distribution of your Contributions. You also agree that Azafure may, in its sole discretion, publicly use or display your name and, if applicable, the name of your organization, solely only to identify or acknowledge your Contributions to the Project, and not for advertising or marketing purposes.
+
+3. **Contributor Representations.** By submitting Contributions, you represent that: `(a)` you created the Contributions or otherwise have sufficient rights to submit it to the Project under this license; `(b)` to the best of your knowledge, the Contributions do not infringe any third party intellectual property rights; `(c)` you are not aware of any claim, suit, or proceeding alleging that the Contributions infringe any third party right; and `(d)` you will duly comply with the provisions set forth herein.
+
+4. **Indemnity.** You agree to indemnify and hold harmless Azafure from and against any claims, damages, losses, liabilities, costs, and expenses arising out of or related to your breach of the foregoing representations and warranties.
+
+5. **Miscellaneous.**
+- Azafure will make good faith efforts to honor reasonable requests to remove Contributions from the Project. Requests for your Contributions to be excluded are a privilege, not a right, and Azafure may ignore requests it deems unreasonable.
+- You may use the Project source code as a reference for building or developing Terraria mods or other software.
+- If you lift any code from the Project repository you must credit such code to *"Azafure, LLC"* and provide a link to the Project repository or this `LICENSE` page.
 - The Calamity Music Mod cannot be redistributed in any form or in any location. The Steam Workshop is the only officially hosted download of the Calamity Music Mod.
-- All music tracks are the property of their respective composers and are used by the Calamity Team with permission.
+- All music tracks remain the property of their respective composers, are not owned by Azafure, and are used by Azafure with permission.
